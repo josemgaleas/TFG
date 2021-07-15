@@ -16,11 +16,20 @@
 %Hablar sobre qué són los esquemas de señalización y cual es su función principal. comentar
 %los esquemas (alternos,cancelación,4ppm,4ippm y pwm) y por qué se han elegido o descartado.
 %Decir que no son los esquemas del estándar y que se han elegido para investigar sus ventajas e inconvenientes. 
-Un esquema de codificación estandariza la codificación de caracteres mediante la definición de un 
-método único para representar los datos de tipo carácter. 
 
-Para los sistemas de comunicación por luz visible el estándar define el código Manchester como el sistema de codificación a 
-usar. Sin embargo, existen muchas otras alternativas a este código que se van a describir a continuación.
+En el ámbito de la comunicación existen múltiples esquemas de codificación digital con diferentes propiedades como 
+probabilidad de bit, ciclo de trabajo, ancho de banda, etc. A la hora de estudiar un esquema de codificación para hacer 
+su elección hay que tener en cuenta tres aspectos fundamentales, que son:
+\begin{itemize}
+    \item Flickering: 
+    \item Rendimiento óptico
+    \item La capacidad para controlar la atenuación o el dimming, 
+\end{itemize} 
+
+El estándar de comunicaciones por luz visible IEEE 802.15.7 usa como esquema de señalización la codificación Manchester. 
+Continuando con el estudio de los esquemas de señalización,
+a continuación, se van a desarrollar otras opciones de esquemas de codificación con características diferentes
+para estudiar su eficacia e impacto en las comunicaciones por luz visible.
 
 \section{Pulsos alternos}
 Comentar teóricamente en que consiste este esquema (miller pero con una opción menos y alternando).

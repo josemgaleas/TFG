@@ -13,7 +13,7 @@
 \contentsline {section}{\numberline {1.4}Esquemas de señalización}{4}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Estructura del documento}{4}{section.1.5}%
 \contentsline {section}{\numberline {1.6}Ámbito de aplicación}{4}{section.1.6}%
-\contentsline {section}{\numberline {1.7}Objetivo}{4}{section.1.7}%
+\contentsline {section}{\numberline {1.7}Objetivo}{5}{section.1.7}%
 \contentsline {part}{II\hspace {1em}Desarrollo del proyecto}{7}{part.2}%
 \contentsline {xpart}{Desarrollo del proyecto}{9}{part.2}%
 \contentsline {chapter}{\numberline {2}Tecnología empleada}{9}{chapter.2}%
@@ -29,7 +29,7 @@
 \contentsline {section}{\numberline {3.4}Mejoras respecto al sistema anterior}{12}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Fundamentos teóricos}{13}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Introducción a los esquemas de señalización}{13}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Pulsos alternos}{13}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Pulsos alternos}{14}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Pulsos alternos con cancelación de pulsos}{14}{section.4.3}%
 \contentsline {section}{\numberline {4.4}4-PPM}{14}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Comparativa 4-PPM frente a Inverse 4-PPM}{15}{section.4.5}%
