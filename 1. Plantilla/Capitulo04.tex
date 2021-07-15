@@ -1,0 +1,71 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Documento LaTeX 																						%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Título:		Capítulo 3
+% Autor:  	Ignacio Moreno Doblas
+% Fecha:  	2014-02-01, actualizado 2019-11-11
+% Versión:	0.5.0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% !TEX root = A0.MiTFG.tex
+
+\chapterbegin{Fundamentos teóricos}
+\label{chp:App}
+\minitoc
+
+\section{Introducción a los esquemas de señalización}
+%Hablar sobre qué són los esquemas de señalización y cual es su función principal. comentar
+%los esquemas (alternos,cancelación,4ppm,4ippm y pwm) y por qué se han elegido o descartado.
+%Decir que no son los esquemas del estándar y que se han elegido para investigar sus ventajas e inconvenientes. 
+Un esquema de codificación estandariza la codificación de caracteres mediante la definición de un 
+método único para representar los datos de tipo carácter. 
+
+Para los sistemas de comunicación por luz visible el estándar define el código Manchester como el sistema de codificación a 
+usar. Sin embargo, existen muchas otras alternativas a este código que se van a describir a continuación.
+
+\section{Pulsos alternos}
+Comentar teóricamente en que consiste este esquema (miller pero con una opción menos y alternando).
+Y que apenas está implementado y desarrollado en ningún sitio.
+
+Dibujar y comentar el diagrama de trellis de este esquema para la codificación/decodificación de la señal.
+
+si encuentro algo hablar sobre cual es su espectro y las diferencias respecto a los del estándar
+
+Desarrollar por qué es un esquema no equiprobable haciendo los cálculos correspondientes.
+
+Comentar si se encuentra la ber y sus prestaciones
+
+\section{Pulsos alternos con cancelación de pulsos}
+Comentar teóricamente en que consiste este esquema (alternos pero eliminando pulsos).
+Y que apenas está implementado y desarrollado en ningún sitio.
+
+Dibujar y comentar el diagrama de trellis de este esquema para la codificación/decodificación de la señal.
+
+si encuentro algo hablar sobre cual es su espectro y las diferencias respecto a los del estándar
+
+Desarrollar por qué es un esquema no equiprobable haciendo los cálculos correspondientes.
+
+Comentar si se encuentra la ber y sus prestaciones
+
+\section{4-PPM}
+Explayarme mucho más porque hay mucha más información.
+Comentar teóricamente en que consiste este esquema.
+Y que apenas está implementado y desarrollado en ningún sitio.
+
+Dibujar y comentar el diagrama de trellis de este esquema para la codificación/decodificación de la señal.
+
+si encuentro algo hablar sobre cual es su espectro y las diferencias respecto a los del estándar
+
+Desarrollar por qué es un esquema no equiprobable haciendo los cálculos correspondientes.
+
+Comentar si se encuentra la ber y sus prestaciones
+
+\section{Comparativa 4-PPM frente a Inverse 4-PPM}
+Comparar estos dos esquemas y comentar ventajas e inconvenientes.
+%https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6614862
+%https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=567560&tag=1
+
+\section{Sistemas de decisión}
+Hablar sobre las técnicas usadas --> hard-decoding, soft-decoding y algoritmo de Viterbi
+Tener en cuenta el mapeo que se realiza para poner la señal en el rango [-8192,8191]
+
+\chapterend{}

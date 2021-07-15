@@ -1,0 +1,32 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Documento LaTeX 																						%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Título:		Capítulo 5
+% Autor:  	Ignacio Moreno Doblas
+% Fecha:  	2014-02-01, actualizado 2019-11-11
+% Versión:	0.5.0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% !TEX root = A0.MiTFG.tex
+
+\chapterbegin{Implementación}
+\label{chp:App2}
+\minitoc
+
+\section{Sistema general}
+Comentar como se relacionan los bloques entre sí y el orden de los mismos para luego entrar en profundidad en 
+los bloques que se han desarrollado.
+
+\section{Transmisor}
+		-Selector del esquema de codificación (sincronismo manchester y trama en la codificación elegida)
+		-Diagramas de Markov para implementar la codificación
+
+\section{Receptor}
+		-Recepción del dato serie
+		-Agrupar los datos en parejas o cuartetos
+		-Decodificar con máquinas de estados o identificación del bit mayor.
+
+\section{Sistema de decisión} (hard-soft decoding, algoritmo de viterbi)
+		-Hard-decoding (umbral en la mitad)
+		-Soft-decoding (cómo se implementa el cálculo de la distancia euclídea)
+		-Algoritmo de Viterbi (que efecto tiene y cómo se implementa la mirada al pasado para descartar opciones que tienen probabilidad 0)
+\chapterend{}
