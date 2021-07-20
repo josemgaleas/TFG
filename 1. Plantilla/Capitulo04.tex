@@ -21,15 +21,25 @@ En el ámbito de la comunicación existen múltiples esquemas de codificación d
 probabilidad de bit, ciclo de trabajo, ancho de banda, etc. A la hora de estudiar un esquema de codificación para hacer 
 su elección hay que tener en cuenta tres aspectos fundamentales, que son:
 \begin{itemize}
-    \item Flickering: 
-    \item Rendimiento óptico
-    \item La capacidad para controlar la atenuación o el dimming, 
+    \item Flickering: se define como el cambio de la luz provocado por la conmutación entre encendido 
+y apagado (1 y 0) en intervalos muy cortos. 
+Estos parpadeos, si se producen a una velocidad perceptible por el ojo humano, pueden llegar a ser molestos y causar dolor. 
+    \item Rendimiento óptico.
+    \item La capacidad para controlar la atenuación o el dimming, provocado por por la variación de la intensidad de la luz, 
+    en esquemas de codificación con ancho de pulso de la señal variable. 
 \end{itemize} 
 
 El estándar de comunicaciones por luz visible IEEE 802.15.7 usa como esquema de señalización la codificación Manchester. 
 Continuando con el estudio de los esquemas de señalización,
 a continuación, se van a desarrollar otras opciones de esquemas de codificación con características diferentes
 para estudiar su eficacia e impacto en las comunicaciones por luz visible.
+Los esquemas a desarrollar son codificación por pulsos alternos, cancelación de pulsos y 4-ppm. También se hará una 
+comparativa de 4-ppm frente a Inverse 4-ppm para comparar sus prestaciones y el efecto de transmitir mayor cantidad 
+de ``unos'' que de ``ceros''.
+
+Es importante destacar que en un primer momento también se planteó el desarrollo de codificación 4-PWM pero se descartó su 
+implementación debido a su escasa capacidad para controlar el dimming. Esto provocaba que la intensidad de la luz 
+fluctuara mucho a lo largo de una transmisión siendo perceptible y molesto para el ojo humano.
 
 \section{Pulsos alternos}
 Comentar teóricamente en que consiste este esquema (miller pero con una opción menos y alternando).
