@@ -1,6 +1,10 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.1}Introducción a los esquemas de señalización}{\reset@font\mtcSfont 13}{section.4.1}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.2}Pulsos alternos}{\reset@font\mtcSfont 14}{section.4.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.3}Pulsos alternos con cancelación de pulsos}{\reset@font\mtcSfont 14}{section.4.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.3}Pulsos alternos con cancelación de pulsos}{\reset@font\mtcSfont 15}{section.4.3}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.4}4-PPM}{\reset@font\mtcSfont 15}{section.4.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.5}Comparativa 4-PPM frente a Inverse 4-PPM}{\reset@font\mtcSfont 15}{section.4.5}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.6}Sistemas de decisión}{\reset@font\mtcSfont 15}{section.4.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.5}Comparativa 4-PPM frente a Inverse 4-PPM}{\reset@font\mtcSfont 16}{section.4.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.6}Sistemas de decisión}{\reset@font\mtcSfont 16}{section.4.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.6.1}Hard-decoding}{\reset@font\mtcSSfont 16}{subsection.4.6.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.6.2}Soft-decoding}{\reset@font\mtcSSfont 16}{subsection.4.6.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.6.3}Algoritmo de Viterbi}{\reset@font\mtcSSfont 16}{subsection.4.6.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.6.4}Comparativa entre los sistemas de decisión}{\reset@font\mtcSSfont 16}{subsection.4.6.4}}

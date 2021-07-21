@@ -11,6 +11,8 @@
 \contentsline {xchapter}{Sistema de comunicación}{11}{chapter.3}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{Fundamentos teóricos}{13}{chapter.4}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \small {Diagrama de Trellis de la codificación pulsos alternos.}\relax }}{15}{figure.caption.7}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \small {Diagrama de Trellis de la codificación cancelación de pulsos.}\relax }}{15}{figure.caption.8}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{Implementación}{17}{chapter.5}%
 \addvspace {10\p@ }

@@ -46,6 +46,14 @@ Comentar teóricamente en que consiste este esquema (miller pero con una opción
 Y que apenas está implementado y desarrollado en ningún sitio.
 
 Dibujar y comentar el diagrama de trellis de este esquema para la codificación/decodificación de la señal.
+\vspace{2cm}
+
+\begin{figure}[ht]
+    \centering
+    \input{./figuras/alternos.tikz}
+    \caption{\small{Diagrama de Trellis de la codificación pulsos alternos.}}
+    \label{trellis_alternos}%
+\end{figure}
 
 si encuentro algo hablar sobre cual es su espectro y las diferencias respecto a los del estándar
 
@@ -58,6 +66,13 @@ Comentar teóricamente en que consiste este esquema (alternos pero eliminando pu
 Y que apenas está implementado y desarrollado en ningún sitio.
 
 Dibujar y comentar el diagrama de trellis de este esquema para la codificación/decodificación de la señal.
+
+\begin{figure}[ht]
+    \centering
+    \input{./figuras/cancelacion.tikz}
+    \caption{\small{Diagrama de Trellis de la codificación cancelación de pulsos.}}
+    \label{trellis_cancelacion}%
+\end{figure}
 
 si encuentro algo hablar sobre cual es su espectro y las diferencias respecto a los del estándar
 
@@ -84,7 +99,18 @@ Comparar estos dos esquemas y comentar ventajas e inconvenientes.
 %https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=567560&tag=1
 
 \section{Sistemas de decisión}
-Hablar sobre las técnicas usadas --> hard-decoding, soft-decoding y algoritmo de Viterbi
-Tener en cuenta el mapeo que se realiza para poner la señal en el rango [-8192,8191]
+%Hablar sobre las técnicas usadas --> hard-decoding, soft-decoding y algoritmo de Viterbi
+%Tener en cuenta el mapeo que se realiza para poner la señal en el rango [-8192,8191]
+En este apartado se van a describir los diferentes sistemas de decisión para interpretar la señal recibida de la mejor 
+manera posible que se han implementado. Para ello, se van a desarrollar 
+sus características más representativas así como sus ventajas e inconvenientes.
+
+\subsection{Hard-decoding}
+
+\subsection{Soft-decoding}
+
+\subsection{Algoritmo de Viterbi}
+
+\subsection{Comparativa entre los sistemas de decisión}
 
 \chapterend{}

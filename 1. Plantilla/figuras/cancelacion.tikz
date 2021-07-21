@@ -1,0 +1,43 @@
+%CANCELACION
+\tikzstyle{state}=[shape=circle,draw=blue!50,fill=blue!20,inner sep=2pt]
+\def\desp{1.5}%
+\begin{tikzpicture}[]
+% 1st column
+\draw (0,3*\desp) node[name=s1_1,state] {$S_1$} node[xshift=-2.2cm]{$0/00$}node[xshift=-1cm]{$1/00$};
+\draw (0,2*\desp) node[name=s2_1,state] {$S_2$} node[xshift=-2.2cm]{$0/10$}node[xshift=-1cm]{$1/01$};
+\draw (0,\desp) node[name=s3_1,state] {$S_3$} node[xshift=-2.2cm]{$0/00$}node[xshift=-1cm]{$1/00$};
+
+% 2nd column
+
+\node[state] (s1_2) at (2,3*\desp) {$S_1$}
+    edge[dashed] (s1_1)
+    edge[dashed] (s2_1)
+    edge[dashed] (s3_1);
+\node[state] (s2_2) at (2,2*\desp) {$S_2$}
+    edge[thin] (s1_1)
+    edge[thin] (s3_1);
+\node[state] (s3_2) at (2,\desp) {$S_3$}
+    edge[thin] (s2_1);
+
+% 3d column
+
+\node[state] (s1_3) at (4,3*\desp) {$S_1$}
+    edge[dashed] (s1_2)
+    edge[dashed] (s2_2)
+    edge[dashed] (s3_2);
+\node[state] (s2_3) at (4,2*\desp) {$S_2$}
+    edge[thin] (s1_2)
+    edge[thin] (s3_2);
+\node[state] (s3_3) at (4,\desp) {$S_3$}
+    edge[thin] (s2_2);
+
+
+\end{tikzpicture}
+
+\hspace{1cm}--------- $1$ ---------
+
+\hspace{1cm}- - - - - $0$ - - - - -
+%\line(1,0){2cm}  $1$ \line(1,0){2cm}
+
+
+% 1 linea continua, 0 linea discontinua
