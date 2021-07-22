@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.6.21)  21 JUL 2021 10:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.6.21)  22 JUL 2021 13:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1093,7 +1093,12 @@ Cap\'{\i }tulo 4.
 ] (./figuras/alternos.tikz) [14] (./figuras/cancelacion.tikz)
 LaTeX Info: Redefining \. on input line 88.
 LaTeX Info: Redefining \% on input line 88.
- [15] [16]) (./Capitulo05.tex
+ [15] [16]
+LaTeX Info: Redefining \. on input line 144.
+LaTeX Info: Redefining \% on input line 144.
+ [17] [18
+
+]) (./Capitulo05.tex
 Cap\'{\i }tulo 5.
 \openout4 = `A0.MiTFG.mtc'.
 
@@ -1104,44 +1109,43 @@ Overfull \hbox (9.67691pt too wide) in paragraph at lines 24--27
 []\T1/phv/m/n/12 -Recepción del da-to se-rie -Agrupar los da-tos en pa-re-jas o cuar-te-tos -Decodificar
  []
 
-[17
+[19
 
-
-] [18]) (./Capitulo06.tex
+] [20]) (./Capitulo06.tex
 Cap\'{\i }tulo 6.
 Package minitoc Info: I0006
 (minitoc)             A0.MiTFG.mtc11 is empty on input line 14.
-[19
+[21
 
 
-] [20
+] [22
 
-]) [21
+]) [23
 
-] [22] (./D0.Conclusiones.tex [23
+] [24] (./D0.Conclusiones.tex [25
 
-] [24
+] [26
 
-]) [25
+]) [27
 
-] [26] (./D1.AppendixA.tex
+] [28] (./D1.AppendixA.tex
 Ap\'{e}ndice A.
 \openout4 = `A0.MiTFG.mtc'.
 
 \openout4 = `A0.MiTFG.mtc'.
 
-(./A0.MiTFG.mtc13) [27
+(./A0.MiTFG.mtc13) [29
 
-] [28
+] [30
 
 ]) (./E1.Bibliografia.tex (./A0.MiTFG.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [29
+) [31
 
 
-] [30
+] [32
 
 ]) (./F1.Index.tex
 runsystem(makeindex A0.MiTFG.idx)...executed safely (allowed).
@@ -1163,7 +1167,7 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the A0.MiTFG.log file.
 
-[31
+[33
 
 
 ] (./A0.MiTFG.aux
@@ -1177,18 +1181,18 @@ Package rerunfilecheck Info: File `A0.MiTFG.out' has not changed.
 (rerunfilecheck)             Checksum: FEF1C6B83F3693EADBAB6D2E0A9B11C7;8485.
  ) 
 Here is how much of TeX's memory you used:
- 29356 strings out of 478510
- 497958 string characters out of 5853586
+ 29358 strings out of 478510
+ 497972 string characters out of 5853586
  824808 words of memory out of 5000000
  46340 multiletter control sequences out of 15000+600000
  476930 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,12n,86p,473b,803s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on A0.MiTFG.pdf (53 pages, 96721 bytes).
+Output written on A0.MiTFG.pdf (55 pages, 97729 bytes).
 PDF statistics:
- 581 PDF objects out of 1000 (max. 8388607)
- 508 compressed objects within 6 object streams
- 111 named destinations out of 1000 (max. 500000)
+ 590 PDF objects out of 1000 (max. 8388607)
+ 515 compressed objects within 6 object streams
+ 113 named destinations out of 1000 (max. 500000)
  405 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -107,10 +107,38 @@ sus características más representativas así como sus ventajas e inconveniente
 
 \subsection{Hard-decoding}
 
-\subsection{Soft-decoding}
 
+\subsection{Soft-decoding}
+aaaaaaaaaa
+aaaaaaaaaa
+
+aaaaaaaa
 \subsection{Algoritmo de Viterbi}
 
+% \begin{figure}[htbp]
+%     \centering
+%     \includegraphics[scale=0.75]{./figuras/Viterbi_pulsos_cancelacion.pdf}
+%     \caption{\small{Viterbi.}}
+%     \label{Viterbi}%
+% \end{figure}
+
 \subsection{Comparativa entre los sistemas de decisión}
+A continuación, se va a comparar la tasa de error de bit (BER) de los distintos esquemas de decisión, para cada esquema 
+de codificación, en función de la relación señal a ruido (SNR), que varia con la distancia (disminuyendo la 
+amplitud de la señal), para verificar la mejora que se produce entre cada sistema de decisión.
+
+Para pulsos alternos, la principal mejora se nota con la aplicación del algoritmo de Viterbi.
+
+Para cancelación de pulsos la aplicación del algoritmo de Viterbi es muy importante ya que, como se comentó anteriormente,
+se descartan muchas opciones al mirar un pasado.
+
+Para 4ppm el uso de soft-decoding implica una gran mejora debido a la posibilidad de buscar el bit mayor ya que solo 
+se recibe un '1' por cuarteto de bits.
+
+%%FOTOS DE ALTERNOS (HARD,SOFT,VITERBI), CANCELACION (HARD,SOFT,VITERBI) Y 4PPM(HARD,SOFT)
+
+%%%%%%%% NO SE SI PONER UN APARTADO DE COMPARATIVA ENTRE CODIFICACIONES SEGUN EL SISTEMA DE DECISION O PONER LAS FOTOS
+%%% DENTRO DE CADA ESQUEMA %%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \chapterend{}
