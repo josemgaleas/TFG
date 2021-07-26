@@ -30,14 +30,14 @@
 \contentsline {chapter}{\numberline {4}Fundamentos teóricos}{13}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Introducción a los esquemas de señalización}{13}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Pulsos alternos}{14}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Pulsos alternos con cancelación de pulsos}{15}{section.4.3}%
-\contentsline {section}{\numberline {4.4}4-PPM}{15}{section.4.4}%
+\contentsline {section}{\numberline {4.3}Cancelación de pulsos}{15}{section.4.3}%
+\contentsline {section}{\numberline {4.4}4-PPM}{16}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Comparativa 4-PPM frente a Inverse 4-PPM}{16}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Sistemas de decisión}{16}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Hard-decoding}{16}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Soft-decoding}{16}{subsection.4.6.2}%
-\contentsline {subsection}{\numberline {4.6.3}Algoritmo de Viterbi}{16}{subsection.4.6.3}%
-\contentsline {subsection}{\numberline {4.6.4}Comparativa entre los sistemas de decisión}{16}{subsection.4.6.4}%
+\contentsline {section}{\numberline {4.6}Sistemas de decisión}{17}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Hard-decoding}{17}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Soft-decoding}{17}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Algoritmo de Viterbi}{17}{subsection.4.6.3}%
+\contentsline {subsection}{\numberline {4.6.4}Comparativa entre los sistemas de decisión}{17}{subsection.4.6.4}%
 \contentsline {chapter}{\numberline {5}Implementación}{19}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Sistema general}{19}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Transmisor}{19}{section.5.2}%

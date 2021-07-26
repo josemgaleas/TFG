@@ -4,8 +4,8 @@
 \def\desp{1.5}%
 \begin{tikzpicture}[]
 % 1st column
-\draw (0,\desp) node[name=s1_1,state] {$S_1$} node[xshift=-2.2cm]{$0/11$}node[xshift=-1cm]{$1/00$};
-\draw (0,0) node[name=s2_1,state] {$S_2$} node[xshift=-2.2cm]{$1/00$}node[xshift=-1cm]{$0/10$};
+\draw (0,\desp) node[name=s1_1,state] {$S_1$} node[xshift=-2.2cm]{$0/00$}node[xshift=-1cm]{$1/01$};
+\draw (0,0) node[name=s2_1,state] {$S_2$} node[xshift=-2.2cm]{$0/00$}node[xshift=-1cm]{$1/10$};
 % 2nd column
 
 \node[state] (s1_2) at (2,\desp) {$S_1$}

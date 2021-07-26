@@ -1,6 +1,8 @@
-This is BibTeX, Version 0.99d (TeX Live 2021/W32TeX)
+This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: A0.MiTFG.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
 I found no \citation commands---while reading file A0.MiTFG.aux
 Database file #1: E2.Bibliografia.bib

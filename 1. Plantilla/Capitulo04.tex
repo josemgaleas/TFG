@@ -42,8 +42,12 @@ implementación debido a su escasa capacidad para controlar el dimming. Esto pro
 fluctuara mucho a lo largo de una transmisión siendo perceptible y molesto para el ojo humano.
 
 \section{Pulsos alternos}
-Comentar teóricamente en que consiste este esquema (miller pero con una opción menos y alternando).
-Y que apenas está implementado y desarrollado en ningún sitio.
+% Comentar teóricamente en que consiste este esquema (miller pero con una opción menos y alternando).
+% Y que apenas está implementado y desarrollado en ningún sitio.
+Este esquema de codificación consiste 
+
+Este formato de pulsos alternos, que tiene un ciclo de trabajo bajo, ha sido
+demostrado que proporciona una gran solidez.
 
 Dibujar y comentar el diagrama de trellis de este esquema para la codificación/decodificación de la señal.
 \vspace{2cm}
@@ -61,11 +65,38 @@ Desarrollar por qué es un esquema no equiprobable haciendo los cálculos corres
 
 Comentar si se encuentra la ber y sus prestaciones
 
-\section{Pulsos alternos con cancelación de pulsos}
-Comentar teóricamente en que consiste este esquema (alternos pero eliminando pulsos).
-Y que apenas está implementado y desarrollado en ningún sitio.
+\section{Cancelación de pulsos}
+% Comentar teóricamente en que consiste este esquema (alternos pero eliminando pulsos).
+% Y que apenas está implementado y desarrollado en ningún sitio.
 
-Dibujar y comentar el diagrama de trellis de este esquema para la codificación/decodificación de la señal.
+Tras el desarrollo de la codificación por pulsos alternos y de haber visto mejora en 
+términos de BER, la ventaja proporcionada por modificar las estadísticas de la secuencia
+no se explotan completamente ya que la técnica de señalización no presenta ninguna mejora
+respecto a la relación de potencia óptica de pico a promedio (PAOPR), y por lo tanto aún
+se pueden conseguir mejores resultados. Siguiendo esta línea, para mejorar el pico de 
+potencia óptica se trata de disminuir el número de pulsos, centrándose en evitar la 
+aparición de más de un pulso de manera consecutiva. 
+
+De esta manera, el bit de información '1' se codifica con la ausencia de pulso '00' 
+o con un pulso con su posición modificada, '01'. Mientras que el bit '0' se representa con
+ausencia de pulso '00' o con presencia de pulso sin modificar su posición '10'. Gracias
+a aplicar esto, se disminuyen los números de pulsos de una manera bastante notable. 
+
+%EXPLICAR EL TRELLIS
+La figura \ref{trellis_cancelacion} representa el diagrama de Trellis de este esquema
+de codificación tal y como se ha descrito anteriormente. Este modelo consiste en tres 
+estados, donde cada estado es imprescindible para saber como codificar el dato.
+Lo más importante del trellis es que el primer '1' que se codifica después de un '0'
+siempre se codifica como ausencia de pulso ('00') y que siempre que el bit de dato
+es un '0' se transiciona al estado S1 para volver a empezar y codificar el primer '1'
+como ausencia de pulso. También se observa que después de codificar el primer '1' es 
+cuando se produce el pulso con su posición modificada si se codifica otro '1' o el 
+pulso con su posición sin modificar si se codifica un '0'.
+Hay que destacar que el estado S3 funciona exactamente igual que el estado S1 pero,
+sin embargo, es necesario por la naturaleza de los diagramas de Trellis o de Markov, 
+ya que no es apropiado que se transicione al mismo estado independientemente del bit 
+que se codifique.
+\vspace{1cm}
 
 \begin{figure}[ht]
     \centering
@@ -74,11 +105,18 @@ Dibujar y comentar el diagrama de trellis de este esquema para la codificación/
     \label{trellis_cancelacion}%
 \end{figure}
 
-si encuentro algo hablar sobre cual es su espectro y las diferencias respecto a los del estándar
+% Por qué es un esquema no equiprobable haciendo los cálculos correspondientes.
+Como se ha explicado anteriormente, este esquema prioriza la ausencia de pulsos por
+lo que también es un esquema no equiprobable (no tiene la misma probabilidad de '0'
+que de '1'), aunque en mayor medida que en pulsos
+alternos ya que en este hay mayor presencia de '0'. Para saber cuales son sus 
+probabilidades hay que realizar los cálculos correspondientes. Este cálculo es 
+imprescindible para conocer %EFECTO DEL CONDENSADOR DEL RECEPTOR PARA MODIFICAR UMBRAL
 
-Desarrollar por qué es un esquema no equiprobable haciendo los cálculos correspondientes.
+% si encuentro algo hablar sobre cual es su espectro y las diferencias respecto a los del estándar
 
-Comentar si se encuentra la ber y sus prestaciones
+
+% Comentar si se encuentra la ber y sus prestaciones
 
 \section{4-PPM}
 Explayarme mucho más porque hay mucha más información.
