@@ -105,18 +105,82 @@ que se codifique.
     \label{trellis_cancelacion}%
 \end{figure}
 
+El esquema de señalización resultante se muestra en la figura \ref{codificación_cancelacion},
+donde se puede observar una mejora del 50\% en PAOPR. Ya que este formato asegura un 
+período mínimo de tiempo sin transiciones consecutivas.
+
+%% INSERTAR FIGURA DE LA CODIFICACIÓN
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.6]{./figuras/CodificadaCancelacion.pdf}
+    \caption{\small{Codificación con cancelación de pulsos.}}
+    \label{codificación_cancelacion}%
+\end{figure}
+
+Además, en dicha figura, se puede apreciar el funcionamiento de este esquema de señalización 
+ya que se comprueba que predomina la ausencia de pulsos. En la parte superior de la figura 
+se encuentra la trama pseudoaleatoria y abajo su codificación. También se 
+observa como la entrada es una señal digital (0 y 1) y como la codificada se encuentra
+entre [-1,1] que es el rango de transmisión por el canal de luz.
+
+En este esquema de codificación, la señal codificada tiene el doble de frecuencia de 
+trabajo ya que, al igual que otros esquemas como pulsos alternos o Manchester, hay 
+transiciones rápidas entre '0' y '1'. 
+
+En la figura también se observa que el ciclo de trabajo de esta codificación es 
+bajo porque hay pocos pulsos. Esto provoca dos efectos.
+\begin{itemize}
+    \item Flickering: al transmitir mayor número de '0' que de '1' la fuente transmisora
+        se encuentra más tiempo apagada que encendida. Esto implica que, a la misma 
+        frecuencia de transmisión que otros esquemas de codificación, el flickering en 
+        cancelación de pulsos sea mayor ya que es uno de los esquemas que mayor 
+        diferencia de probabilidad de bits presenta.
+    \item Potencia óptica: la ventaja de transmitir pocos pulsos es que estos se pueden 
+        transmitir con mayor potencia ya que el transmisor está la mayor parte del tiempo
+        sin transmitir. 
+\end{itemize}
+
 % Por qué es un esquema no equiprobable haciendo los cálculos correspondientes.
 Como se ha explicado anteriormente, este esquema prioriza la ausencia de pulsos por
 lo que también es un esquema no equiprobable (no tiene la misma probabilidad de '0'
 que de '1'), aunque en mayor medida que en pulsos
 alternos ya que en este hay mayor presencia de '0'. Para saber cuales son sus 
-probabilidades hay que realizar los cálculos correspondientes. Este cálculo es 
-imprescindible para conocer %EFECTO DEL CONDENSADOR DEL RECEPTOR PARA MODIFICAR UMBRAL
+probabilidades exactas hay que realizar los cálculos correspondientes. Este cálculo es 
+imprescindible para, además de conocer el ciclo de trabajo, conocer el efecto que 
+produce en el receptor de luz.
+%%%%%%%%%%%%%%%%%%%% FORMULA DE LA PROBABILIDAD %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% si encuentro algo hablar sobre cual es su espectro y las diferencias respecto a los del estándar
+Al igual que para pulsos alternos, se han estudiado sus prestaciones en función de varios 
+sistemas de decisión. Estos sistemas se explicarán en el apartado 4.6 pero es oportuno 
+tener una referencia de su tasa de error de bit para tener una idea inicial de sus 
+prestaciones. Para ello, la figura x muestra la tasa de error de bit de este esquema
+para una trama pseudoaleatoria aplicando \textit{soft-decoding} como sistema de decisión. 
+%%%%%%%%%%%%%%%%%%% FOTO DE BER SOFT-DECODING %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+A continuación, podemos calcular la densidad de potencia espectral (PSD) de la 
+codificación propuesta aplicando la siguiente fórmula.
+% Calculo del psd en el paper que me pasó Antonio
+%%%%%%%%%%%%%%%%%% FORMULA PSD %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Por consiguiente, la densidad de potencia espectral obtenida a través de los cálculos
+anteriores se muestra en la figura \ref{psd_cancelación}.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{./figuras/psd_cancelacion.png}
+    \caption{\small{Potencia espectral frente a frecuencia normalizada.}}
+    \label{psd_cancelación}%
+\end{figure}
 
 
-% Comentar si se encuentra la ber y sus prestaciones
+% CONCLUSION 
+En conclusión, este esquema de codificación propuesto basado en la ausencia de pulsos
+mejora notablemente la codificación de la señal.
+El aumento de los tiempos de silencio se utilizan para modificar las estadísticas de
+la secuencia de amplitud con respecto a las estadísticas de la
+secuencia de mensajes, lo que permite el aumento de la PAOPR,
+que es una característica favorable en enlaces ópticos. De esta manera se 
+obtiene una buena compensación entre rendimiento y complejidad requerida.
 
 \section{4-PPM}
 Explayarme mucho más porque hay mucha más información.
