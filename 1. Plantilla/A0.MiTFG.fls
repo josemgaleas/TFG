@@ -1773,9 +1773,12 @@ INPUT ./A0.MiTFG.lof
 INPUT A0.MiTFG.lof
 INPUT A0.MiTFG.lof
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/adobe/helvetic/phvro8t.tfm
 OUTPUT A0.MiTFG.lof
 INPUT c:/texlive/2021/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/vf/adobe/helvetic/phvro8t.vf
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
 INPUT ./B4.TableOfTables.tex
 INPUT B4.TableOfTables.tex
 INPUT ./B4.TableOfTables.tex
@@ -1885,6 +1888,11 @@ INPUT ./figuras/psd_cancelacion.png
 INPUT ./figuras/psd_cancelacion.png
 INPUT ./figuras/psd_cancelacion.png
 INPUT ./figuras/psd_cancelacion.png
+INPUT ./figuras/Hard.pdf
+INPUT ./figuras/Hard.pdf
+INPUT ./figuras/Hard.pdf
+INPUT ./figuras/Hard.pdf
+INPUT ./figuras/Hard.pdf
 INPUT ./Capitulo05.tex
 INPUT Capitulo05.tex
 INPUT ./Capitulo05.tex

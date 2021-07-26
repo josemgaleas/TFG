@@ -17,12 +17,13 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces \small {Diagrama de Trellis de la codificación cancelación de pulsos.}\relax }}{18}{figure.caption.10}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces \small {Codificación con cancelación de pulsos.}\relax }}{19}{figure.caption.11}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces \small {Potencia espectral frente a frecuencia normalizada.}\relax }}{20}{figure.caption.12}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces \small {Sistema \textit {Hard-decoding}.}\relax }}{22}{figure.caption.13}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Implementación}{23}{chapter.5}%
+\contentsline {xchapter}{Implementación}{25}{chapter.5}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Pruebas}{25}{chapter.6}%
-\contentsline {xpart}{Parte tercera.}{29}{part.3}%
-\contentsline {xpart}{Apéndices}{33}{part.4}%
+\contentsline {xchapter}{Pruebas}{27}{chapter.6}%
+\contentsline {xpart}{Parte tercera.}{31}{part.3}%
+\contentsline {xpart}{Apéndices}{35}{part.4}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Manual de uso}{33}{appendix.Alph1}%
+\contentsline {xchapter}{Manual de uso}{35}{appendix.Alph1}%
 \contentsfinish 

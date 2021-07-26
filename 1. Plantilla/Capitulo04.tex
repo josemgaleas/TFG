@@ -282,18 +282,77 @@ Comparar estos dos esquemas y comentar ventajas e inconvenientes.
 \section{Sistemas de decisión}
 %Hablar sobre las técnicas usadas --> hard-decoding, soft-decoding y algoritmo de Viterbi
 %Tener en cuenta el mapeo que se realiza para poner la señal en el rango [-8192,8191]
-En este apartado se van a describir los diferentes sistemas de decisión para interpretar la señal recibida de la mejor 
-manera posible que se han implementado. Para ello, se van a desarrollar 
-sus características más representativas así como sus ventajas e inconvenientes.
+Hoy en día, una tarea desafiante en la corrección de errores es decodificar las palabras 
+de código que se han recibido a través de canales ruidosos. Si no hay errores, es decir, 
+las palabras de código encuentran una coincidencia exacta, entonces es fácil decodificar 
+los datos. Sin embargo, si no se encuentra una coincidencia, se adoptan diversos mecanismos
+de decodificación más complejos. Por este motivo,
+en este apartado, se van a describir los diferentes sistemas de decisión para interpretar 
+la señal recibida de la mejor manera posible que se han implementado. Para ello, se van a
+desarrollar sus características más representativas así como sus ventajas e inconvenientes.
 
 \subsection{Hard-decoding}
+El primer sistema de decisión desarrollado es \textit{hard-decoding}. Este sistema es 
+el más sencillo de todos y por ello suele ser el que se aplica en la mayoría de sistemas
+de comunicación sencillos que no necesitan de alta robustez frente al ruido.
 
+Para su desarrollo es imprescindible fijar un umbral ya que este método compara los 
+valores de los pulsos recibidos con el valor del umbral fijado. El valor del umbral se 
+determina en la mitad del pulso. Por lo que si el valor del dato es mayor que el valor 
+del umbral se interpreta como un '1' y, de lo contrario, se interpreta como un '0'.
+La decodificación se realiza siempre igual independientemente de lo cerca que se encuentre 
+el valor del dato del umbral.
+
+Es por este motivo que este sistema de decisión es muy poco robusto frente a picos de 
+ruido y frente a la inlcusión de componente de continua que pueda modificar y mover 
+la amplitud de la señal, provocando que el umbral no se encuentre en la mitad que 
+se preveía.
+
+A continuación se muestra la figura \ref{hard-decoding} que compara el funcionamiento de 
+los tres esquemas de codificación desarrollados con el método \textit{hard-decoding}.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.65]{./figuras/Hard.pdf}
+    \caption{\small{Sistema \textit{Hard-decoding}.}}
+    \label{hard-decoding}%
+\end{figure}
+
+En la figura se puede comprobar como, con este sistema, los tres esquemas de señalización 
+funcionan esencialmente igual y que, con relaciones señal a ruido bajas (o negativas), la 
+tasa de error de bit es alta y no sería aceptable para cualquier sistema de comunicación
+por lo que este sistema sólo es apto para comunicaciones directas y cercanas en las que 
+la señal se reciba prácticamente perfecta con muy poco ruido.
+
+Tal y como se ha explicado en este apartado, el sistema \textit{hard-decoding} es 
+un sistema sencillo y rápido de implementar, sin embargo, no es 
+óptimo ni útil para afrontar comunicaciones con un poco de ruido. Por esto, este sistema
+no se aplica prácticamente nunca por lo que 
+se desarrolla otra técnica de decisión como \textit{soft-decoding} que mejora notablemente
+las prestaciones.
 
 \subsection{Soft-decoding}
-aaaaaaaaaa
-aaaaaaaaaa
+Tras el desarrollo de \textit{hard-decoding} y de haber visto que sus prestaciones no son 
+buenas se ha implementado el sistema de decisión \textit{soft-decoding}. 
+Este sistema es más complejo que el anterior y por ende sus prestaciones son mejores y 
+es el que se aplica en la mayoría de sistemas de comunicaciones para asegurar una 
+correcta recepción de la señal en la mayoría de situaciones y entornos.
 
-aaaaaaaa
+El sistema \textit{soft-decoding} opera con un rango de valores, en nuestro caso con 
+parejas de bits para ver a que opción se parece más la pareja recibida. Este sistema 
+trabaja con los valores en crudo de la señal 
+
+%Comentar el desarrollo que es rango de opciones y ver a cual se parece mas mediante la 
+%distancia euclídea y ya ver que si descartas algunas opciones se quedan las diagonales
+%que es mucho mejor por que se pueden comparar bits y por eso funciona mejor
+
+%Seguir explicando y meter fotillos de los esquemas con soft-decoding para apoyar la 
+%argumentación de que 4ppm es mucho mejor por la comparativa de >/<. 
+
+%Conclusión
+
+
+
 \subsection{Algoritmo de Viterbi}
 
 % \begin{figure}[htbp]
