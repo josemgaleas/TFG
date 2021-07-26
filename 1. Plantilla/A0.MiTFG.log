@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.6.21)  26 JUL 2021 11:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.6.21)  26 JUL 2021 12:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1090,27 +1090,41 @@ Cap\'{\i }tulo 4.
 (./A0.MiTFG.mtc9) [13
 
 
-] (./figuras/alternos.tikz) [14] (./figuras/cancelacion.tikz)
-LaTeX Info: Redefining \. on input line 111.
-LaTeX Info: Redefining \% on input line 111.
- [15]
-<./figuras/CodificadaCancelacion.pdf, id=458, 562.1pt x 421.575pt>
+] [14] (./figuras/alternos.tikz)
+<./figuras/CodificadaAlternos.pdf, id=454, 562.1pt x 421.575pt>
+File: ./figuras/CodificadaAlternos.pdf Graphic file (type pdf)
+<use ./figuras/CodificadaAlternos.pdf>
+Package pdftex.def Info: ./figuras/CodificadaAlternos.pdf  used on input line 86.
+(pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+ [15 <./figuras/CodificadaAlternos.pdf>]
+<./figuras/psd_alternos.png, id=478, 485.56406pt x 307.90031pt>
+File: ./figuras/psd_alternos.png Graphic file (type png)
+<use ./figuras/psd_alternos.png>
+Package pdftex.def Info: ./figuras/psd_alternos.png  used on input line 136.
+(pdftex.def)             Requested size: 242.78143pt x 153.94977pt.
+ [16]
+LaTeX Info: Redefining \. on input line 179.
+LaTeX Info: Redefining \% on input line 179.
+ [17 <./figuras/psd_alternos.png>] (./figuras/cancelacion.tikz)
+<./figuras/CodificadaCancelacion.pdf, id=489, 562.1pt x 421.575pt>
 File: ./figuras/CodificadaCancelacion.pdf Graphic file (type pdf)
 <use ./figuras/CodificadaCancelacion.pdf>
-Package pdftex.def Info: ./figuras/CodificadaCancelacion.pdf  used on input line 115.
+Package pdftex.def Info: ./figuras/CodificadaCancelacion.pdf  used on input line 194.
 (pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
- [16 <./figuras/CodificadaCancelacion.pdf>]
-<./figuras/psd_cancelacion.png, id=478, 577.40718pt x 454.69875pt>
+ [18]
+<./figuras/psd_cancelacion.png, id=495, 577.40718pt x 454.69875pt>
 File: ./figuras/psd_cancelacion.png Graphic file (type png)
 <use ./figuras/psd_cancelacion.png>
-Package pdftex.def Info: ./figuras/psd_cancelacion.png  used on input line 170.
+Package pdftex.def Info: ./figuras/psd_cancelacion.png  used on input line 249.
 (pdftex.def)             Requested size: 288.70288pt x 227.34882pt.
-LaTeX Info: Redefining \. on input line 184.
-LaTeX Info: Redefining \% on input line 184.
- [17] [18 <./figuras/psd_cancelacion.png>]
-LaTeX Info: Redefining \. on input line 246.
-LaTeX Info: Redefining \% on input line 246.
- [19] [20
+LaTeX Info: Redefining \. on input line 263.
+LaTeX Info: Redefining \% on input line 263.
+ [19 <./figuras/CodificadaCancelacion.pdf>] [20 <./figuras/psd_cancelacion.png>]
+LaTeX Info: Redefining \. on input line 325.
+LaTeX Info: Redefining \% on input line 325.
+ [21] [22
 
 ]) (./Capitulo05.tex
 Cap\'{\i }tulo 5.
@@ -1123,43 +1137,43 @@ Overfull \hbox (9.67691pt too wide) in paragraph at lines 24--27
 []\T1/phv/m/n/12 -Recepción del da-to se-rie -Agrupar los da-tos en pa-re-jas o cuar-te-tos -Decodificar
  []
 
-[21
+[23
 
-] [22]) (./Capitulo06.tex
+] [24]) (./Capitulo06.tex
 Cap\'{\i }tulo 6.
 Package minitoc Info: I0006
 (minitoc)             A0.MiTFG.mtc11 is empty on input line 14.
-[23
+[25
 
 
-] [24
+] [26
 
-]) [25
+]) [27
 
-] [26] (./D0.Conclusiones.tex [27
+] [28] (./D0.Conclusiones.tex [29
 
-] [28
+] [30
 
-]) [29
+]) [31
 
-] [30] (./D1.AppendixA.tex
+] [32] (./D1.AppendixA.tex
 Ap\'{e}ndice A.
 \openout4 = `A0.MiTFG.mtc'.
 
 \openout4 = `A0.MiTFG.mtc'.
 
-(./A0.MiTFG.mtc13) [31
+(./A0.MiTFG.mtc13) [33
 
-] [32
+] [34
 
 ]) (./E1.Bibliografia.tex (./A0.MiTFG.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [33
+) [35
 
 
-] [34
+] [36
 
 ]) (./F1.Index.tex
 runsystem(makeindex A0.MiTFG.idx)...executed safely (allowed).
@@ -1181,7 +1195,7 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the A0.MiTFG.log file.
 
-[35
+[37
 
 
 ] (./A0.MiTFG.aux
@@ -1192,21 +1206,21 @@ LaTeX Info: Redefining \% on input line 26.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `A0.MiTFG.out' has not changed.
-(rerunfilecheck)             Checksum: 7344D6269C20CAD97A20959664EBC787;8377.
+(rerunfilecheck)             Checksum: 9FF752D1D7412BDAE68D106C10070627;8377.
  ) 
 Here is how much of TeX's memory you used:
- 29379 strings out of 478510
- 498584 string characters out of 5853586
- 824808 words of memory out of 5000000
- 46354 multiletter control sequences out of 15000+600000
+ 29399 strings out of 478510
+ 499141 string characters out of 5853586
+ 822808 words of memory out of 5000000
+ 46368 multiletter control sequences out of 15000+600000
  476930 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,12n,86p,473b,803s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on A0.MiTFG.pdf (57 pages, 165425 bytes).
+Output written on A0.MiTFG.pdf (59 pages, 221153 bytes).
 PDF statistics:
- 622 PDF objects out of 1000 (max. 8388607)
- 539 compressed objects within 6 object streams
- 117 named destinations out of 1000 (max. 500000)
- 415 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 654 PDF objects out of 1000 (max. 8388607)
+ 563 compressed objects within 6 object streams
+ 121 named destinations out of 1000 (max. 500000)
+ 425 words of extra memory for PDF output out of 10000 (max. 10000000)
 

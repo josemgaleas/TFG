@@ -44,13 +44,32 @@ fluctuara mucho a lo largo de una transmisión siendo perceptible y molesto para
 \section{Pulsos alternos}
 % Comentar teóricamente en que consiste este esquema (miller pero con una opción menos y alternando).
 % Y que apenas está implementado y desarrollado en ningún sitio.
-Este esquema de codificación consiste 
+El primer esquema de codificación desarrollado es pulsos alternos. Este esquema 
+se puede considerar como una versión de la codificación Manchester pero
+añadiendo tiempos de silencio. Estos tiempos de silencio añadidos en la transmisión
+se emplean para diseñar formatos OOK con memoria mediante el uso de de la alternancia de
+posición de pulsos. Lo que proporciona una mejora notable en el rendimiento y una 
+configuración del espectro favorable. 
+Este formato de pulsos alternos tiene un ciclo de trabajo bajo, lo que provoca que esta 
+codificación sea ventajosa en términos de modulación de intensidad y detección directa. 
+En este esquema, utilizamos los tiempos de silencio y los pulsos alternos para
+modificar las estadísticas de la secuencia de amplitud con respecto a las estadísticas de 
+la secuencia de mensajes.
 
-Este formato de pulsos alternos, que tiene un ciclo de trabajo bajo, ha sido
-demostrado que proporciona una gran solidez.
+De esta manera, el bit de información '0' siempre se codifica con la ausencia de pulso 
+'00', mientras que el bit '1' se representa con un pulso que va variando su posición con
+cada transmisión del '1'. Gracias a aplicar este esquema, se reduce el número de pulsos 
+transmitidos en otros esquemas de señalización como Manchester o Miller.
 
-Dibujar y comentar el diagrama de trellis de este esquema para la codificación/decodificación de la señal.
-\vspace{2cm}
+%Dibujar y comentar el diagrama de trellis de este esquema
+La figura \ref{trellis_alternos} representa el diagrama de Trellis de este esquema de 
+codificación tal y como se ha descrito anteriormente. Este modelo consiste en dos estados,
+imprescindibles para la alternancia de pulsos. Lo más destablace del diagrama es que 
+siempre que se codifica un '0' nos mantenemos en el mismo estado y siempre que se 
+codifca un '1' cambiamos de estado para realizar la alternancia de pulsos. Será en el 
+momento de cambio de estado cuando codificaremos el pulso correspondiente que dependerá 
+del estado al que se transicione.
+\vspace{1cm}
 
 \begin{figure}[ht]
     \centering
@@ -59,11 +78,71 @@ Dibujar y comentar el diagrama de trellis de este esquema para la codificación/
     \label{trellis_alternos}%
 \end{figure}
 
-si encuentro algo hablar sobre cual es su espectro y las diferencias respecto a los del estándar
+El esquema de señalización resultante se muestra en la figura \ref{codificacion_alternos}.
 
-Desarrollar por qué es un esquema no equiprobable haciendo los cálculos correspondientes.
+%% INSERTAR FIGURA DE LA CODIFICACIÓN
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{./figuras/CodificadaAlternos.pdf}
+    \caption{\small{Codificación con pulsos alternos.}}
+    \label{codificacion_alternos}%
+\end{figure}
 
-Comentar si se encuentra la ber y sus prestaciones
+En dicha figura se observa perfectamente el funcionamiento de este esquema de 
+señalización. En la parte superior de la figura se encuentra la trama pseudoaleatoria y 
+abajo su codificación en la que se muestra como los pulsos alteran en cada codificación 
+de '1' y que siempre se que codifica un '0' hay ausencia de pulsos. Además, la señal 
+codificada se encuentra entre -1V y 1V lo que implica que ya está preparada para ser 
+transmitida por el canal de luz. La señal codificada trabaja a el doble de frecuencia que 
+la señal de entrada ya que hay transiciones rápidas cuando se transmite un pulso al igual
+que ocurre con la codificación Manchester que especifica el estándar.
+
+Además, también se observa que el ciclo de trabajo es bajo cuya ventaja, como se ha 
+comentado anteriormente, es que proporciona mayor intensidad de iluminación cuando se 
+transmite un pulso. Sin embargo, también tiene una desventaja que va ligada al flickering.
+Al tranmsitir mayor cantidad de '0' que de '1' el transmisor se encuentra más tiempo 
+apagado por lo que el parpadeo es más notable para el ojo humano que en otras 
+codificaciones como Manchester o Miller por lo que se necesitará una frecuencia de 
+transmisión mayor para este esquema de señalización para que el flickering no sea 
+perceptible por el ojo humano y llegue a ser molesto.
+
+% Por qué es un esquema no equiprobable haciendo los cálculos correspondientes.
+Este esquema al tener mayor número de '0' que de '1' se convierte en un esquema no 
+equiprobable, es decir, en un esquema que no tiene la misma probabilidad de transmitir 
+'0' que '1'. Es importante realizar los cálculos correspondientes para conocer la 
+probabilidad exacta de cada bit para conocer el ciclo de trabajo y el efecto que 
+provoca en el receptor óptico la no equiprobabilidad.
+%%%%%%%%%%%%%%%%%%%% FORMULA DE LA PROBABILIDAD %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% BER 
+Se han estudiado sus prestaciones para tener una idea de cómo funciona este esquema. 
+El funcionamiento depende del sistema de decisión que se aplique (estos sistemas de 
+explican en el apartado 4.6) pero es bueno tener una visión de su tasa de error de bit.
+La figura x muestra la tasa de error de bit (BER) en función de la relación señal a ruido
+(SNR) de esque esquema de señalización aplicando \textit{soft-decoding} como sistema de 
+decisión. 
+%%%%%%%%%%%%%%%%%%% FOTO DE BER SOFT-DECODING %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Seguidamente, podemos calcular la densidad de potencia espectral (PSD) de la 
+codificación propuesta aplicando la siguiente fórmula.
+% Calculo del psd en el paper que me pasó Antonio
+%%%%%%%%%%%%%%%%%% FORMULA PSD %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+La densidad de potencia espectral obtenida a través de los cálculos
+anteriores se muestra en la figura \ref{psd_alternos}
+%%%%%%%% FOTO DEL PSD DEL PAPER DE ANTONIO %%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{./figuras/psd_alternos.png}
+    \caption{\small{Potencia espectral frente a frecuencia normalizada.}}
+    \label{psd_alternos}%
+\end{figure}
+
+% CONCLUSION 
+En definitiva, se ha propuesto una nueva técnica de codificación basada en la 
+alternancia de pulsos y en la ausencia de los mismos para modificar las estadísticas de la
+secuencia de amplitud con respecto a las estadísticas de la secuencia de mensajes llevando
+a una mejora notable para el formato OOK con un rendimiento óptimo.
 
 \section{Cancelación de pulsos}
 % Comentar teóricamente en que consiste este esquema (alternos pero eliminando pulsos).
