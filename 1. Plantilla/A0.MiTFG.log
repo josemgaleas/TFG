@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.6.21)  26 JUL 2021 13:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.6.21)  27 JUL 2021 13:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1028,7 +1028,7 @@ LaTeX Info: Redefining \% on input line 27.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 20.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 22.
 )
 \tf@lof=\write8
 \openout8 = `A0.MiTFG.lof'.
@@ -1093,50 +1093,105 @@ Cap\'{\i }tulo 4.
 
 
 ] [14] (./figuras/alternos.tikz)
-<./figuras/CodificadaAlternos.pdf, id=456, 562.1pt x 421.575pt>
+<./figuras/CodificadaAlternos.pdf, id=479, 562.1pt x 421.575pt>
 File: ./figuras/CodificadaAlternos.pdf Graphic file (type pdf)
 <use ./figuras/CodificadaAlternos.pdf>
 Package pdftex.def Info: ./figuras/CodificadaAlternos.pdf  used on input line 86.
 (pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
-LaTeX Info: Redefining \. on input line 99.
-LaTeX Info: Redefining \% on input line 99.
- [15 <./figuras/CodificadaAlternos.pdf>]
-<./figuras/psd_alternos.png, id=480, 485.56406pt x 307.90031pt>
+LaTeX Info: Redefining \. on input line 108.
+LaTeX Info: Redefining \% on input line 108.
+ [15]
+<./figuras/psd_alternos.png, id=489, 485.56406pt x 307.90031pt>
 File: ./figuras/psd_alternos.png Graphic file (type png)
 <use ./figuras/psd_alternos.png>
 Package pdftex.def Info: ./figuras/psd_alternos.png  used on input line 136.
 (pdftex.def)             Requested size: 242.78143pt x 153.94977pt.
- [16]
+ [16 <./figuras/CodificadaAlternos.pdf>]
 LaTeX Info: Redefining \. on input line 179.
 LaTeX Info: Redefining \% on input line 179.
  [17 <./figuras/psd_alternos.png>] (./figuras/cancelacion.tikz)
-<./figuras/CodificadaCancelacion.pdf, id=491, 562.1pt x 421.575pt>
+<./figuras/CodificadaCancelacion.pdf, id=514, 562.1pt x 421.575pt>
 File: ./figuras/CodificadaCancelacion.pdf Graphic file (type pdf)
 <use ./figuras/CodificadaCancelacion.pdf>
 Package pdftex.def Info: ./figuras/CodificadaCancelacion.pdf  used on input line 194.
 (pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
  [18]
-<./figuras/psd_cancelacion.png, id=497, 577.40718pt x 454.69875pt>
+LaTeX Info: Redefining \. on input line 246.
+LaTeX Info: Redefining \% on input line 246.
+ [19 <./figuras/CodificadaCancelacion.pdf>]
+<./figuras/psd_cancelacion.png, id=538, 577.40718pt x 454.69875pt>
 File: ./figuras/psd_cancelacion.png Graphic file (type png)
 <use ./figuras/psd_cancelacion.png>
 Package pdftex.def Info: ./figuras/psd_cancelacion.png  used on input line 249.
 (pdftex.def)             Requested size: 288.70288pt x 227.34882pt.
-LaTeX Info: Redefining \. on input line 263.
-LaTeX Info: Redefining \% on input line 263.
- [19 <./figuras/CodificadaCancelacion.pdf>] [20 <./figuras/psd_cancelacion.png>]
-<./figuras/Hard.pdf, id=521, 562.1pt x 421.575pt>
+ [20 <./figuras/psd_cancelacion.png>]
+<./figuras/opciones4PPM.png, id=545, 715.92468pt x 203.25937pt>
+File: ./figuras/opciones4PPM.png Graphic file (type png)
+<use ./figuras/opciones4PPM.png>
+Package pdftex.def Info: ./figuras/opciones4PPM.png  used on input line 287.
+(pdftex.def)             Requested size: 357.96146pt x 101.62943pt.
+<./figuras/CodificadaPPM.pdf, id=548, 562.1pt x 421.575pt>
+File: ./figuras/CodificadaPPM.pdf Graphic file (type pdf)
+<use ./figuras/CodificadaPPM.pdf>
+Package pdftex.def Info: ./figuras/CodificadaPPM.pdf  used on input line 296.
+(pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
+LaTeX Info: Redefining \. on input line 324.
+LaTeX Info: Redefining \% on input line 324.
+ [21 <./figuras/opciones4PPM.png> <./figuras/CodificadaPPM.pdf>]
+<./figuras/Hard.pdf, id=570, 562.1pt x 421.575pt>
 File: ./figuras/Hard.pdf Graphic file (type pdf)
 <use ./figuras/Hard.pdf>
-Package pdftex.def Info: ./figuras/Hard.pdf  used on input line 316.
+Package pdftex.def Info: ./figuras/Hard.pdf  used on input line 347.
 (pdftex.def)             Requested size: 365.36067pt x 274.0205pt.
-LaTeX Info: Redefining \. on input line 326.
-LaTeX Info: Redefining \% on input line 326.
- [21] [22 <./figuras/Hard.pdf>]
-LaTeX Info: Redefining \. on input line 384.
-LaTeX Info: Redefining \% on input line 384.
- [23] [24
+ [22]
+LaTeX Info: Redefining \. on input line 385.
+LaTeX Info: Redefining \% on input line 385.
+ [23 <./figuras/Hard.pdf>]
+<./figuras/Soft.pdf, id=588, 774.895pt x 710.655pt>
+File: ./figuras/Soft.pdf Graphic file (type pdf)
+<use ./figuras/Soft.pdf>
+Package pdftex.def Info: ./figuras/Soft.pdf  used on input line 419.
+(pdftex.def)             Requested size: 387.44655pt x 355.32663pt.
+ [24]
+LaTeX Info: Redefining \. on input line 463.
+LaTeX Info: Redefining \% on input line 463.
+ [25 <./figuras/Soft.pdf>]
+<./figuras/Viterbi.pdf, id=606, 562.1pt x 421.575pt>
+File: ./figuras/Viterbi.pdf Graphic file (type pdf)
+<use ./figuras/Viterbi.pdf>
+Package pdftex.def Info: ./figuras/Viterbi.pdf  used on input line 486.
+(pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
+ [26]
+<./figuras/alternos.pdf, id=612, 652.4375pt x 485.815pt>
+File: ./figuras/alternos.pdf Graphic file (type pdf)
+<use ./figuras/alternos.pdf>
+Package pdftex.def Info: ./figuras/alternos.pdf  used on input line 507.
+(pdftex.def)             Requested size: 391.46552pt x 291.49124pt.
+<./figuras/cancelacion.pdf, id=614, 562.1pt x 421.575pt>
+File: ./figuras/cancelacion.pdf Graphic file (type pdf)
+<use ./figuras/cancelacion.pdf>
+Package pdftex.def Info: ./figuras/cancelacion.pdf  used on input line 522.
+(pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
+<./figuras/4ppm.pdf, id=616, 562.1pt x 421.575pt>
+File: ./figuras/4ppm.pdf Graphic file (type pdf)
+<use ./figuras/4ppm.pdf>
+Package pdftex.def Info: ./figuras/4ppm.pdf  used on input line 536.
+(pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
+LaTeX Info: Redefining \. on input line 548.
+LaTeX Info: Redefining \% on input line 548.
+ [27 <./figuras/Viterbi.pdf>]
+<./figuras/Comparativa.pdf, id=630, 637.38126pt x 493.845pt>
+File: ./figuras/Comparativa.pdf Graphic file (type pdf)
+<use ./figuras/Comparativa.pdf>
+Package pdftex.def Info: ./figuras/Comparativa.pdf  used on input line 551.
+(pdftex.def)             Requested size: 382.4317pt x 296.30928pt.
+ [28 <./figuras/alternos.pdf>]
+LaTeX Info: Redefining \. on input line 561.
+LaTeX Info: Redefining \% on input line 561.
+ [29 <./figuras/cancelacion.pdf> <./figuras/4ppm.pdf
 
-]) (./Capitulo05.tex
+pdfTeX warning: pdflatex.exe (file ./figuras/4ppm.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [30 <./figuras/Comparativa.pdf>]) (./Capitulo05.tex
 Cap\'{\i }tulo 5.
 \openout4 = `A0.MiTFG.mtc'.
 
@@ -1147,43 +1202,44 @@ Overfull \hbox (9.67691pt too wide) in paragraph at lines 24--27
 []\T1/phv/m/n/12 -Recepción del da-to se-rie -Agrupar los da-tos en pa-re-jas o cuar-te-tos -Decodificar
  []
 
-[25
+[31
 
-] [26]) (./Capitulo06.tex
+
+] [32]) (./Capitulo06.tex
 Cap\'{\i }tulo 6.
 Package minitoc Info: I0006
 (minitoc)             A0.MiTFG.mtc11 is empty on input line 14.
-[27
+[33
 
 
-] [28
+] [34
 
-]) [29
+]) [35
 
-] [30] (./D0.Conclusiones.tex [31
+] [36] (./D0.Conclusiones.tex [37
 
-] [32
+] [38
 
-]) [33
+]) [39
 
-] [34] (./D1.AppendixA.tex
+] [40] (./D1.AppendixA.tex
 Ap\'{e}ndice A.
 \openout4 = `A0.MiTFG.mtc'.
 
 \openout4 = `A0.MiTFG.mtc'.
 
-(./A0.MiTFG.mtc13) [35
+(./A0.MiTFG.mtc13) [41
 
-] [36
+] [42
 
 ]) (./E1.Bibliografia.tex (./A0.MiTFG.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [37
+) [43
 
 
-] [38
+] [44
 
 ]) (./F1.Index.tex
 runsystem(makeindex A0.MiTFG.idx)...executed safely (allowed).
@@ -1205,7 +1261,7 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the A0.MiTFG.log file.
 
-[39
+[45
 
 
 ] (./A0.MiTFG.aux
@@ -1216,21 +1272,21 @@ LaTeX Info: Redefining \% on input line 26.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `A0.MiTFG.out' has not changed.
-(rerunfilecheck)             Checksum: CD7A43852E83D00176485B314AB8C383;8377.
+(rerunfilecheck)             Checksum: 21A717A9C4DA9A909264B36336A241ED;8532.
  ) 
 Here is how much of TeX's memory you used:
- 29413 strings out of 478510
- 499399 string characters out of 5853586
+ 29491 strings out of 478510
+ 501287 string characters out of 5853586
  822808 words of memory out of 5000000
- 46377 multiletter control sequences out of 15000+600000
+ 46434 multiletter control sequences out of 15000+600000
  479946 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,12n,86p,473b,803s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on A0.MiTFG.pdf (61 pages, 233797 bytes).
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on A0.MiTFG.pdf (67 pages, 359407 bytes).
 PDF statistics:
- 675 PDF objects out of 1000 (max. 8388607)
- 579 compressed objects within 6 object streams
- 124 named destinations out of 1000 (max. 500000)
- 430 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 809 PDF objects out of 1000 (max. 8388607)
+ 680 compressed objects within 7 object streams
+ 139 named destinations out of 1000 (max. 500000)
+ 478 words of extra memory for PDF output out of 10000 (max. 10000000)
 

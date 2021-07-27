@@ -262,17 +262,48 @@ que es una característica favorable en enlaces ópticos. De esta manera se
 obtiene una buena compensación entre rendimiento y complejidad requerida.
 
 \section{4-PPM}
-Explayarme mucho más porque hay mucha más información.
-Comentar teóricamente en que consiste este esquema.
-Y que apenas está implementado y desarrollado en ningún sitio.
+% Explayarme mucho más porque hay mucha más información.
+% Comentar teóricamente en que consiste este esquema.
+Este esquema de señalización 
+proviene de la modulación por posición de pulso (PPM).
+La modulación por posición de pulso es un modo de codificación en el que M bits son 
+codificados para transmitir un pulso de duración $ T_C = T/2^M $ en una de las $ 2^M $ 
+posiciones posibles en un intervalo de tiempo de T segundos, que es la duración del símbolo.
+Este esquema se repite cada T segundos, por lo tanto, la tasa de transmisión es $M/T$ bits 
+por segundo. La
+atenuación de la luz se lleva a cabo mediante la reducción de la potencia transmitida de 
+acuerdo con el
+porcentaje requerido de atenuación.
+Uno de los esquemas sugeridos es el esquema 4-PPM y es el que se desarrolla en este trabajo.
+Gracias a estos esquemas, como la potencia media es constante, se evitan las variaciones 
+en la intensidad, pero para ello se necesita una buena sincronización.
 
-Dibujar y comentar el diagrama de trellis de este esquema para la codificación/decodificación de la señal.
+En este esquema se codifica cada pareja de bits
+por la posición de pulso en cuatro posiciones posibles como se aprecia en la figura
+\ref{bits4ppm}.
 
-si encuentro algo hablar sobre cual es su espectro y las diferencias respecto a los del estándar
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{./figuras/opciones4PPM.png}%referencia del paper estado arte
+    \caption{\small{Pareja de bits con su respectiva codificación.}}
+    \label{bits4ppm}%
+\end{figure}
 
-Desarrollar por qué es un esquema no equiprobable haciendo los cálculos correspondientes.
+El esquema de señalización resultante se muestra en la figura \ref{cod4ppm}
+% PUEDE SER BUENO METER LA SEÑAL DE RELOJ EN MEDIO DE LA ENTRADA Y LA CODIFICADA
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{./figuras/CodificadaPPM.pdf}%referencia del paper estado arte
+    \caption{\small{Codificación 4-PPM.}}
+    \label{cod4ppm}%
+\end{figure}
 
-Comentar si se encuentra la ber y sus prestaciones
+
+% si encuentro algo hablar sobre cual es su espectro y las diferencias respecto a los del estándar
+
+% Desarrollar por qué es un esquema no equiprobable haciendo los cálculos correspondientes.
+
+% Comentar si se encuentra la ber y sus prestaciones
 
 \section{Comparativa 4-PPM frente a Inverse 4-PPM}
 Comparar estos dos esquemas y comentar ventajas e inconvenientes.
@@ -308,7 +339,7 @@ ruido y frente a la inlcusión de componente de continua que pueda modificar y m
 la amplitud de la señal, provocando que el umbral no se encuentre en la mitad que 
 se preveía.
 
-A continuación se muestra la figura \ref{hard-decoding} que compara el funcionamiento de 
+A continuación, se muestra la figura \ref{hard-decoding} que compara el funcionamiento de 
 los tres esquemas de codificación desarrollados con el método \textit{hard-decoding}.
 
 \begin{figure}[ht]
@@ -334,51 +365,197 @@ las prestaciones.
 \subsection{Soft-decoding}
 Tras el desarrollo de \textit{hard-decoding} y de haber visto que sus prestaciones no son 
 buenas se ha implementado el sistema de decisión \textit{soft-decoding}. 
-Este sistema es más complejo que el anterior y por ende sus prestaciones son mejores y 
+Este sistema es más complejo que el anterior y por ende, sus prestaciones son mejores y 
 es el que se aplica en la mayoría de sistemas de comunicaciones para asegurar una 
 correcta recepción de la señal en la mayoría de situaciones y entornos.
 
 El sistema \textit{soft-decoding} opera con un rango de valores, en nuestro caso con 
 parejas de bits para ver a que opción se parece más la pareja recibida. Este sistema 
-trabaja con los valores en crudo de la señal 
+trabaja con los valores en crudo de la señal para tener mejores estimaciones de la señal
+de entrada real. 
+
+Este sistema se basa en el cálculo de la distancia euclídea 
+para saber a cuál de las opciones, que se predefinen en el sistema de 
+comunicaciones, se parece más la señal recibida. La distancia euclídea es la 
+distancia 'ordinaria' entre dos puntos, la cual se deduce a partir del teorema de 
+Pitágoras. En este caso, al usar parejas de bits, es equivalente a calcular la distancia
+euclídea entre dos puntos en un espacio bidimensional, aunque es simple ampliarla cuando se 
+usen mayor número de bits como opciones tal y como se explicará en el apartado 
+\textit{Algoritmo de Viterbi}. Para ello se aplica la siguiente fórmula:
+
+%%%%%%%%%%%%%%%%%%% FORMULA DISTANCIA EUCLÍDEA %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %Comentar el desarrollo que es rango de opciones y ver a cual se parece mas mediante la 
 %distancia euclídea y ya ver que si descartas algunas opciones se quedan las diagonales
 %que es mucho mejor por que se pueden comparar bits y por eso funciona mejor
 
-%Seguir explicando y meter fotillos de los esquemas con soft-decoding para apoyar la 
-%argumentación de que 4ppm es mucho mejor por la comparativa de >/<. 
+En la aplicación de este método en nuestros sistemas de señalización hay que destacar 
+varios aspectos. El primero de ellos es que
+tanto para pulsos alternos como para cancelación de pulsos la opción de 
+'11' no está contemplada por lo que ambas solo tienen tres opciones de parejas de bits. 
+Esto ya mejora respecto al funcionamiento de \textit{hard-decoding} ya que por umbral se 
+podría dar esta pareja y sería un error el 100\% de las veces mientras que aplicando 
+\textit{soft-decoding} puede ser corregido calculando a cual de las tres opciones 
+que si tienen posibilidad se parece más.
+
+El siguiente es que para 4-ppm se tendría que ampliar la fórmula ya que se trabaja
+con 4 bits. Sin embargo, esta codificación tiene la característica de que las distancias
+entre las cuatro opciones posibles son tan lejanas que,
+hablando en términos geométricos, representan las diagonales
+de un teseracto (análogo del cubo en cuatro dimensiones). Esto implica que dichas 
+distancias euclídeas sean máximas y se pueda aplicar el método de comparación de bits.
+
+Para implementarlo hay que buscar el bit más grande dentro del cuarteto
+recibido y para ello se comparan los cuatro bits en crudo. El bit mayor se interpreta 
+como '1' y los otros tres como '0'. Este método es especialmente eficaz frente a 
+inlcusiones de componentes de continua que provoquen que la señal recibida aumente sus 
+valores.
+
+Seguidamente se muestra la figura \ref{soft-decoding}, que compara el funcionamiento de 
+los tres esquemas de codificación desarrollados con el método \textit{soft-decoding}.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{./figuras/Soft.pdf}
+    \caption{\small{Sistema \textit{Soft-decoding}.}}
+    \label{soft-decoding}%
+\end{figure}
+
+En la figura se comprueba que pulsos alternos y cancelación de pulsos tienen un 
+funcionamiento parecido al contar con las mismas opciones y, lo más importante, que
+el funcionamiento de 4-ppm es mejor. Esto se debe, como se ha explicado anteriormente,
+a que las distancias entre los puntos son las diagonales. Por lo tanto,
+este método incrementa el potencial del 
+uso de \textit{soft-decoding} y su funcionamiento es muy óptimo. 
 
 %Conclusión
+Finalmente, se concluye que, mientras que \textit{hard-decoding} opera con un solo bit de 
+información, \textit{soft-decoding} puede tomar un rango de valores de entrada. Esta 
+información adicional es fundamental para tener mejores estimaciones de los datos
+originales.
 
+En la línea de aumentar el rango de valores de entrada se trabaja con juntar 
+\textit{soft-decoding} con el Algoritmo de Viterbi.
 
 
 \subsection{Algoritmo de Viterbi}
+El algoritmo de Viterbi es un algoritmo de programación dinámica que permite hallar 
+la secuencia más probable (el llamado camino de Viterbi) que produce 
+una secuencia observada, especialmente en el contexto de fuentes de información 
+de Márkov.
 
-% \begin{figure}[htbp]
-%     \centering
-%     \includegraphics[scale=0.75]{./figuras/Viterbi_pulsos_cancelacion.pdf}
-%     \caption{\small{Viterbi.}}
-%     \label{Viterbi}%
-% \end{figure}
+En el trabajo se aplica el algoritmo de Viterbi en función del pasado, es decir, 
+otorgandole memoria al sistema. Esto se usa para ampliar el rango de valores posibles, 
+pero sobre todo, para que el número de opciones descartadas sea relevante en relación a
+las opciones totales.
+
+% Comentar que Viterbi va ligado a soft-decoding
+Este sistema de decisión no es independiente, es decir, cuando se le otorga dicha 
+memoria al sistema y se descartan las opciones no probables hay que elegir entre las
+opciones que sí son posibles. Esta elección se realiza con el método 
+\textit{soft-decoding} ampliando la fórmula bidimensional a el número de puntos que 
+nos proporcine la memoria. Por lo tanto, se puede pensar que cuantos más pasados 
+se tengan más robusto será el sistema. Sin embargo, mirar al pasado requiere de mucha
+complejidad y de retardos de tiempo a la hora de calcular la distancia euclídea con 
+tantos puntos. Por ello, hay que encontrar una solución de compromiso para que la mejora
+sea significante y la complejidad no sea excesiva. En este trabajo vamos a quedarnos 
+con un pasado.
+
+En la aplicación de este método en nuestros sistemas de señalización hay bastantes 
+diferencias entre ellos. Lo más importante es que no es útil aplicar este algoritmo para 
+el esquema 4-PPM porque mirar el cuarteto anterior no tiene ningún impacto en el 
+cuarteto actual ya que esta codificación no presenta restricciones entre la 
+transmisión de cuartetos.
+
+En el esquema pulsos alternos la aplicación del algoritmo de Viterbi si tiene sentido,
+sin embargo, al mirar un pasado sólo se descartan dos opciones de las nueve posibles 
+que tendría este esquema si no se usara Viterbi. Por esto, la mejora en cuanto a 
+robustez que se presenta no es muy significativa respecto al método \textit{soft-decoding}
+sin Viterbi del apartado anterior.
+
+Para el esquema cancelación de pulsos usar el algoritmo de Viterbi es más eficaz que 
+en el caso anterior. Esto es debido a que en este caso se descartan cuatro opciones de 
+las nueve posibles por lo que la tiene un gran impacto en cuanto a la mejora de 
+robustez frente al ruido.
+
+En la figura \ref{viterbi} se muestra el funcionamiento de pulsos alternos y de cancelación de pulsos
+con este método de decicisón.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.6]{./figuras/Viterbi.pdf}
+    \caption{\small{Algoritmo de Viterbi.}}
+    \label{viterbi}%
+\end{figure}
+
+Al analizar la gráfica se contempla que ambos esquemas mejoran respecto a la aplicación
+de \textit{soft-decoding} sin Viterbi. Aunque tal y como se desarrollo anteriormente,
+el uso de este algoritmo tiene más efecto en el esquema cancelación de pulsos llegando
+a cambiar las tornas en cuanto a cuál de los dos es más robusto frente al ruido.
+
 
 \subsection{Comparativa entre los sistemas de decisión}
 A continuación, se va a comparar la tasa de error de bit (BER) de los distintos esquemas de decisión, para cada esquema 
 de codificación, en función de la relación señal a ruido (SNR), que varia con la distancia (disminuyendo la 
 amplitud de la señal), para verificar la mejora que se produce entre cada sistema de decisión.
 
-Para pulsos alternos, la principal mejora se nota con la aplicación del algoritmo de Viterbi.
+La figura \ref{alternos} muestra una comparativa de los esquemas bajo 
+la codificación de pulsos alternos.
 
-Para cancelación de pulsos la aplicación del algoritmo de Viterbi es muy importante ya que, como se comentó anteriormente,
-se descartan muchas opciones al mirar un pasado.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.6]{./figuras/alternos.pdf}
+    \caption{\small{Sistemas de decisión con pulsos alternos.}}
+    \label{alternos}%
+\end{figure}
 
-Para 4ppm el uso de soft-decoding implica una gran mejora debido a la posibilidad de buscar el bit mayor ya que solo 
-se recibe un '1' por cuarteto de bits.
+Se observa que para pulsos alternos, la principal mejora se nota con la aplicación 
+de soft-decoding o Viterbi. El funcionamiento de Viterbi es levemente mejor porque 
+aplicando Viterbi con un pasado solo se descartan dos opciones de nueve posibles por lo 
+que no sale a relucir su máximo potencial. 
 
-%%FOTOS DE ALTERNOS (HARD,SOFT,VITERBI), CANCELACION (HARD,SOFT,VITERBI) Y 4PPM(HARD,SOFT)
+La figura \ref{cancelacion} muestra una comparativa de los esquemas bajo 
+la codificación de cancelación de pulsos.
 
-%%%%%%%% NO SE SI PONER UN APARTADO DE COMPARATIVA ENTRE CODIFICACIONES SEGUN EL SISTEMA DE DECISION O PONER LAS FOTOS
-%%% DENTRO DE CADA ESQUEMA %%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.6]{./figuras/cancelacion.pdf}
+    \caption{\small{Sistemas de decisión con cancelación de pulsos.}}
+    \label{cancelacion}%
+\end{figure}
 
+Se comprueba que para cancelación de pulsos la aplicación del algoritmo de Viterbi 
+es muy importante ya que, como se comentó en el apartado anterior, se descartan más 
+opciones al mirar un pasado, concretamente se descartan cuatro de nueve opciones.
+
+La figura \ref{4ppm} muestra una comparativa de los esquemas bajo 
+la codificación 4-PPM.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.6]{./figuras/4ppm.pdf}
+    \caption{\small{Sistemas de decisión con 4-PPM.}}
+    \label{4ppm}%
+\end{figure}
+
+Se verifica que para 4ppm el uso de soft-decoding implica una gran mejora debido a 
+la posibilidad de buscar el bit mayor ya que solo se recibe un '1' por cuarteto de bits.
+
+\subsection{Conclusiones}
+Finalmente, para concluir este apartado se muestra una gráfica comparativa de los 
+tres esquemas de señalización con el sistema de deicisón que mejores prestaciones ofrece
+a cada uno de ellos.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.6]{./figuras/Comparativa.pdf}
+    \caption{\small{Comparativa de los esquemas de codificación con su mejor sistema de deicisón.}}
+    \label{comparativa}%
+\end{figure}
+
+Por tanto el mejor esquema de codificación en cuanto a robustez es 4-PPM con 
+\text{soft-decoding}.
+
+[TERMINAR DE CERRAR EL CAPÍTULO]
 
 \chapterend{}
