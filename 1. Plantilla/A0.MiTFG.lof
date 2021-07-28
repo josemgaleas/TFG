@@ -19,19 +19,20 @@
 \contentsline {figure}{\numberline {4.6}{\ignorespaces \small {Potencia espectral frente a frecuencia normalizada.}\relax }}{20}{figure.caption.12}%
 \contentsline {figure}{\numberline {4.7}{\ignorespaces \small {Pareja de bits con su respectiva codificación.}\relax }}{21}{figure.caption.13}%
 \contentsline {figure}{\numberline {4.8}{\ignorespaces \small {Codificación 4-PPM.}\relax }}{21}{figure.caption.14}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces \small {Sistema \textit {Hard-decoding}.}\relax }}{23}{figure.caption.15}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces \small {Sistema \textit {Soft-decoding}.}\relax }}{25}{figure.caption.16}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces \small {Algoritmo de Viterbi.}\relax }}{27}{figure.caption.17}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces \small {Sistemas de decisión con pulsos alternos.}\relax }}{28}{figure.caption.18}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces \small {Sistemas de decisión con cancelación de pulsos.}\relax }}{29}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces \small {Sistemas de decisión con 4-PPM.}\relax }}{29}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces \small {Comparativa de los esquemas de codificación con su mejor sistema de deicisón.}\relax }}{30}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces \small {Pareja de bits con su respectiva codificación.}\relax }}{23}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces \small {Sistema \textit {Hard-decoding}.}\relax }}{24}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces \small {Sistema \textit {Soft-decoding}.}\relax }}{26}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces \small {Algoritmo de Viterbi.}\relax }}{28}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces \small {Sistemas de decisión con pulsos alternos.}\relax }}{29}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces \small {Sistemas de decisión con cancelación de pulsos.}\relax }}{30}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces \small {Sistemas de decisión con 4-PPM.}\relax }}{31}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces \small {Comparativa de los esquemas de codificación con su mejor sistema de deicisón.}\relax }}{32}{figure.caption.22}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Implementación}{31}{chapter.5}%
+\contentsline {xchapter}{Implementación}{33}{chapter.5}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Pruebas}{33}{chapter.6}%
-\contentsline {xpart}{Parte tercera.}{37}{part.3}%
-\contentsline {xpart}{Apéndices}{41}{part.4}%
+\contentsline {xchapter}{Pruebas}{35}{chapter.6}%
+\contentsline {xpart}{Parte tercera.}{39}{part.3}%
+\contentsline {xpart}{Apéndices}{43}{part.4}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Manual de uso}{41}{appendix.Alph1}%
+\contentsline {xchapter}{Manual de uso}{43}{appendix.Alph1}%
 \contentsfinish 

@@ -90,7 +90,7 @@ El esquema de señalización resultante se muestra en la figura \ref{codificacio
 
 En dicha figura se observa perfectamente el funcionamiento de este esquema de 
 señalización. En la parte superior de la figura se encuentra la trama pseudoaleatoria y 
-abajo su codificación en la que se muestra como los pulsos alteran en cada codificación 
+abajo su codificación en la que se muestra como los pulsos alternan en cada codificación 
 de '1' y que siempre se que codifica un '0' hay ausencia de pulsos. Además, la señal 
 codificada se encuentra entre -1V y 1V lo que implica que ya está preparada para ser 
 transmitida por el canal de luz. La señal codificada trabaja a el doble de frecuencia que 
@@ -278,7 +278,7 @@ Uno de los esquemas sugeridos es el esquema 4-PPM y es el que se desarrolla en e
 Gracias a estos esquemas, como la potencia media es constante, se evitan las variaciones 
 en la intensidad, pero para ello se necesita una buena sincronización.
 
-En este esquema se codifica cada pareja de bits
+En el esquema 4-PPM propuesto se codifica cada pareja de bits
 por la posición de pulso en cuatro posiciones posibles como se aprecia en la figura
 \ref{bits4ppm}.
 
@@ -298,17 +298,67 @@ El esquema de señalización resultante se muestra en la figura \ref{cod4ppm}
     \label{cod4ppm}%
 \end{figure}
 
+En dicha figura se verifica el funcionamiento de este esquema. En la parte superior de la 
+figura se encuentra la señal de entrada, en la que cada línea vertical separa a los bits
+de entrada, y abajo su codificación, en la que cada línea vertical separa a los bits de 
+salida. Cada pareja de bits se codifica con un cuarteto por lo que este esquema sigue en 
+la línea de que se codifica al doble de frecuencia de la señal de entrada.
 
-% si encuentro algo hablar sobre cual es su espectro y las diferencias respecto a los del estándar
-
-% Desarrollar por qué es un esquema no equiprobable haciendo los cálculos correspondientes.
+También se observa una de las características más representativas de 4-PPM que es 
+su ciclo de trabajo. Viendo la naturaleza de la codificación es trivial averiguar que 
+el ciclo de trabajo es del 25\% ya que se transmiten un '1' y tres '0'. Esto implica que 
+también sea un esquema no equiprobable pero a diferencia de los esquemas anteriores ya 
+conocemos las probabilidades de '0' y '1' sin necesidad de realizar cálculos. Por lo 
+tanto, debido al efecto del condensador del receptor óptico que simetriza la señal entre
+[-1,1V] incluyendo la componente de continua, la señal, teóricamente, se encuentra en el 
+rango [-0.5,1.5V]. Sin embargo, el receptor satura en 1V. Esta naturaleza presenta 
+la ventaja de que proporciona mayor intensidad de iluminación cuando se transmite el 
+pulso y la desventaja del flickering.
 
 % Comentar si se encuentra la ber y sus prestaciones
+Se han estudiado las prestaciones para tener una idea de cómo funciona este esquema.
+El funcionamiento depende del sistema de deicisón que se aplique. La figura x muestra
+la tasa de error de bit (BER) en función de la relación señal a ruido (SNR) aplicando
+\textit{soft-decoding} como sistema de decisión y los resultados son muy buenos.
+
+% Espectro
+A continuación, se van a realizar los cálculos correspondientes para obtener la 
+densidad de potencia espectral (PSD) de la codificación propuesta.
+%%%%%%%%%%% FORMULA PSD SI LA ENCUENTRO XD, SI NO BER %%%%%%%%%%%%%%%%%%%%%%%%
+
+En resumen, este esquema de codificación propuesto, aunque es el más complejo de 
+implementar debido a la dificultad de sincronización, es el más recomendable por su 
+compatibilidad con el método \textit{soft-decoding}, tal y como se desarrollará en el 
+apartado 4.6.2, lo que implica una gran robustez y la posibilidad de recuperar la 
+señal en situaciones muy adversas.
 
 \section{Comparativa 4-PPM frente a Inverse 4-PPM}
-Comparar estos dos esquemas y comentar ventajas e inconvenientes.
+%Comparar estos dos esquemas y comentar ventajas e inconvenientes.
 %https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6614862
 %https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=567560&tag=1
+Otra posibilidad planteada era la implementación de la modulación por posición de 
+pulsos inversa (Inverse PPM). Como su propio nombre indica este esquema es el inverso
+del PPM desarrollado en la sección anterior, es decir, en vez de codificar con un pulso
+de duración $ T_C = T/2^M $ se codifica con un hueco.
+
+Por lo tanto, en el esquema Inverse 4-PPM se codificaría cada pareja de bits por la 
+posición de hueco en cuatro posiciones posibles como se aprecia en la figura 
+\ref{bitsi4ppm}.
+
+%FIGURA INVERSE 4PPM
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{./figuras/opcionesI4PPM.png}%referencia del paper estado arte
+    \caption{\small{Pareja de bits con su respectiva codificación.}}
+    \label{bitsi4ppm}%
+\end{figure}
+
+La principal ventaja de esta modulación es que consigue una mejora en la iluminación ya que 
+se invierte el estado alto y bajo de los pulsos por lo que alumbra más tiempo. 
+
+Sin embargo, debido a su similitud con 4-PPM y que solo presenta esta ventaja y tiene 
+la desventaja de que presenta mayor consumo y menor potencia óptica se ha decidido 
+implementar 4-PPM.
 
 \section{Sistemas de decisión}
 %Hablar sobre las técnicas usadas --> hard-decoding, soft-decoding y algoritmo de Viterbi
@@ -381,9 +431,14 @@ distancia 'ordinaria' entre dos puntos, la cual se deduce a partir del teorema d
 Pitágoras. En este caso, al usar parejas de bits, es equivalente a calcular la distancia
 euclídea entre dos puntos en un espacio bidimensional, aunque es simple ampliarla cuando se 
 usen mayor número de bits como opciones tal y como se explicará en el apartado 
-\textit{Algoritmo de Viterbi}. Para ello se aplica la siguiente fórmula:
-
+\textit{Algoritmo de Viterbi}. Para el cálculo se aplica la siguiente fórmula:
 %%%%%%%%%%%%%%%%%%% FORMULA DISTANCIA EUCLÍDEA %%%%%%%%%%%%%%%%%%%%%%%%%%
+\[ d_E(P_1,P_2) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \] 
+Siendo $P_1$ el punto de la tensión recibida y $P_2$ el punto de la tensión ideal 
+o esperada. Por ejemplo, para pulsos alternos, este cálculo se realizaría para las 
+tres posibilidades de tensión esperada en voltios (-1,-1), (-1,1) y (1,-1) con la 
+tensión recibida por el enlace. Una vez se ha hecho el cálculo para todas las opciones
+la opción elegida será la que tenga una distancia menor con la recibida.
 
 %Comentar el desarrollo que es rango de opciones y ver a cual se parece mas mediante la 
 %distancia euclídea y ya ver que si descartas algunas opciones se quedan las diagonales
@@ -459,10 +514,10 @@ se tengan más robusto será el sistema. Sin embargo, mirar al pasado requiere d
 complejidad y de retardos de tiempo a la hora de calcular la distancia euclídea con 
 tantos puntos. Por ello, hay que encontrar una solución de compromiso para que la mejora
 sea significante y la complejidad no sea excesiva. En este trabajo vamos a quedarnos 
-con un pasado.
+con un pasado, es decir, con cuatro bits.
 
 En la aplicación de este método en nuestros sistemas de señalización hay bastantes 
-diferencias entre ellos. Lo más importante es que no es útil aplicar este algoritmo para 
+diferencias. Lo más importante es que no es útil aplicar este algoritmo para 
 el esquema 4-PPM porque mirar el cuarteto anterior no tiene ningún impacto en el 
 cuarteto actual ya que esta codificación no presenta restricciones entre la 
 transmisión de cuartetos.
@@ -471,12 +526,17 @@ En el esquema pulsos alternos la aplicación del algoritmo de Viterbi si tiene s
 sin embargo, al mirar un pasado sólo se descartan dos opciones de las nueve posibles 
 que tendría este esquema si no se usara Viterbi. Por esto, la mejora en cuanto a 
 robustez que se presenta no es muy significativa respecto al método \textit{soft-decoding}
-sin Viterbi del apartado anterior.
+sin Viterbi del apartado anterior. La única restricción que presenta este esquema es que 
+los pulsos deben ir alternando su posición. Por lo tanto,
+las opciones descartadas son las dos que no presentan dicha 
+la alternancia de pulsos ('0101' y '1010')
 
 Para el esquema cancelación de pulsos usar el algoritmo de Viterbi es más eficaz que 
-en el caso anterior. Esto es debido a que en este caso se descartan cuatro opciones de 
+en el caso anterior. Esto es debido a que, en este caso, se descartan cuatro opciones de 
 las nueve posibles por lo que la tiene un gran impacto en cuanto a la mejora de 
-robustez frente al ruido.
+robustez frente al ruido. En este esquema la restricción que se presenta es que no puede 
+haber más de un pulso seguido ya que entre pulsos tiene que haber silencio.
+Por lo tanto, las opciones descartadas son '0101', '0110', '1001' y '1010'.
 
 En la figura \ref{viterbi} se muestra el funcionamiento de pulsos alternos y de cancelación de pulsos
 con este método de decicisón.
@@ -541,9 +601,9 @@ la codificación 4-PPM.
 Se verifica que para 4ppm el uso de soft-decoding implica una gran mejora debido a 
 la posibilidad de buscar el bit mayor ya que solo se recibe un '1' por cuarteto de bits.
 
-\subsection{Conclusiones}
+\section{Conclusiones}
 Finalmente, para concluir este apartado se muestra una gráfica comparativa de los 
-tres esquemas de señalización con el sistema de deicisón que mejores prestaciones ofrece
+tres esquemas de señalización con el sistema de decisón que mejores prestaciones ofrece
 a cada uno de ellos.
 
 \begin{figure}[ht]

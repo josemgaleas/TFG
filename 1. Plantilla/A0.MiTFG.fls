@@ -1898,6 +1898,11 @@ INPUT ./figuras/CodificadaPPM.pdf
 INPUT ./figuras/CodificadaPPM.pdf
 INPUT ./figuras/CodificadaPPM.pdf
 INPUT ./figuras/CodificadaPPM.pdf
+INPUT ./figuras/opcionesI4PPM.png
+INPUT ./figuras/opcionesI4PPM.png
+INPUT ./figuras/opcionesI4PPM.png
+INPUT ./figuras/opcionesI4PPM.png
+INPUT ./figuras/opcionesI4PPM.png
 INPUT ./figuras/Hard.pdf
 INPUT ./figuras/Hard.pdf
 INPUT ./figuras/Hard.pdf
@@ -2025,10 +2030,12 @@ INPUT A0.MiTFG.aux
 INPUT ./A0.MiTFG.out
 INPUT ./A0.MiTFG.out
 INPUT c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb
