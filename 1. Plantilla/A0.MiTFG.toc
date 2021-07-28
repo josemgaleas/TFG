@@ -22,35 +22,35 @@
 \contentsline {section}{\numberline {2.2}Plataforma software}{10}{section.2.2}%
 \contentsline {chapter}{\numberline {3}Sistema de comunicación}{11}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Estándar de los sistemas VLC}{11}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Enlace de luz}{11}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Transmisor}{12}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Receptor}{12}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Sistema de partida}{12}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Mejoras respecto al sistema anterior}{12}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Fundamentos teóricos}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introducción a los esquemas de señalización}{13}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Pulsos alternos}{14}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Cancelación de pulsos}{17}{section.4.3}%
-\contentsline {section}{\numberline {4.4}4-PPM}{20}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Comparativa 4-PPM frente a Inverse 4-PPM}{22}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Sistemas de decisión}{23}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Hard-decoding}{23}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Soft-decoding}{25}{subsection.4.6.2}%
-\contentsline {subsection}{\numberline {4.6.3}Algoritmo de Viterbi}{27}{subsection.4.6.3}%
-\contentsline {subsection}{\numberline {4.6.4}Comparativa entre los sistemas de decisión}{29}{subsection.4.6.4}%
-\contentsline {section}{\numberline {4.7}Conclusiones}{30}{section.4.7}%
-\contentsline {chapter}{\numberline {5}Implementación}{33}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Sistema general}{33}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Transmisor}{33}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Receptor}{33}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Sistema de decisión}{34}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Pruebas}{35}{chapter.6}%
-\contentsline {part}{III\hspace {1em}Parte tercera.}{37}{part.3}%
-\contentsline {xpart}{Parte tercera.}{39}{part.3}%
-\contentsline {starchapter}{Conclusiones y líneas futuras}{39}{chapter*.23}%
-\contentsline {part}{IV\hspace {1em}Apéndices}{41}{part.4}%
-\contentsline {xpart}{Apéndices}{43}{part.4}%
-\contentsline {chapter}{\numberline {A}Manual de uso}{43}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Primera sección}{43}{section.Alph1.1}%
-\contentsline {chapter}{Bibliografía}{45}{appendix*.24}%
+\contentsline {section}{\numberline {3.2}Enlace de luz}{13}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Transmisor}{13}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Receptor}{14}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Sistema de partida}{14}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Mejoras respecto al sistema anterior}{14}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Fundamentos teóricos}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introducción a los esquemas de señalización}{17}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Pulsos alternos}{18}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Cancelación de pulsos}{21}{section.4.3}%
+\contentsline {section}{\numberline {4.4}4-PPM}{24}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Comparativa 4-PPM frente a Inverse 4-PPM}{26}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Sistemas de decisión}{27}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Hard-decoding}{27}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Soft-decoding}{29}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Algoritmo de Viterbi}{31}{subsection.4.6.3}%
+\contentsline {subsection}{\numberline {4.6.4}Comparativa entre los sistemas de decisión}{33}{subsection.4.6.4}%
+\contentsline {section}{\numberline {4.7}Conclusiones}{34}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Implementación}{37}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Sistema general}{37}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Transmisor}{37}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Receptor}{37}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Sistema de decisión}{38}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Pruebas}{39}{chapter.6}%
+\contentsline {part}{III\hspace {1em}Parte tercera.}{41}{part.3}%
+\contentsline {xpart}{Parte tercera.}{43}{part.3}%
+\contentsline {starchapter}{Conclusiones y líneas futuras}{43}{chapter*.25}%
+\contentsline {part}{IV\hspace {1em}Apéndices}{45}{part.4}%
+\contentsline {xpart}{Apéndices}{47}{part.4}%
+\contentsline {chapter}{\numberline {A}Manual de uso}{47}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Primera sección}{47}{section.Alph1.1}%
+\contentsline {chapter}{Bibliografía}{49}{appendix*.26}%
 \contentsfinish 

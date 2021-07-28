@@ -9,30 +9,31 @@
 \contentsline {xchapter}{Tecnología empleada}{9}{chapter.2}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{Sistema de comunicación}{11}{chapter.3}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces \small {División en frecuencia para los tres tipos de capas PHY. Fuente [X].}\relax }}{12}{figure.caption.7}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Fundamentos teóricos}{13}{chapter.4}%
-\contentsline {figure}{\numberline {4.1}{\ignorespaces \small {Diagrama de Trellis de la codificación pulsos alternos.}\relax }}{15}{figure.caption.7}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces \small {Codificación con pulsos alternos.}\relax }}{16}{figure.caption.8}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces \small {Potencia espectral frente a frecuencia normalizada.}\relax }}{17}{figure.caption.9}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces \small {Diagrama de Trellis de la codificación cancelación de pulsos.}\relax }}{18}{figure.caption.10}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces \small {Codificación con cancelación de pulsos.}\relax }}{19}{figure.caption.11}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces \small {Potencia espectral frente a frecuencia normalizada.}\relax }}{20}{figure.caption.12}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces \small {Pareja de bits con su respectiva codificación.}\relax }}{21}{figure.caption.13}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces \small {Codificación 4-PPM.}\relax }}{21}{figure.caption.14}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces \small {Pareja de bits con su respectiva codificación.}\relax }}{23}{figure.caption.15}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces \small {Sistema \textit {Hard-decoding}.}\relax }}{24}{figure.caption.16}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces \small {Sistema \textit {Soft-decoding}.}\relax }}{26}{figure.caption.17}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces \small {Algoritmo de Viterbi.}\relax }}{28}{figure.caption.18}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces \small {Sistemas de decisión con pulsos alternos.}\relax }}{29}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces \small {Sistemas de decisión con cancelación de pulsos.}\relax }}{30}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces \small {Sistemas de decisión con 4-PPM.}\relax }}{31}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces \small {Comparativa de los esquemas de codificación con su mejor sistema de deicisón.}\relax }}{32}{figure.caption.22}%
+\contentsline {xchapter}{Fundamentos teóricos}{17}{chapter.4}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \small {Diagrama de Trellis de la codificación pulsos alternos.}\relax }}{19}{figure.caption.9}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \small {Codificación con pulsos alternos.}\relax }}{20}{figure.caption.10}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces \small {Potencia espectral frente a frecuencia normalizada.}\relax }}{21}{figure.caption.11}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces \small {Diagrama de Trellis de la codificación cancelación de pulsos.}\relax }}{22}{figure.caption.12}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces \small {Codificación con cancelación de pulsos.}\relax }}{23}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces \small {Potencia espectral frente a frecuencia normalizada.}\relax }}{24}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces \small {Pareja de bits con su respectiva codificación.}\relax }}{25}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces \small {Codificación 4-PPM.}\relax }}{25}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces \small {Pareja de bits con su respectiva codificación.}\relax }}{27}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces \small {Sistema \textit {Hard-decoding}.}\relax }}{28}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces \small {Sistema \textit {Soft-decoding}.}\relax }}{30}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces \small {Algoritmo de Viterbi.}\relax }}{32}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces \small {Sistemas de decisión con pulsos alternos.}\relax }}{33}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces \small {Sistemas de decisión con cancelación de pulsos.}\relax }}{34}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces \small {Sistemas de decisión con 4-PPM.}\relax }}{35}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces \small {Comparativa de los esquemas de codificación con su mejor sistema de deicisón.}\relax }}{36}{figure.caption.24}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Implementación}{33}{chapter.5}%
+\contentsline {xchapter}{Implementación}{37}{chapter.5}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Pruebas}{35}{chapter.6}%
-\contentsline {xpart}{Parte tercera.}{39}{part.3}%
-\contentsline {xpart}{Apéndices}{43}{part.4}%
+\contentsline {xchapter}{Pruebas}{39}{chapter.6}%
+\contentsline {xpart}{Parte tercera.}{43}{part.3}%
+\contentsline {xpart}{Apéndices}{47}{part.4}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Manual de uso}{43}{appendix.Alph1}%
+\contentsline {xchapter}{Manual de uso}{47}{appendix.Alph1}%
 \contentsfinish 

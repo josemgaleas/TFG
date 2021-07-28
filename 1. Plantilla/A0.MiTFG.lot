@@ -9,14 +9,15 @@
 \contentsline {xchapter}{Tecnología empleada}{9}{chapter.2}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{Sistema de comunicación}{11}{chapter.3}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces \small {Clasificación de dispositivos según el estándar IEEE 802.15.7. Fuente [6]}\relax }}{13}{table.caption.8}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Fundamentos teóricos}{13}{chapter.4}%
+\contentsline {xchapter}{Fundamentos teóricos}{17}{chapter.4}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Implementación}{33}{chapter.5}%
+\contentsline {xchapter}{Implementación}{37}{chapter.5}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Pruebas}{35}{chapter.6}%
-\contentsline {xpart}{Parte tercera.}{39}{part.3}%
-\contentsline {xpart}{Apéndices}{43}{part.4}%
+\contentsline {xchapter}{Pruebas}{39}{chapter.6}%
+\contentsline {xpart}{Parte tercera.}{43}{part.3}%
+\contentsline {xpart}{Apéndices}{47}{part.4}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Manual de uso}{43}{appendix.Alph1}%
+\contentsline {xchapter}{Manual de uso}{47}{appendix.Alph1}%
 \contentsfinish 

@@ -1845,6 +1845,11 @@ OUTPUT A0.MiTFG.mtc
 INPUT ./A0.MiTFG.mtc8
 INPUT A0.MiTFG.mtc8
 INPUT A0.MiTFG.mtc8
+INPUT ./figuras/capasEstandar.png
+INPUT ./figuras/capasEstandar.png
+INPUT ./figuras/capasEstandar.png
+INPUT ./figuras/capasEstandar.png
+INPUT ./figuras/capasEstandar.png
 INPUT ./Capitulo04.tex
 INPUT Capitulo04.tex
 INPUT ./Capitulo04.tex
