@@ -8,23 +8,66 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % !TEX root = A0.MiTFG.tex
 \chapterbegin{Tecnología empleada}
-En este apartado se van a explicar las plataformas o elementos, tanto hardware como software, sobre los que se ha desarrollado este proyecto. 
+En este apartado se van a explicar las plataformas o elementos, tanto hardware como 
+software, sobre los que se ha desarrollado este proyecto. 
 \vspace{1cm}
 \label{chp:ManLaTeX}
 \minitoc
 
 \section{Plataforma hardware}
-El sistema hardware empleado va a ser un dispositivo FPGA. Una matriz de puertas lógicas programables
-(FPGA) se define como un dispositivo electróncio programable que contiene bloques de lógica cuya 
-interconexión y funcionalidad puede ser configurada en el momento, mediante un lenguaje de descripción especializado. La lógica programable puede 
-reproducir desde funciones tan sencillas como las llevadas a cabo por una puerta lógica o un sistema combinacional hasta complejos sistemas en un chip. 
+El sistema hardware empleado va a ser un dispositivo FPGA. Una matriz de puertas lógicas 
+programables (FPGA) se define como un dispositivo electrónico programable que contiene 
+bloques de lógica cuya interconexión y funcionalidad puede ser configurada en el momento, 
+mediante un lenguaje de descripción especializado. La lógica programable puede reproducir 
+desde funciones tan sencillas como las llevadas a cabo por una puerta lógica o un sistema 
+combinacional hasta complejos sistemas en un chip. Su principal 
+ventaja es que pueden ser reprogramados para un trabajo específico o cambiar sus 
+requisitos después de haberse fabricado. El inventor de esta tecnología fue 
+Xilinx. 
+
+La principal característica es la flexibilidad. Esto también implica que en muchos
+casos se pueden hacer cambios físicos sin hacer modificaciones costosas en la placa.
+
+La segunda característica es la aceleración. En el proceso de producción, 
+estos dispositivos son muy fáciles de fabricar y se venden preparados para ser usados 
+directamente, lo cual convella una disminución en los tiempos totales. 
+En el apartado de diseño, una FPGA está lista en cuanto su diseño incial esté finalizado
+y testeado, lo cual, de nuevo, ahorra tiempo. Finalmente, para la aceleración, las FPGA, 
+mediante aceleraciones de carga y descarga de información, aumentan el 
+rendimiento global del sistema. 
+
+Normalmente la programación de los FPGA se realiza en lenguajes de programación de 
+bajo nivel llamados Verilog o VHDL. Ambos son similares y sirven para 'describir' cómo
+la FPGA debe manejar el hardware del msimo. Esto se desarrollará con mayor profundidad
+y detalle en el apartado software (2.2).
+
+Para el desarrollo de este trabajo se ha elegido como FPGA la Red Pitaya proporcionada 
+por Stemlab. Esta FPGA se describe a continuación.
 
 \subsection{Red Pitaya}
+[HABLAR A FULL DE LA PITAYA CON SUS CARACTERÍSTICAS Y ESO ADEMÁS DE LAS FOTOS]
 
 \section{Plataforma software}
-Hablar sobre la plataforma sobre la que se ha programado la fpga (vivado) comentando sus características y sus 
-principales funciones y en que aplicaciones es recomendable su uso.
-Hablar sobre que el programa en c que es el que ejecuta las transmisiones y recepciones y es el encargado de poner en
-funcionamiento el enlace además de comprobar los paquetes, etc.
+% [Hablar sobre la plataforma sobre la que se ha programado la fpga (vivado) comentando sus 
+% características y sus principales funciones y en que aplicaciones es recomendable su uso.
+% Hablar sobre que el programa en c que es el que ejecuta las transmisiones y recepciones 
+% y es el encargado de poner en
+% funcionamiento el enlace además de comprobar los paquetes, etc.]
+La elección de la FPGA es una fase muy importante porque será la base del 
+desarrollo de todo el proyecto, por lo tanto, 
+en este apartado se va a describir el apartado software con el que se ha implementado
+y desarrollado el proyecto. Este apartado consta de dos puntos diferenciales que son la 
+programación de la FPGA y la programación en C encargada de generar la trama y de 
+controlar la recepción de la misma.
+
+La programación de la FPGA se ha realizado en el entorno Vivado. Vivado Design Suite
+es un paquete de software producido por Xilinx para la síntesis y análisis de diseños 
+HDL, reemplazando a Xilinx ISE con características adicionales para el desarrollo de 
+sistemas en un chip y síntesis de alto nivel. 
+
+Vivado se creó en 2012 y es un entorno de diseño integrado (IDE) que ofrece un ámbito
+de desarrollo de próxima generación con orientación SoC, centrado en IP y en el sistema,
+que se ha creado desde cero para mejorar la productividad en la integración e 
+implementación del sistema.
 
 \chapterend{}

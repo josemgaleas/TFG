@@ -91,9 +91,18 @@ electromagnéticas y a sistemas radiofrecuencia.
 \section{Enlace de luz}
 Para probar el proyecto y verificar el funcionamiento real del mismo
 se parte de un enlace de luz formado por un transmisor y un 
-receptor. A continuación se van a describir brevemente para tener una idea de 
+receptor. A continuación, se van a describir brevemente para tener una idea de 
 su funcionamiento e importancia ya que han sido 
-heredados y no han sido desarrollados en este proyecto.
+heredados y no han sido desarrollados en este proyecto. Pero antes la figura 
+\ref{enlace}
+muestra el enlace completo durante una transmisión a pocos metros en el laboratorio.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.15]{./figuras/Enlace.jpeg}
+    \caption{\small{Sistema de transmisión-recepción completo.}}
+    \label{enlace}%
+\end{figure}
 
 \subsection{Transmisor}
 %Hablar un poco del transmisor óptico que tiene Salva y de los voltajes.
@@ -108,10 +117,19 @@ El funcionamiento del transmisor se puede desglosar en tres etapas:
     que se entrega al modulador desciende abruptamente y el ciclo de trabajo de la senal se 
     ve dañado por lo que esta etapa consiste en eliminar dicha restricción.
 \end{itemize}
-%%%%%%%%%%% FOTO DEL TRANSMISOR DE SALVA %%%%%%%%%%%%%%
+
+Lo más importante del transmisor es conocer los niveles de amplitud para saber lo que 
+tiene que proporcionarle la FPGA. En este caso la amplitud a nivel alto es de 1V y a nivel 
+bajo es de 0V. 
+
+En la figura x se muestra una imagen del transmisor óptico.
+
+[FOTO DEL TRANSMISOR DE SALVA]
+
 Este dispositivo ha sido incorporado a un faro de coche para que la simulación de la 
 transmisión sea más realista como se ve en la figura x.
-%%%%%%%%%%% FOTO DEL FARO %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+[FOTO DEL FARO]
 
 \subsection{Receptor}
 %Hablar un poco del receptor óptico que tiene Salva y de los voltajes.
@@ -124,22 +142,59 @@ El funcionamiento del receptor se puede desglosar en tres etapas:
     \item Amplificador no inversor: amplifica la señal para dar más sensibilidad al 
     receptor.
 \end{itemize}
-%%%%%%%%%%% FOTO DEL RECEPTOR DE SALVA %%%%%%%%%%%%%%
+
+Como se comentó en el transmisor lo importante son los niveles de amplitud que, en este 
+caso, son de 1V a nivel alto y de -1V a nivel bajo. Este rango es el que tiene la 
+FPGA a la entrada por lo que nos proporciona una resolución máxima.
+
+En la figura x se muestra una imagen del receptor óptico.
+
+[FOTO DEL RECEPTOR DE SALVA]
 
 \section{Sistema de partida}
 % Hablar sobre el proyecto que nos dejó Andrés tanto de las características
 % software como su capacidad de alcance y el enfoque del trabajo de Andrés que era el Desarrollo
 % del filtro adaptado y al final tratar de hilarlo con nuestra implementación para mejorar el sistema.
 % Comentar el mapeo de la señal para ponerla en el rango [-8192,8191] que nos influye para el hard-decoding y el soft-decoding.
-Hay que mencionar que este trabajo coge el testigo de otro trabajo desarrollado por un 
-compañero. Dicho trabajo consiste, a grandes rasgos, en el desarrollo del filtro adaptado 
-para mejorar la comunción por luz visible.  
+Hay que mencionar que este trabajo coge el testigo de otro trabajo desarrollado con
+anterioridad. Dicho trabajo consiste, a grandes rasgos, en el desarrollo del filtro 
+adaptado para mejorar la comunción por luz visible. 
+
+El funcionamiento del sistema, de manera general, se divide en dos bloques. Transmisión y 
+recepción. 
+
+La transmisión consiste en que un programa en C 
+produce una trama que se almacena en la memoria RAM y se pasa a los bloques encargados
+de su transmisión como son el serializador, el modulador y finalmente el DAC para 
+transformar el dato digital en analógico y el transmisor óptico para transmitir la señal
+en forma de pulsos de luz. 
+
+La señal se recibe por el receptor óptico y este la pasa el conversor ADC para volver 
+a digitalizar la señal para que pueda ser procesada. Es en este momento, donde actúa el 
+filtro adaptado. Su función principal, de una manera resumida, consiste en detectar la 
+presencia de una señal conocida o patrón dentro de la señal recibida. La señal a la
+salida será la correlación entre la conocida y la recibida. Esto es correspondiente
+a realizar la convolución de la señal desconocida con una que usa como referencia.
+Por tanto, el objetivo del filtro adaptado es el de maximizar la relación señal a rudi 
+(SNR) de una señal conocida para poder recuperarla por completo.
+
+Después de  ser filtrada por el filtro adaptado, la señal se demodula y los datos se 
+guardan
+en la memoria RAM para que puedan ser leídos el programa en C anteriormente mencionado.
+
+En el siguiente apartado, se van a describir las mejoras que se han decidido
+implementar para mejorar sus prestaciones y acercar más el funcionamiento del sistema 
+a lo requerido para poder ser implementado en aplicaciones vehículares en las que las 
+distancias de transmisión son más largas ya que el sistema anterior no permitía 
+transmisiones de larga distancia. 
 
 \section{Mejoras respecto al sistema anterior}
 % Hablar sobre cuales son las mejoras que se han implementado y que es lo que se quiere conseguir con estas mejoras.
 % Las mejoras (Mayor robustez de paquetes y mayor distancia de transmisión) se han conseguido
 % gracias a implementar esquemas de codificación y sistemas de decisión.
-Tras analizar el proyecto del que se partía se concluyó que una manera de mejorar el 
+Tras analizar el proyecto del que se partía se concluyó que había que desarrollar algún 
+subsistema para mejorar el enlace y acercarlo a que pueda ser utilizado en aplicaciones
+vehículares de manera eficaz. Una manera de mejorar el 
 sistema de comunicación y seguir el camino de investigar los sistemas de comunicación por 
 luz visible era desarrollar e implementar varios esquemas de señalización y varios sistemas
 de decisión de la señal para analizar sus diferentes comportamientos y cuantificar las 
@@ -150,6 +205,8 @@ mezcle con mucho ruido o simplemente cuando se transmita información a mucha di
 la fuerza de la señal disminuya.
 
 En los siguientes apartados se van a desarrollar tanto su fundamento teórico como su 
-implementación en una FPGA de los dos métodos implementados.
+implementación en una FPGA tanto de los esquemas de señalización como de los 
+sistemas de decisión. Además de realizar las respectivas pruebas para verificar las
+mejoras que se producen.
 
 \chapterend{}

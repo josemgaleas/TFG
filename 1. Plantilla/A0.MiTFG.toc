@@ -24,9 +24,9 @@
 \contentsline {section}{\numberline {3.1}Estándar de los sistemas VLC}{11}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Enlace de luz}{13}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Transmisor}{13}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Receptor}{14}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Sistema de partida}{14}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Mejoras respecto al sistema anterior}{14}{section.3.4}%
+\contentsline {subsection}{\numberline {3.2.2}Receptor}{15}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Sistema de partida}{15}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Mejoras respecto al sistema anterior}{16}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Fundamentos teóricos}{17}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Introducción a los esquemas de señalización}{17}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Pulsos alternos}{18}{section.4.2}%
@@ -47,10 +47,10 @@
 \contentsline {chapter}{\numberline {6}Pruebas}{39}{chapter.6}%
 \contentsline {part}{III\hspace {1em}Parte tercera.}{41}{part.3}%
 \contentsline {xpart}{Parte tercera.}{43}{part.3}%
-\contentsline {starchapter}{Conclusiones y líneas futuras}{43}{chapter*.25}%
+\contentsline {starchapter}{Conclusiones y líneas futuras}{43}{chapter*.26}%
 \contentsline {part}{IV\hspace {1em}Apéndices}{45}{part.4}%
 \contentsline {xpart}{Apéndices}{47}{part.4}%
 \contentsline {chapter}{\numberline {A}Manual de uso}{47}{appendix.Alph1}%
 \contentsline {section}{\numberline {A.1}Primera sección}{47}{section.Alph1.1}%
-\contentsline {chapter}{Bibliografía}{49}{appendix*.26}%
+\contentsline {chapter}{Bibliografía}{49}{appendix*.27}%
 \contentsfinish 
