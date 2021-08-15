@@ -1,56 +1,63 @@
 \babel@toc {spanish}{}
 \contentsline {starchapter}{Resumen}{\es@scroman {iii}}{Doc-Start}%
 \contentsline {starchapter}{Abstract}{\es@scroman {v}}{Doc-Start}%
-\contentsline {starchapter}{Agradecimientos}{\es@scroman {ix}}{chapter*.1}%
-\contentsline {starchapter}{Acrónimos}{\es@scroman {xi}}{chapter*.2}%
-\contentsline {chapter}{Índice}{\es@scroman {xiii}}{chapter*.3}%
+\contentsline {starchapter}{Agradecimientos}{\es@scroman {vii}}{chapter*.1}%
+\contentsline {starchapter}{Acrónimos}{\es@scroman {ix}}{chapter*.2}%
 \contentsline {part}{I\hspace {1em}Introducción}{1}{part.1}%
 \contentsline {xpart}{Introducción}{3}{part.1}%
 \contentsline {chapter}{\numberline {1}Introducción y visión general}{3}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Problemática de los accidentes de tráfico}{3}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Problemática de las ondas electromagnéticas}{3}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Estado del arte}{4}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Esquemas de señalización}{4}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Estructura del documento}{4}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Ámbito de aplicación}{4}{section.1.6}%
-\contentsline {section}{\numberline {1.7}Objetivo}{5}{section.1.7}%
-\contentsline {part}{II\hspace {1em}Desarrollo del proyecto}{7}{part.2}%
-\contentsline {xpart}{Desarrollo del proyecto}{9}{part.2}%
-\contentsline {chapter}{\numberline {2}Tecnología empleada}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Plataforma hardware}{9}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Red Pitaya}{10}{subsection.2.1.1}%
-\contentsline {section}{\numberline {2.2}Plataforma software}{10}{section.2.2}%
-\contentsline {chapter}{\numberline {3}Sistema de comunicación}{11}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Estándar de los sistemas VLC}{11}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Enlace de luz}{13}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Transmisor}{13}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Receptor}{15}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Sistema de partida}{15}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Mejoras respecto al sistema anterior}{16}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Fundamentos teóricos}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introducción a los esquemas de señalización}{17}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Pulsos alternos}{18}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Cancelación de pulsos}{21}{section.4.3}%
-\contentsline {section}{\numberline {4.4}4-PPM}{24}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Comparativa 4-PPM frente a Inverse 4-PPM}{26}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Sistemas de decisión}{27}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Hard-decoding}{27}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Soft-decoding}{29}{subsection.4.6.2}%
-\contentsline {subsection}{\numberline {4.6.3}Algoritmo de Viterbi}{31}{subsection.4.6.3}%
-\contentsline {subsection}{\numberline {4.6.4}Comparativa entre los sistemas de decisión}{33}{subsection.4.6.4}%
-\contentsline {section}{\numberline {4.7}Conclusiones}{34}{section.4.7}%
-\contentsline {chapter}{\numberline {5}Implementación}{37}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Sistema general}{37}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Transmisor}{37}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Receptor}{37}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Sistema de decisión}{38}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Pruebas}{39}{chapter.6}%
-\contentsline {part}{III\hspace {1em}Parte tercera.}{41}{part.3}%
-\contentsline {xpart}{Parte tercera.}{43}{part.3}%
-\contentsline {starchapter}{Conclusiones y líneas futuras}{43}{chapter*.26}%
-\contentsline {part}{IV\hspace {1em}Apéndices}{45}{part.4}%
-\contentsline {xpart}{Apéndices}{47}{part.4}%
-\contentsline {chapter}{\numberline {A}Manual de uso}{47}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Primera sección}{47}{section.Alph1.1}%
-\contentsline {chapter}{Bibliografía}{49}{appendix*.27}%
+\contentsline {section}{\numberline {1.2}Problemática de las ondas electromagnéticas}{6}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Ventajas y ámbito de aplicación}{7}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Proyectos relacionados con la comunicación por luz visible entre vehículos}{9}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Esquemas de señalización}{10}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Estructura del documento}{10}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Objetivo}{11}{section.1.7}%
+\contentsline {part}{II\hspace {1em}Desarrollo del proyecto}{13}{part.2}%
+\contentsline {xpart}{Desarrollo del proyecto}{15}{part.2}%
+\contentsline {chapter}{\numberline {2}Tecnología empleada}{15}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Plataforma hardware}{15}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Red Pitaya}{16}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}Plataforma software}{18}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Sistema de comunicación}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Estándar de los sistemas VLC}{21}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Enlace de luz}{23}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Transmisor}{24}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Receptor}{25}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Sistema de partida}{26}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Mejoras respecto al sistema anterior}{27}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Fundamentos teóricos}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introducción a los esquemas de señalización}{29}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Pulsos alternos}{30}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Cancelación de pulsos}{34}{section.4.3}%
+\contentsline {section}{\numberline {4.4}4-PPM}{38}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Comparativa 4-PPM frente a Inverse 4-PPM}{41}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Sistemas de decisión}{41}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Hard-decoding}{42}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Soft-decoding}{43}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Algoritmo de Viterbi}{45}{subsection.4.6.3}%
+\contentsline {subsection}{\numberline {4.6.4}Comparativa entre los sistemas de decisión}{47}{subsection.4.6.4}%
+\contentsline {section}{\numberline {4.7}Conclusiones}{50}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Implementación}{51}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Sistema general}{51}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Transmisor}{53}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Receptor}{56}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Sistema de decisión}{57}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Hard-decoding}{57}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Soft-decoding}{58}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Algoritmo de Viterbi}{60}{subsection.5.4.3}%
+\contentsline {chapter}{\numberline {6}Pruebas}{63}{chapter.6}%
+\contentsline {section}{\numberline {6.1}24 metros}{66}{section.6.1}%
+\contentsline {section}{\numberline {6.2}40 metros}{66}{section.6.2}%
+\contentsline {section}{\numberline {6.3}54 metros}{66}{section.6.3}%
+\contentsline {section}{\numberline {6.4}60 metros}{67}{section.6.4}%
+\contentsline {section}{\numberline {6.5}68 metros}{67}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Resumen}{67}{section.6.6}%
+\contentsline {part}{III\hspace {1em}Parte tercera.}{69}{part.3}%
+\contentsline {xpart}{Parte tercera.}{71}{part.3}%
+\contentsline {starchapter}{Conclusiones y líneas futuras}{71}{chapter*.56}%
+\contentsline {part}{IV\hspace {1em}Apéndices}{73}{part.4}%
+\contentsline {xpart}{Apéndices}{75}{part.4}%
+\contentsline {chapter}{\numberline {A}Manual de uso de la aplicación funcional}{75}{appendix.Alph1}%
+\contentsline {chapter}{Bibliografía}{78}{appendix*.58}%
 \contentsfinish 

@@ -22,12 +22,12 @@ and metropolitan área networks. Part 15.7: Short-Range Optical Wireless}.
 En las comunicaciones ópticas inalámbricas (OWC) los datos se transmiten a través de 
 fuentes ópticas, como diodos emisores (LED). Se fusiona la iluminación y las 
 comunicaciones de datos en aplicaciones como farolas, letreros, señales de tráfico, 
-vehículos etc. Este estándar define el uso de las comunicaciones ópticas inalámbricas.
+vehículos, etc. Este estándar define el uso de las comunicaciones ópticas inalámbricas.
 %https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8697198
-Algunas de las características que se encuentran en el estándar son las siguientes:
+Algunas de las características que se encuentran en el estándar son las siguientes: \cite{ieee}
 \begin{itemize}
     \item Topologías como estrella, P2P (punto a punto) y broadcast (difusión amplia).
-    \item Tamaño de direeción (16 o 64 bits).
+    \item Tamaño de dirección (16 o 64 bits).
     \item Acceso aleatorio programado o ranurado con transmisión para evitar colisiones.
     \item Protocolo para transmisiones fiables.
     \item Indicación de la calidad de longitud de onda.
@@ -43,7 +43,7 @@ al medio (MAC) para comunicaciones ópticas inalámbricas de corto alcance en me
 capaz de tener velocidad de datos suficiente para admitir tanto servicios de vídeo como 
 de audio, así como también considera la movilidad del enlace óptico, su compatibilidad 
 con las infraestructuras, los problemas debido al ruido y la interferencia con fuentes 
-como la luz natural.
+como la luz natural. \cite{ieee}
 
 Dependiendo de la aplicación y de la tasa de datos el estándar permite tres tipos de 
 capas PHY. PHY I está prevista para aplicaciones exteriores con baja velocidad de 
@@ -54,7 +54,7 @@ Esta diferencia se ilustra en la figura \ref{capasPHY}
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.35]{./figuras/capasEstandar.png}
-    \caption{\small{División en frecuencia para los tres tipos de capas PHY. Fuente [X].}}
+    \caption{\small{División en frecuencia para los tres tipos de capas PHY. Fuente [6].}}
     \label{capasPHY}%
 \end{figure}
 
@@ -91,45 +91,65 @@ electromagnéticas y a sistemas radiofrecuencia.
 \section{Enlace de luz}
 Para probar el proyecto y verificar el funcionamiento real del mismo
 se parte de un enlace de luz formado por un transmisor y un 
-receptor. A continuación, se van a describir brevemente para tener una idea de 
-su funcionamiento e importancia ya que han sido 
-heredados y no han sido desarrollados en este proyecto. Pero antes la figura 
+receptor. A continuación, se van a describir brevemente para tener una idea 
+aproximada de su funcionamiento. Pero antes, la figura 
 \ref{enlace}
 muestra el enlace completo durante una transmisión a pocos metros en el laboratorio.
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.15]{./figuras/Enlace.jpeg}
+    \includegraphics[scale=0.14]{./figuras/Enlace.jpeg}
     \caption{\small{Sistema de transmisión-recepción completo.}}
     \label{enlace}%
 \end{figure}
-
+\newpage
 \subsection{Transmisor}
 %Hablar un poco del transmisor óptico que tiene Salva y de los voltajes.
 El funcionamiento del transmisor se puede desglosar en tres etapas:
 \begin{itemize}
-    \item Adaptación de nivel: se encarga de convertir los niveles logicos de la señal 
+    \item Adaptación de nivel: se encarga de convertir los niveles lógicos de la señal 
     de entrada ('1' codificado como 1 V y '0' codificado como –1 V) en niveles de tensión 
-    utiles para el modulador.
+    útiles para el modulador.
     \item Ajuste de corriente: su función es excitar a los dispositivos
     LED con la corriente reconfigurada.
-    \item Habilitación de baja frecuencia: Por debajo de 100 KHz, el nivel de tension alto 
-    que se entrega al modulador desciende abruptamente y el ciclo de trabajo de la senal se 
-    ve dañado por lo que esta etapa consiste en eliminar dicha restricción.
+    \item Habilitación de baja frecuencia: Por debajo de 100 KHz, el nivel de tensión alto 
+    que se entrega al modulador desciende abruptamente y el ciclo de trabajo de la señal se 
+    ve dañado por lo que esta etapa consiste en conseguir que la tensión no descienda para
+    no dañar el ciclo de trabajo.
 \end{itemize}
 
 Lo más importante del transmisor es conocer los niveles de amplitud para saber lo que 
 tiene que proporcionarle la FPGA. En este caso la amplitud a nivel alto es de 1V y a nivel 
 bajo es de 0V. 
 
-En la figura x se muestra una imagen del transmisor óptico.
+En la figura \ref{transm} se muestra una imagen del transmisor óptico.
 
-[FOTO DEL TRANSMISOR DE SALVA]
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.40]{./figuras/transm.png}
+    \caption{\small{Transmisor óptico.}}
+    \label{transm}%
+\end{figure}
 
 Este dispositivo ha sido incorporado a un faro de coche para que la simulación de la 
-transmisión sea más realista como se ve en la figura x.
+transmisión sea más realista como se ve en las figuras \ref{faro} y \ref{faro2}.
 
-[FOTO DEL FARO]
+\begin{figure}[ht]
+	\centering
+	  \begin{minipage}{7cm}
+		\centering
+		\includegraphics[scale=0.40]{./figuras/faro2.png}
+		\caption{Parte frontal del faro.}
+		\label{faro}
+	  \end{minipage}%
+	  \hspace{5mm}
+	  \begin{minipage}{7cm}
+		\centering
+		\includegraphics[scale=0.139]{./figuras/faro.png}
+		\caption{Parte trasera del faro}
+		\label{faro2}
+	  \end{minipage}
+\end{figure}
 
 \subsection{Receptor}
 %Hablar un poco del receptor óptico que tiene Salva y de los voltajes.
@@ -147,9 +167,14 @@ Como se comentó en el transmisor lo importante son los niveles de amplitud que,
 caso, son de 1V a nivel alto y de -1V a nivel bajo. Este rango es el que tiene la 
 FPGA a la entrada por lo que nos proporciona una resolución máxima.
 
-En la figura x se muestra una imagen del receptor óptico.
+En la figura \ref{recept} se muestra una imagen del receptor óptico.
 
-[FOTO DEL RECEPTOR DE SALVA]
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.40]{./figuras/recept.png}
+    \caption{\small{Transmisor óptico.}}
+    \label{recept}%
+\end{figure}
 
 \section{Sistema de partida}
 % Hablar sobre el proyecto que nos dejó Andrés tanto de las características
@@ -158,7 +183,7 @@ En la figura x se muestra una imagen del receptor óptico.
 % Comentar el mapeo de la señal para ponerla en el rango [-8192,8191] que nos influye para el hard-decoding y el soft-decoding.
 Hay que mencionar que este trabajo coge el testigo de otro trabajo desarrollado con
 anterioridad. Dicho trabajo consiste, a grandes rasgos, en el desarrollo del filtro 
-adaptado para mejorar la comunción por luz visible. 
+adaptado para mejorar la comunicación por luz visible. 
 
 El funcionamiento del sistema, de manera general, se divide en dos bloques. Transmisión y 
 recepción. 
@@ -175,16 +200,16 @@ filtro adaptado. Su función principal, de una manera resumida, consiste en dete
 presencia de una señal conocida o patrón dentro de la señal recibida. La señal a la
 salida será la correlación entre la conocida y la recibida. Esto es correspondiente
 a realizar la convolución de la señal desconocida con una que usa como referencia.
-Por tanto, el objetivo del filtro adaptado es el de maximizar la relación señal a rudi 
+Por tanto, el objetivo del filtro adaptado es el de maximizar la relación señal a ruido 
 (SNR) de una señal conocida para poder recuperarla por completo.
 
 Después de  ser filtrada por el filtro adaptado, la señal se demodula y los datos se 
 guardan
-en la memoria RAM para que puedan ser leídos el programa en C anteriormente mencionado.
+en la memoria RAM para que puedan ser leídos por el programa en C anteriormente mencionado.
 
 En el siguiente apartado, se van a describir las mejoras que se han decidido
 implementar para mejorar sus prestaciones y acercar más el funcionamiento del sistema 
-a lo requerido para poder ser implementado en aplicaciones vehículares en las que las 
+a lo requerido para poder ser implementado en aplicaciones vehiculares en las que las 
 distancias de transmisión son más largas ya que el sistema anterior no permitía 
 transmisiones de larga distancia. 
 
@@ -193,8 +218,8 @@ transmisiones de larga distancia.
 % Las mejoras (Mayor robustez de paquetes y mayor distancia de transmisión) se han conseguido
 % gracias a implementar esquemas de codificación y sistemas de decisión.
 Tras analizar el proyecto del que se partía se concluyó que había que desarrollar algún 
-subsistema para mejorar el enlace y acercarlo a que pueda ser utilizado en aplicaciones
-vehículares de manera eficaz. Una manera de mejorar el 
+subsistema para mejorar el enlace y que pueda ser utilizado en aplicaciones
+vehiculares de manera eficaz. Una manera de mejorar el 
 sistema de comunicación y seguir el camino de investigar los sistemas de comunicación por 
 luz visible era desarrollar e implementar varios esquemas de señalización y varios sistemas
 de decisión de la señal para analizar sus diferentes comportamientos y cuantificar las 

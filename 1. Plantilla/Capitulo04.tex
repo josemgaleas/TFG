@@ -19,7 +19,7 @@
 
 En el ámbito de la comunicación existen múltiples esquemas de codificación digital con diferentes propiedades como 
 probabilidad de bit, ciclo de trabajo, ancho de banda, etc. A la hora de estudiar un esquema de codificación para hacer 
-su elección hay que tener en cuenta tres aspectos fundamentales, que son:
+su elección hay que tener en cuenta tres aspectos fundamentales, que son: \cite{arte}
 \begin{itemize}
     \item Flickering: se define como el cambio de la luz provocado por la conmutación entre encendido 
 y apagado (1 y 0) en intervalos muy cortos. 
@@ -34,7 +34,7 @@ Continuando con el estudio de los esquemas de señalización,
 a continuación, se van a desarrollar otras opciones de esquemas de codificación con características diferentes
 para estudiar su eficacia e impacto en las comunicaciones por luz visible.
 Los esquemas a desarrollar son codificación por pulsos alternos, cancelación de pulsos y 4-ppm. También se hará una 
-comparativa de 4-ppm frente a Inverse 4-ppm para comparar sus prestaciones y el efecto de transmitir mayor cantidad 
+comparativa de 4-PPM frente a Inverse 4-PPM para comparar sus prestaciones y el efecto de transmitir mayor cantidad 
 de ``unos'' que de ``ceros''.
 
 Es importante destacar que en un primer momento también se planteó el desarrollo de codificación 4-PWM pero se descartó su 
@@ -44,7 +44,7 @@ fluctuara mucho a lo largo de una transmisión siendo perceptible y molesto para
 \section{Pulsos alternos}
 % Comentar teóricamente en que consiste este esquema (miller pero con una opción menos y alternando).
 % Y que apenas está implementado y desarrollado en ningún sitio.
-El primer esquema de codificación desarrollado es pulsos alternos. Este esquema 
+Pulsos alternos es el primer esquema de codificación desarrollado. Este esquema 
 se puede considerar como una versión de la codificación Manchester pero
 añadiendo tiempos de silencio. Estos tiempos de silencio añadidos en la transmisión
 se emplean para diseñar formatos OOK con memoria mediante el uso de de la alternancia de
@@ -54,22 +54,21 @@ Este formato de pulsos alternos tiene un ciclo de trabajo bajo, lo que provoca q
 codificación sea ventajosa en términos de modulación de intensidad y detección directa. 
 En este esquema, utilizamos los tiempos de silencio y los pulsos alternos para
 modificar las estadísticas de la secuencia de amplitud con respecto a las estadísticas de 
-la secuencia de mensajes.
-
+la secuencia de mensajes. \cite{anto_alt}
+\newpage
 De esta manera, el bit de información '0' siempre se codifica con la ausencia de pulso 
 '00', mientras que el bit '1' se representa con un pulso que va variando su posición con
-cada transmisión del '1'. Gracias a aplicar este esquema, se reduce el número de pulsos 
-transmitidos en otros esquemas de señalización como Manchester o Miller.
+cada transmisión del '1'. La ventaja de este esquema es que se reduce el número de pulsos 
+transmitidos respecto a otros esquemas de señalización como Manchester o Miller.
 
 %Dibujar y comentar el diagrama de trellis de este esquema
 La figura \ref{trellis_alternos} representa el diagrama de Trellis de este esquema de 
 codificación tal y como se ha descrito anteriormente. Este modelo consiste en dos estados,
-imprescindibles para la alternancia de pulsos. Lo más destablace del diagrama es que 
+imprescindibles para la alternancia de pulsos. Lo más destacable del diagrama es que 
 siempre que se codifica un '0' nos mantenemos en el mismo estado y siempre que se 
-codifca un '1' cambiamos de estado para realizar la alternancia de pulsos. Será en el 
+codifica un '1' cambiamos de estado para realizar la alternancia de pulsos. Será en el 
 momento de cambio de estado cuando codificaremos el pulso correspondiente que dependerá 
 del estado al que se transicione.
-\vspace{1cm}
 
 \begin{figure}[ht]
     \centering
@@ -91,16 +90,16 @@ El esquema de señalización resultante se muestra en la figura \ref{codificacio
 En dicha figura se observa perfectamente el funcionamiento de este esquema de 
 señalización. En la parte superior de la figura se encuentra la trama pseudoaleatoria y 
 abajo su codificación en la que se muestra como los pulsos alternan en cada codificación 
-de '1' y que siempre se que codifica un '0' hay ausencia de pulsos. Además, la señal 
+de '1' y que siempre que se codifica un '0' hay ausencia de pulsos. Además, la señal 
 codificada se encuentra entre -1V y 1V lo que implica que ya está preparada para ser 
-transmitida por el canal de luz. La señal codificada trabaja a el doble de frecuencia que 
+transmitida por el canal de luz. La señal codificada trabaja al doble de frecuencia que 
 la señal de entrada ya que hay transiciones rápidas cuando se transmite un pulso al igual
 que ocurre con la codificación Manchester que especifica el estándar.
 
 Además, también se observa que el ciclo de trabajo es bajo cuya ventaja, como se ha 
 comentado anteriormente, es que proporciona mayor intensidad de iluminación cuando se 
 transmite un pulso. Sin embargo, también tiene una desventaja que va ligada al flickering.
-Al tranmsitir mayor cantidad de '0' que de '1' el transmisor se encuentra más tiempo 
+Al transmitir mayor cantidad de '0' que de '1' el transmisor se encuentra más tiempo 
 apagado por lo que el parpadeo es más notable para el ojo humano que en otras 
 codificaciones como Manchester o Miller por lo que se necesitará una frecuencia de 
 transmisión mayor para este esquema de señalización para que el flickering no sea 
@@ -111,30 +110,58 @@ Este esquema al tener mayor número de '0' que de '1' se convierte en un esquema
 equiprobable, es decir, en un esquema que no tiene la misma probabilidad de transmitir 
 '0' que '1'. Es importante realizar los cálculos correspondientes para conocer la 
 probabilidad exacta de cada bit para conocer el ciclo de trabajo y el efecto que 
-provoca en el receptor óptico la no equiprobabilidad.
+provoca en el receptor óptico la no equiprobabilidad. 
 %%%%%%%%%%%%%%%%%%%% FORMULA DE LA PROBABILIDAD %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Para este esquema de codificación no es necesario hacer cálculos ya que es 
+intuitivo reconocer que como los estados son equiprobables lo único que difiere es la 
+cantidad de '0' o '1' en cada estado. Como se observa en el trellis en cada estado se 
+codifica con '00' o pulso ('01','10') dependiendo de si el dato es '0' o '1' y como esa
+probabilidad también es del 50\% se llega a la conclusión de que la probabilidad de que
+haya un '0' es del 75\% (3/4) y la probabilidad de '1' es del 25\% (1/4) ya que el 
+resultado de una pareja de entrada '01' se codificaría como '0001' o '0010'. Por lo tanto,
+debido al condensador que simetriza la señal en el receptor óptico, se produce que la 
+señal no se encuentre entre 1V y -1V si no que se mueve a 1.5V y -0.5V pero al saturar 
+en 1V tanto el receptor como la FPGA la señal pierde resolución y se queda en el 
+rango de 1V y -0.5V por lo que el valor máximo del nivel bajo es la mitad del mismo
+para este esquema de codificación.
 
 % BER 
 Se han estudiado sus prestaciones para tener una idea de cómo funciona este esquema. 
-El funcionamiento depende del sistema de decisión que se aplique (estos sistemas de 
-explican en el apartado 4.6) pero es bueno tener una visión de su tasa de error de bit.
-La figura x muestra la tasa de error de bit (BER) en función de la relación señal a ruido
-(SNR) de esque esquema de señalización aplicando \textit{soft-decoding} como sistema de 
+El funcionamiento depende del sistema de decisión que se aplique (se 
+explican en el apartado 4.6) pero es bueno tener una idea de su tasa de error de bit (BER).
+La figura \ref{solo_soft_alternos} muestra la BER en función de la 
+relación señal a ruido
+(SNR) de este esquema aplicando \textit{soft-decoding} como sistema de 
 decisión. 
 %%%%%%%%%%%%%%%%%%% FOTO DE BER SOFT-DECODING %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.27]{./figuras/solo_soft_alternos.pdf}
+    \caption{\small{BER de pulsos alternos.}}
+    \label{solo_soft_alternos}%
+\end{figure}
+
 Seguidamente, podemos calcular la densidad de potencia espectral (PSD) de la 
-codificación propuesta aplicando la siguiente fórmula.
+codificación propuesta aplicando la siguiente fórmula, 
+donde $ X_T $ es la transformada de Fourier. \cite{anto_alt}
 % Calculo del psd en el paper que me pasó Antonio
 %%%%%%%%%%%%%%%%%% FORMULA PSD %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+$ X_T(t) = \sum_{k=-K}^{k=K}a_k^2p(t-(1+a_k)\frac{D}{4}-kD)$
+
+La variable $a_k$ toma el valor de 0 para el bit '0' (no pulso) y 1 o -1 para el bit 
+'1' (pulso) de manera alterna. Además, el parámetro D representa el periodo resultante 
+de la reducción correspondiente al esquema propuesto.
 
 La densidad de potencia espectral obtenida a través de los cálculos
 anteriores se muestra en la figura \ref{psd_alternos}
 %%%%%%%% FOTO DEL PSD DEL PAPER DE ANTONIO %%%%%%%%%%%%%%%%
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.5]{./figuras/psd_alternos.png}
-    \caption{\small{Potencia espectral frente a frecuencia normalizada.}}
+    \includegraphics[scale=0.37]{./figuras/psd_alternos.png}
+    \caption{\small{Potencia espectral frente a frecuencia normalizada. Fuente: [12]}}
     \label{psd_alternos}%
 \end{figure}
 
@@ -142,19 +169,20 @@ anteriores se muestra en la figura \ref{psd_alternos}
 En definitiva, se ha propuesto una nueva técnica de codificación basada en la 
 alternancia de pulsos y en la ausencia de los mismos para modificar las estadísticas de la
 secuencia de amplitud con respecto a las estadísticas de la secuencia de mensajes llevando
-a una mejora notable para el formato OOK con un rendimiento óptimo.
+a una mejora notable para el formato OOK (\textit{On-Off Keying)} 
+con un rendimiento óptimo.
 
 \section{Cancelación de pulsos}
 % Comentar teóricamente en que consiste este esquema (alternos pero eliminando pulsos).
 % Y que apenas está implementado y desarrollado en ningún sitio.
 
 Tras el desarrollo de la codificación por pulsos alternos y de haber visto mejora en 
-términos de BER, la ventaja proporcionada por modificar las estadísticas de la secuencia
+términos de BER, la ventaja obtenida, tras modificar las estadísticas de la secuencia,
 no se explotan completamente ya que la técnica de señalización no presenta ninguna mejora
 respecto a la relación de potencia óptica de pico a promedio (PAOPR), y por lo tanto aún
 se pueden conseguir mejores resultados. Siguiendo esta línea, para mejorar el pico de 
 potencia óptica se trata de disminuir el número de pulsos, centrándose en evitar la 
-aparición de más de un pulso de manera consecutiva. 
+aparición de más de un pulso de manera consecutiva. \cite{anto_cancel}
 
 De esta manera, el bit de información '1' se codifica con la ausencia de pulso '00' 
 o con un pulso con su posición modificada, '01'. Mientras que el bit '0' se representa con
@@ -164,19 +192,19 @@ a aplicar esto, se disminuyen los números de pulsos de una manera bastante nota
 %EXPLICAR EL TRELLIS
 La figura \ref{trellis_cancelacion} representa el diagrama de Trellis de este esquema
 de codificación tal y como se ha descrito anteriormente. Este modelo consiste en tres 
-estados, donde cada estado es imprescindible para saber como codificar el dato.
+estados, donde cada estado es imprescindible para saber cómo codificar el dato.
 Lo más importante del trellis es que el primer '1' que se codifica después de un '0'
 siempre se codifica como ausencia de pulso ('00') y que siempre que el bit de dato
 es un '0' se transiciona al estado S1 para volver a empezar y codificar el primer '1'
-como ausencia de pulso. También se observa que después de codificar el primer '1' es 
-cuando se produce el pulso con su posición modificada si se codifica otro '1' o el 
-pulso con su posición sin modificar si se codifica un '0'.
-Hay que destacar que el estado S3 funciona exactamente igual que el estado S1 pero,
-sin embargo, es necesario por la naturaleza de los diagramas de Trellis o de Markov, 
+como ausencia de pulso. También se observa que después de codificar el primer '1' 
+si se codifica otro '1' se produce el pulso con su posición modificada, sin embargo si 
+se codifica un '0' se produce el pulso con su posición sin modificar. 
+Hay que destacar que el estado S3 funciona exactamente igual que el estado S1, sin 
+embargo, el estado S3 es necesario utilizarlo
+por la naturaleza de los diagramas de Trellis o de Markov, 
 ya que no es apropiado que se transicione al mismo estado independientemente del bit 
 que se codifique.
-\vspace{1cm}
-
+\newpage
 \begin{figure}[ht]
     \centering
     \input{./figuras/cancelacion.tikz}
@@ -191,7 +219,7 @@ período mínimo de tiempo sin transiciones consecutivas.
 %% INSERTAR FIGURA DE LA CODIFICACIÓN
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.6]{./figuras/CodificadaCancelacion.pdf}
+    \includegraphics[scale=0.55]{./figuras/CodificadaCancelacion.pdf}
     \caption{\small{Codificación con cancelación de pulsos.}}
     \label{codificación_cancelacion}%
 \end{figure}
@@ -221,33 +249,73 @@ bajo porque hay pocos pulsos. Esto provoca dos efectos.
 
 % Por qué es un esquema no equiprobable haciendo los cálculos correspondientes.
 Como se ha explicado anteriormente, este esquema prioriza la ausencia de pulsos por
-lo que también es un esquema no equiprobable (no tiene la misma probabilidad de '0'
-que de '1'), aunque en mayor medida que en pulsos
-alternos ya que en este hay mayor presencia de '0'. Para saber cuales son sus 
+lo que también es un esquema no equiprobable, aunque en mayor medida que en pulsos
+alternos ya que en este hay mayor presencia de '0'. Para saber cuáles son sus 
 probabilidades exactas hay que realizar los cálculos correspondientes. Este cálculo es 
 imprescindible para, además de conocer el ciclo de trabajo, conocer el efecto que 
-produce en el receptor de luz.
-%%%%%%%%%%%%%%%%%%%% FORMULA DE LA PROBABILIDAD %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+produce en el receptor de luz. En este esquema no se puede calcular de manera 
+intuitiva al igual que en pulsos alternos por lo que primero se va a calcular la 
+probabilidad de cada estado que se deduce del diagrama de trellis anterior. \cite{anto_cancel}
+
+$ P(S_0) = P(0) = \frac{1}{2} $ (siempre que se reciba un 0 se va al estado $S_0$)
+
+$ P(S_1) = P(S_0) \cdot P(1) + P(S_2) \cdot P(1) $
+
+$ P(S_2) = P(S_1) \cdot P(1) $
+
+para resolver las dos últimas ecuaciones se hace por sustitución, metiendo el valor de 
+$P(S_2)$ en la segunda ecuación. 
+
+$ P(S_1) = P(S_0) \cdot P(1) + P(S_1) \cdot P(1) = \frac{1}{2} \cdot \frac{1}{2} 
++ P(S_1) \cdot \frac{1}{2} $, despejando $P(S_1)$:
+
+$ P(S_1) = \frac{\frac{1}{4}}{\frac{3}{4}} \Rightarrow P(S_1) = \frac{1}{3} $, por lo 
+tanto las probabilidades de cada estado son:
+
+$ P(S_0) = \frac{1}{2} $
+
+$ P(S_1) = \frac{1}{3} $
+
+$ P(S_2) = \frac{1}{6} $
+
+de lo que se deduce que la probabilidad de '0' codificado es de $\frac{2}{3}$ y de 
+'1' es de $\frac{1}{3}$. Por lo tanto, debido al condensador del receptor, la señal 
+no se encuentra simetrizada en 1V y -1V si no que se movería a 1.66V y a -0.33V pero como 
+se produce saturación a nivel alto la señal queda entre 1V y -0.33V por lo que el valor
+a nivel bajo se ve reducido considerablemente lo que puede producir más errores en 
+sistemas \textit{hard-decoding}.
 
 Al igual que para pulsos alternos, se han estudiado sus prestaciones en función de varios 
 sistemas de decisión. Estos sistemas se explicarán en el apartado 4.6 pero es oportuno 
 tener una referencia de su tasa de error de bit para tener una idea inicial de sus 
-prestaciones. Para ello, la figura x muestra la tasa de error de bit de este esquema
+prestaciones. Para ello, la figura \ref{solo_soft_cancelacion} muestra la tasa de error 
+de bit de este esquema
 para una trama pseudoaleatoria aplicando \textit{soft-decoding} como sistema de decisión. 
 %%%%%%%%%%%%%%%%%%% FOTO DE BER SOFT-DECODING %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.45]{./figuras/solo_soft_cancelacion.pdf}
+    \caption{\small{BER de cancelación de pulsos.}}
+    \label{solo_soft_cancelacion}%
+\end{figure}
+
 A continuación, podemos calcular la densidad de potencia espectral (PSD) de la 
-codificación propuesta aplicando la siguiente fórmula.
+codificación propuesta aplicando la siguiente fórmula. \cite{anto_cancel}
 % Calculo del psd en el paper que me pasó Antonio
 %%%%%%%%%%%%%%%%%% FORMULA PSD %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\vspace{0.5cm}
+$ X_T(t) = \sum_{k=-K}^{k=K}\frac{3}{2}RR \cdot a_kp (t-\frac{D}{4}(1+b_k)-kD)$
+\vspace{0.5cm}
+
 Por consiguiente, la densidad de potencia espectral obtenida a través de los cálculos
 anteriores se muestra en la figura \ref{psd_cancelación}.
-
+\newpage
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.5]{./figuras/psd_cancelacion.png}
-    \caption{\small{Potencia espectral frente a frecuencia normalizada.}}
+    \caption{\small{Potencia espectral frente a frecuencia normalizada. Fuente: [13]}}
     \label{psd_cancelación}%
 \end{figure}
 
@@ -255,10 +323,10 @@ anteriores se muestra en la figura \ref{psd_cancelación}.
 % CONCLUSION 
 En conclusión, este esquema de codificación propuesto basado en la ausencia de pulsos
 mejora notablemente la codificación de la señal.
-El aumento de los tiempos de silencio se utilizan para modificar las estadísticas de
+El aumento de los tiempos de silencio, se utilizan para modificar las estadísticas de
 la secuencia de amplitud con respecto a las estadísticas de la
 secuencia de mensajes, lo que permite el aumento de la PAOPR,
-que es una característica favorable en enlaces ópticos. De esta manera se 
+una característica favorable en enlaces ópticos. De esta manera se 
 obtiene una buena compensación entre rendimiento y complejidad requerida.
 
 \section{4-PPM}
@@ -276,7 +344,7 @@ acuerdo con el
 porcentaje requerido de atenuación.
 Uno de los esquemas sugeridos es el esquema 4-PPM y es el que se desarrolla en este trabajo.
 Gracias a estos esquemas, como la potencia media es constante, se evitan las variaciones 
-en la intensidad, pero para ello se necesita una buena sincronización.
+en la intensidad, pero para ello se necesita una buena sincronización. \cite{ppm}
 
 En el esquema 4-PPM propuesto se codifica cada pareja de bits
 por la posición de pulso en cuatro posiciones posibles como se aprecia en la figura
@@ -284,7 +352,7 @@ por la posición de pulso en cuatro posiciones posibles como se aprecia en la fi
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.5]{./figuras/opciones4PPM.png}%referencia del paper estado arte
+    \includegraphics[scale=0.4]{./figuras/opciones4PPM.png}%referencia del paper estado arte
     \caption{\small{Pareja de bits con su respectiva codificación.}}
     \label{bits4ppm}%
 \end{figure}
@@ -299,8 +367,9 @@ El esquema de señalización resultante se muestra en la figura \ref{cod4ppm}
 \end{figure}
 
 En dicha figura se verifica el funcionamiento de este esquema. En la parte superior de la 
-figura se encuentra la señal de entrada, en la que cada línea vertical separa a los bits
-de entrada, y abajo su codificación, en la que cada línea vertical separa a los bits de 
+figura se encuentra la señal de entrada, en la que cada línea vertical separa los bits
+de entrada, y justo debajo se encuentra su codificación, en la que cada línea vertical 
+separa los bits de 
 salida. Cada pareja de bits se codifica con un cuarteto por lo que este esquema sigue en 
 la línea de que se codifica al doble de frecuencia de la señal de entrada.
 
@@ -310,21 +379,29 @@ el ciclo de trabajo es del 25\% ya que se transmiten un '1' y tres '0'. Esto imp
 también sea un esquema no equiprobable pero a diferencia de los esquemas anteriores ya 
 conocemos las probabilidades de '0' y '1' sin necesidad de realizar cálculos. Por lo 
 tanto, debido al efecto del condensador del receptor óptico que simetriza la señal entre
-[-1,1V] incluyendo la componente de continua, la señal, teóricamente, se encuentra en el 
-rango [-0.5,1.5V]. Sin embargo, el receptor satura en 1V. Esta naturaleza presenta 
+[-1,1V] incluyendo la componente de continua. La señal, teóricamente, se encuentra en el 
+rango [-0.5,1.5V], sin embargo, el receptor satura en 1V. Esta naturaleza presenta 
 la ventaja de que proporciona mayor intensidad de iluminación cuando se transmite el 
 pulso y la desventaja del flickering.
 
 % Comentar si se encuentra la ber y sus prestaciones
 Se han estudiado las prestaciones para tener una idea de cómo funciona este esquema.
-El funcionamiento depende del sistema de deicisón que se aplique. La figura x muestra
+El funcionamiento depende del sistema de decisión que se aplique. La figura 
+\ref{solo_soft_ppm} muestra
 la tasa de error de bit (BER) en función de la relación señal a ruido (SNR) aplicando
-\textit{soft-decoding} como sistema de decisión y los resultados son muy buenos.
+\textit{soft-decoding} como sistema de decisión y los resultados resultan satisfactorios.
 
-% Espectro
-A continuación, se van a realizar los cálculos correspondientes para obtener la 
-densidad de potencia espectral (PSD) de la codificación propuesta.
-%%%%%%%%%%% FORMULA PSD SI LA ENCUENTRO XD, SI NO BER %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.4]{./figuras/solo_soft_ppm.pdf}
+    \caption{\small{Ber de 4PPM.}}
+    \label{solo_soft_ppm}%
+\end{figure}
+
+% % Espectro
+% A continuación, se van a realizar los cálculos correspondientes para obtener la 
+% densidad de potencia espectral (PSD) de la codificación propuesta.
+% %%%%%%%%%%% FORMULA PSD SI LA ENCUENTRO XD, SI NO BER %%%%%%%%%%%%%%%%%%%%%%%%
 
 En resumen, este esquema de codificación propuesto, aunque es el más complejo de 
 implementar debido a la dificultad de sincronización, es el más recomendable por su 
@@ -339,7 +416,7 @@ señal en situaciones muy adversas.
 Otra posibilidad planteada era la implementación de la modulación por posición de 
 pulsos inversa (Inverse PPM). Como su propio nombre indica este esquema es el inverso
 del PPM desarrollado en la sección anterior, es decir, en vez de codificar con un pulso
-de duración $ T_C = T/2^M $ se codifica con un hueco.
+de duración $ T_C = T/2^M $ se codifica con un hueco. \cite{ppm}
 
 Por lo tanto, en el esquema Inverse 4-PPM se codificaría cada pareja de bits por la 
 posición de hueco en cuatro posiciones posibles como se aprecia en la figura 
@@ -368,8 +445,9 @@ de código que se han recibido a través de canales ruidosos. Si no hay errores,
 las palabras de código encuentran una coincidencia exacta, entonces es fácil decodificar 
 los datos. Sin embargo, si no se encuentra una coincidencia, se adoptan diversos mecanismos
 de decodificación más complejos. Por este motivo,
-en este apartado, se van a describir los diferentes sistemas de decisión para interpretar 
-la señal recibida de la mejor manera posible que se han implementado. Para ello, se van a
+en este apartado, se van a describir los diferentes sistemas de decisión que se han 
+implementado para interpretar 
+la señal recibida de la mejor manera posible. Para ello, se van a
 desarrollar sus características más representativas así como sus ventajas e inconvenientes.
 
 \subsection{Hard-decoding}
@@ -379,13 +457,13 @@ de comunicación sencillos que no necesitan de alta robustez frente al ruido.
 
 Para su desarrollo es imprescindible fijar un umbral ya que este método compara los 
 valores de los pulsos recibidos con el valor del umbral fijado. El valor del umbral se 
-determina en la mitad del pulso. Por lo que si el valor del dato es mayor que el valor 
+determina en la mitad del pulso por lo que, si el valor del dato es mayor que el valor 
 del umbral se interpreta como un '1' y, de lo contrario, se interpreta como un '0'.
 La decodificación se realiza siempre igual independientemente de lo cerca que se encuentre 
-el valor del dato del umbral.
+el valor del dato del umbral. \cite{hard}
 
 Es por este motivo que este sistema de decisión es muy poco robusto frente a picos de 
-ruido y frente a la inlcusión de componente de continua que pueda modificar y mover 
+ruido y frente a la inclusión de componente continua que pueda modificar y mover 
 la amplitud de la señal, provocando que el umbral no se encuentre en la mitad que 
 se preveía.
 
@@ -394,12 +472,12 @@ los tres esquemas de codificación desarrollados con el método \textit{hard-dec
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.65]{./figuras/Hard.pdf}
+    \includegraphics[scale=0.52]{./figuras/Hard.pdf}
     \caption{\small{Sistema \textit{Hard-decoding}.}}
     \label{hard-decoding}%
 \end{figure}
 
-En la figura se puede comprobar como, con este sistema, los tres esquemas de señalización 
+En la figura se puede comprobar cómo, con este sistema, los tres esquemas de señalización 
 funcionan esencialmente igual y que, con relaciones señal a ruido bajas (o negativas), la 
 tasa de error de bit es alta y no sería aceptable para cualquier sistema de comunicación
 por lo que este sistema sólo es apto para comunicaciones directas y cercanas en las que 
@@ -409,33 +487,32 @@ Tal y como se ha explicado en este apartado, el sistema \textit{hard-decoding} e
 un sistema sencillo y rápido de implementar, sin embargo, no es 
 óptimo ni útil para afrontar comunicaciones con un poco de ruido. Por esto, este sistema
 no se aplica prácticamente nunca por lo que 
-se desarrolla otra técnica de decisión como \textit{soft-decoding} que mejora notablemente
+se ha desarrollado \textit{soft-decoding}, otra técnica de decisión que mejora notablemente
 las prestaciones.
 
 \subsection{Soft-decoding}
-Tras el desarrollo de \textit{hard-decoding} y de haber visto que sus prestaciones no son 
-buenas se ha implementado el sistema de decisión \textit{soft-decoding}. 
 Este sistema es más complejo que el anterior y por ende, sus prestaciones son mejores y 
 es el que se aplica en la mayoría de sistemas de comunicaciones para asegurar una 
 correcta recepción de la señal en la mayoría de situaciones y entornos.
 
 El sistema \textit{soft-decoding} opera con un rango de valores, en nuestro caso con 
-parejas de bits para ver a que opción se parece más la pareja recibida. Este sistema 
+parejas de bits para ver que opción se parece más la pareja recibida. Este sistema 
 trabaja con los valores en crudo de la señal para tener mejores estimaciones de la señal
 de entrada real. 
 
 Este sistema se basa en el cálculo de la distancia euclídea 
-para saber a cuál de las opciones, que se predefinen en el sistema de 
-comunicaciones, se parece más la señal recibida. La distancia euclídea es la 
+que se define como la
 distancia 'ordinaria' entre dos puntos, la cual se deduce a partir del teorema de 
 Pitágoras. En este caso, al usar parejas de bits, es equivalente a calcular la distancia
 euclídea entre dos puntos en un espacio bidimensional, aunque es simple ampliarla cuando se 
 usen mayor número de bits como opciones tal y como se explicará en el apartado 
-\textit{Algoritmo de Viterbi}. Para el cálculo se aplica la siguiente fórmula:
+algoritmo de Viterbi. Para el cálculo se aplica la siguiente fórmula,
+siendo $P_1$ el punto de la tensión recibida y $P_2$ el punto de la tensión ideal 
+o esperada. \cite{euclidean}
 %%%%%%%%%%%%%%%%%%% FORMULA DISTANCIA EUCLÍDEA %%%%%%%%%%%%%%%%%%%%%%%%%%
 \[ d_E(P_1,P_2) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \] 
-Siendo $P_1$ el punto de la tensión recibida y $P_2$ el punto de la tensión ideal 
-o esperada. Por ejemplo, para pulsos alternos, este cálculo se realizaría para las 
+
+Por ejemplo, para pulsos alternos, este cálculo se realizaría para las 
 tres posibilidades de tensión esperada en voltios (-1,-1), (-1,1) y (1,-1) con la 
 tensión recibida por el enlace. Una vez se ha hecho el cálculo para todas las opciones
 la opción elegida será la que tenga una distancia menor con la recibida.
@@ -450,10 +527,10 @@ tanto para pulsos alternos como para cancelación de pulsos la opción de
 '11' no está contemplada por lo que ambas solo tienen tres opciones de parejas de bits. 
 Esto ya mejora respecto al funcionamiento de \textit{hard-decoding} ya que por umbral se 
 podría dar esta pareja y sería un error el 100\% de las veces mientras que aplicando 
-\textit{soft-decoding} puede ser corregido calculando a cual de las tres opciones 
-que si tienen posibilidad se parece más.
+\textit{soft-decoding} puede ser corregido calculando a cuál de las tres opciones 
+se parece más.
 
-El siguiente es que para 4-ppm se tendría que ampliar la fórmula ya que se trabaja
+El siguiente es que para 4-PPM se tendría que ampliar la fórmula ya que se trabaja
 con 4 bits. Sin embargo, esta codificación tiene la característica de que las distancias
 entre las cuatro opciones posibles son tan lejanas que,
 hablando en términos geométricos, representan las diagonales
@@ -463,7 +540,7 @@ distancias euclídeas sean máximas y se pueda aplicar el método de comparació
 Para implementarlo hay que buscar el bit más grande dentro del cuarteto
 recibido y para ello se comparan los cuatro bits en crudo. El bit mayor se interpreta 
 como '1' y los otros tres como '0'. Este método es especialmente eficaz frente a 
-inlcusiones de componentes de continua que provoquen que la señal recibida aumente sus 
+inclusiones de componentes de continua que provoquen que la señal recibida aumente sus 
 valores.
 
 Seguidamente se muestra la figura \ref{soft-decoding}, que compara el funcionamiento de 
@@ -471,7 +548,7 @@ los tres esquemas de codificación desarrollados con el método \textit{soft-dec
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.5]{./figuras/Soft.pdf}
+    \includegraphics[scale=0.38]{./figuras/Soft.pdf}
     \caption{\small{Sistema \textit{Soft-decoding}.}}
     \label{soft-decoding}%
 \end{figure}
@@ -481,7 +558,7 @@ funcionamiento parecido al contar con las mismas opciones y, lo más importante,
 el funcionamiento de 4-ppm es mejor. Esto se debe, como se ha explicado anteriormente,
 a que las distancias entre los puntos son las diagonales. Por lo tanto,
 este método incrementa el potencial del 
-uso de \textit{soft-decoding} y su funcionamiento es muy óptimo. 
+uso de \textit{soft-decoding} y su funcionamiento es muy bueno. 
 
 %Conclusión
 Finalmente, se concluye que, mientras que \textit{hard-decoding} opera con un solo bit de 
@@ -489,37 +566,36 @@ información, \textit{soft-decoding} puede tomar un rango de valores de entrada.
 información adicional es fundamental para tener mejores estimaciones de los datos
 originales.
 
-En la línea de aumentar el rango de valores de entrada se trabaja con juntar 
-\textit{soft-decoding} con el Algoritmo de Viterbi.
+En la línea de aumentar el rango de valores de entrada se trabaja con realizar 
+\textit{soft-decoding} aplicando el algoritmo de Viterbi.
 
 
 \subsection{Algoritmo de Viterbi}
 El algoritmo de Viterbi es un algoritmo de programación dinámica que permite hallar 
 la secuencia más probable (el llamado camino de Viterbi) que produce 
 una secuencia observada, especialmente en el contexto de fuentes de información 
-de Márkov.
+de Márkov. \cite{viterbi}
 
 En el trabajo se aplica el algoritmo de Viterbi en función del pasado, es decir, 
-otorgandole memoria al sistema. Esto se usa para ampliar el rango de valores posibles, 
-pero sobre todo, para que el número de opciones descartadas sea relevante en relación a
+otorgándole memoria al sistema. Esto se usa para ampliar el rango de valores posibles, 
+pero, sobre todo, para que el número de opciones descartadas sea relevante en relación a
 las opciones totales.
 
 % Comentar que Viterbi va ligado a soft-decoding
 Este sistema de decisión no es independiente, es decir, cuando se le otorga dicha 
 memoria al sistema y se descartan las opciones no probables hay que elegir entre las
 opciones que sí son posibles. Esta elección se realiza con el método 
-\textit{soft-decoding} ampliando la fórmula bidimensional a el número de puntos que 
-nos proporcine la memoria. Por lo tanto, se puede pensar que cuantos más pasados 
+\textit{soft-decoding} ampliando la fórmula bidimensional al número de puntos que 
+nos proporcione la memoria. Por lo tanto, se puede pensar que cuantos más pasados 
 se tengan más robusto será el sistema. Sin embargo, mirar al pasado requiere de mucha
 complejidad y de retardos de tiempo a la hora de calcular la distancia euclídea con 
 tantos puntos. Por ello, hay que encontrar una solución de compromiso para que la mejora
 sea significante y la complejidad no sea excesiva. En este trabajo vamos a quedarnos 
 con un pasado, es decir, con cuatro bits.
 
-En la aplicación de este método en nuestros sistemas de señalización hay bastantes 
-diferencias. Lo más importante es que no es útil aplicar este algoritmo para 
-el esquema 4-PPM porque mirar el cuarteto anterior no tiene ningún impacto en el 
-cuarteto actual ya que esta codificación no presenta restricciones entre la 
+Un aspecto a destacar es que no es útil aplicar este algoritmo para 
+el esquema 4-PPM porque mirar el pasado anterior no tiene ningún impacto en el 
+actual ya que esta codificación no presenta restricciones entre la 
 transmisión de cuartetos.
 
 En el esquema pulsos alternos la aplicación del algoritmo de Viterbi si tiene sentido,
@@ -529,7 +605,7 @@ robustez que se presenta no es muy significativa respecto al método \textit{sof
 sin Viterbi del apartado anterior. La única restricción que presenta este esquema es que 
 los pulsos deben ir alternando su posición. Por lo tanto,
 las opciones descartadas son las dos que no presentan dicha 
-la alternancia de pulsos ('0101' y '1010')
+alternancia de pulsos ('0101' y '1010').
 
 Para el esquema cancelación de pulsos usar el algoritmo de Viterbi es más eficaz que 
 en el caso anterior. Esto es debido a que, en este caso, se descartan cuatro opciones de 
@@ -539,7 +615,7 @@ haber más de un pulso seguido ya que entre pulsos tiene que haber silencio.
 Por lo tanto, las opciones descartadas son '0101', '0110', '1001' y '1010'.
 
 En la figura \ref{viterbi} se muestra el funcionamiento de pulsos alternos y de cancelación de pulsos
-con este método de decicisón.
+con este método de decisión.
 
 \begin{figure}[ht]
     \centering
@@ -549,22 +625,22 @@ con este método de decicisón.
 \end{figure}
 
 Al analizar la gráfica se contempla que ambos esquemas mejoran respecto a la aplicación
-de \textit{soft-decoding} sin Viterbi. Aunque tal y como se desarrollo anteriormente,
+de \textit{soft-decoding} sin Viterbi. Aunque tal y como se desarrolló anteriormente,
 el uso de este algoritmo tiene más efecto en el esquema cancelación de pulsos llegando
 a cambiar las tornas en cuanto a cuál de los dos es más robusto frente al ruido.
 
 
 \subsection{Comparativa entre los sistemas de decisión}
-A continuación, se va a comparar la tasa de error de bit (BER) de los distintos esquemas de decisión, para cada esquema 
-de codificación, en función de la relación señal a ruido (SNR), que varia con la distancia (disminuyendo la 
-amplitud de la señal), para verificar la mejora que se produce entre cada sistema de decisión.
+A continuación, se va a comparar la tasa de error de bit (BER), de los distintos esquemas de decisión para cada esquema 
+de codificación, en función de la relación señal a ruido (SNR) que varía con la distancia (disminuyendo la 
+amplitud de la señal) para verificar la mejora que se produce entre cada sistema de decisión.
 
 La figura \ref{alternos} muestra una comparativa de los esquemas bajo 
 la codificación de pulsos alternos.
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.6]{./figuras/alternos.pdf}
+    \includegraphics[scale=0.7]{./figuras/alternos.pdf}
     \caption{\small{Sistemas de decisión con pulsos alternos.}}
     \label{alternos}%
 \end{figure}
@@ -573,49 +649,52 @@ Se observa que para pulsos alternos, la principal mejora se nota con la aplicaci
 de soft-decoding o Viterbi. El funcionamiento de Viterbi es levemente mejor porque 
 aplicando Viterbi con un pasado solo se descartan dos opciones de nueve posibles por lo 
 que no sale a relucir su máximo potencial. 
-
+\newpage
 La figura \ref{cancelacion} muestra una comparativa de los esquemas bajo 
 la codificación de cancelación de pulsos.
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.6]{./figuras/cancelacion.pdf}
+    \includegraphics[scale=0.75]{./figuras/cancelacion.pdf}
     \caption{\small{Sistemas de decisión con cancelación de pulsos.}}
     \label{cancelacion}%
 \end{figure}
 
-Se comprueba que para cancelación de pulsos la aplicación del algoritmo de Viterbi 
-es muy importante ya que, como se comentó en el apartado anterior, se descartan más 
-opciones al mirar un pasado, concretamente se descartan cuatro de nueve opciones.
-
+Se comprueba que para cancelación de pulsos el uso del algoritmo de Viterbi 
+es fundamental ya que, como se comentó en el apartado anterior, se descartan muchas 
+opciones al mirar un pasado, concretamente cuatro de nueve opciones.
+\newpage
 La figura \ref{4ppm} muestra una comparativa de los esquemas bajo 
 la codificación 4-PPM.
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.6]{./figuras/4ppm.pdf}
+    \includegraphics[scale=0.75]{./figuras/4ppm.pdf}
     \caption{\small{Sistemas de decisión con 4-PPM.}}
     \label{4ppm}%
 \end{figure}
 
 Se verifica que para 4ppm el uso de soft-decoding implica una gran mejora debido a 
 la posibilidad de buscar el bit mayor ya que solo se recibe un '1' por cuarteto de bits.
-
+\newpage
 \section{Conclusiones}
 Finalmente, para concluir este apartado se muestra una gráfica comparativa de los 
-tres esquemas de señalización con el sistema de decisón que mejores prestaciones ofrece
+tres esquemas de señalización con el sistema de decisión que mejores prestaciones ofrece
 a cada uno de ellos.
 
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.6]{./figuras/Comparativa.pdf}
-    \caption{\small{Comparativa de los esquemas de codificación con su mejor sistema de deicisón.}}
+    \caption{\small{Comparativa de los esquemas de codificación con su mejor sistema de decisión.}}
     \label{comparativa}%
 \end{figure}
 
-Por tanto el mejor esquema de codificación en cuanto a robustez es 4-PPM con 
-\text{soft-decoding}.
-
-[TERMINAR DE CERRAR EL CAPÍTULO]
+Por tanto, el mejor esquema de codificación en cuanto a robustez es 4-PPM con 
+\text{soft-decoding}. Se verifica que independientemente del esquema de codificación 
+empleado el sistema de decisión \textit{hard-decoding} no es óptimo en ningún caso y 
+que la ventaja de 4-PPM respecto al resto se debe a la posibilidad de decidir a través
+de la comparativa de bits ya que las distancias entre las opciones son máximas. Así que,
+aunque no se pueda aplicar el algoritmo de Viterbi a esta codificación sigue siendo 
+superior a las otras dos.
 
 \chapterend{}

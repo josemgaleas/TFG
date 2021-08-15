@@ -2,18 +2,66 @@
 
 \chapterbeginx{Conclusiones y líneas futuras}
 
-Después de todo el desarrollo del proyecto, es pertinente hacer una
-valoración final del mismo, respecto a los resultados obtenidos, las
-expectativas o el resultado de la experiencia acumulada.
+% Después de todo el desarrollo del proyecto, es pertinente hacer una
+% valoración final del mismo, respecto a los resultados obtenidos, las
+% expectativas o el resultado de la experiencia acumulada.
 
-Esta sección es indispensable y en ella se ha de reflejar, lo más
-claramente posible, las aportaciones del trabajo con unas conclusiones
-finales.
+% Esta sección es indispensable y en ella se ha de reflejar, lo más
+% claramente posible, las aportaciones del trabajo con unas conclusiones
+% finales.
 
-Además, considerando también el estado de la técnica, se deben indicar
-las posibles líneas futuras de trabajo, proponer otros puntos de vista
-o cualquier otra sugerencia como postámbulo del presente trabajo, para
-ser considerada por el lector o el tribunal evaluador.
+% Además, considerando también el estado de la técnica, se deben indicar
+% las posibles líneas futuras de trabajo, proponer otros puntos de vista
+% o cualquier otra sugerencia como postámbulo del presente trabajo, para
+% ser considerada por el lector o el tribunal evaluador.
 
+En este último capítulo se van a exponer algunas conclusiones y líneas futuras que se 
+han pensado que se podrían implementar después de la realización del proyecto.
+
+Tras la realización de este trabajo se ha comprendido en profundidad los fundamentos 
+de los esquemas de señalización para comunicaciones digitales además del gran impacto
+que supone la inclusión de los sistemas de decisión a la hora de interpretar y 
+decodificar la señal. A su vez, se han aumentado las capacidades y conocimientos a la 
+hora de trabajar con dispositivos FPGA tanto a nivel hardware como software siendo 
+las más relevantes el conocimiento de la estructura interna de estos dispositivos y
+su entorno de programación. También se ha mejorado en el uso y en la comprensión de 
+los dispositivos conversores y de los transceptores ópticos para realizar comunicaciones
+ópticas.
+
+Sin duda, el mayor reto ha sido la programación de la FPGA ya 
+que se ha tenido que cambiar la visión de programación a la que nos habituamos durante 
+el Grado porque para programar la FPGA se utiliza
+un lenguaje de descripción hardware, en concreto, VHDL. 
+
+Como conclusión, se puede decir que el trabajo realizado ha sido satisfactorio con el 
+objetivo planteado siendo este dotar de mayor robustez al sistema mediante la implementación
+de esquemas de codificación junto con varios sistemas de decisión. A decir verdad, los 
+resultados han superado las espectativas planteadas ya que se han conseguido realizar
+comunicaciones a 60 metros de distancia cuando en el sistema inicial era de 2-3 metros por
+lo que puede ser integrado en vehículos para ser testeado.
+
+\newpage
+Hay diversas líneas futuras que se pueden incorporar al sistema para completar 
+y mejorar su funcionalidad. Estas se van a comentar a continuación:
+
+\begin{itemize}
+    \item Diseñar e implementar otros esquemas de señalización ampliando el área a 
+    modulaciones en frecuencia, de fase o de amplitud.
+    \item Estudiar la rentabilidad de aumentar el algoritmo de Viterbi a costa de la 
+    complejidad e intentar disminuir los retrasos en los cálculos de las distancias 
+    euclídeas. Además, investigar si es ventajoso cambiar la versión de la Red Pitaya por 
+    otra más potente.
+    \item Diseñar un filtro paso alto a la entrada
+    ya que una vez recibida la señal es conveniente
+    calcular que filtro paso alto es el adecuado para mejorar la calidad de
+    la señal recibida.
+    \item Desarrollar un interfaz para visualizar la información descrita de una manera
+    más representativa e intuitiva lo que puede ser ventajoso a la hora de implementarlo
+    en un vehículo.
+    \item Implementar una aplicación móvil que permita la transmisión y recepción de datos
+    ya que hoy en día, el uso de dispositivos móviles se ha incrementado mucho, 
+    tanto que casi toda la población usa uno, por lo que sería una gran ventaja para 
+    aplicaciones futuras.
+\end{itemize}
 
 \chapterend

@@ -1,40 +1,68 @@
 \babel@toc {spanish}{}
-\addvspace {10\p@ }
-\contentsline {xchapter}{Índice}{\es@scroman {xiii}}{chapter*.3}%
 \contentsline {xpart}{Introducción}{3}{part.1}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{Introducción y visión general}{3}{chapter.1}%
-\contentsline {xpart}{Desarrollo del proyecto}{9}{part.2}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces \small {Número y tasa de muertes por accidentes de tráfico por 100 mil habitantes. Fuente: [2] }\relax }}{5}{figure.caption.6}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces \small {Distribución de muertes por tipos de usuarios en las carreteras. Fuente: [2] }\relax }}{5}{figure.caption.7}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces \small {Gráfica del aumento de tráficos de datos en el mundo expresado en exabytes por mes. Fuente [4].}\relax }}{6}{figure.caption.8}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces \small {Espectro de frecuencia VLC. Fuente [4]}\relax }}{8}{figure.caption.9}%
+\contentsline {xpart}{Desarrollo del proyecto}{15}{part.2}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Tecnología empleada}{9}{chapter.2}%
+\contentsline {xchapter}{Tecnología empleada}{15}{chapter.2}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces \small {Red Pitaya.}\relax }}{16}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces \small {Componentes Red Pitaya. Fuente[8]}\relax }}{17}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces \small {Interfaz del programa Vivado.}\relax }}{19}{figure.caption.12}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Sistema de comunicación}{11}{chapter.3}%
-\contentsline {figure}{\numberline {3.1}{\ignorespaces \small {División en frecuencia para los tres tipos de capas PHY. Fuente [X].}\relax }}{12}{figure.caption.7}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces \small {Sistema de transmisión-recepción completo.}\relax }}{14}{figure.caption.9}%
+\contentsline {xchapter}{Sistema de comunicación}{21}{chapter.3}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces \small {División en frecuencia para los tres tipos de capas PHY. Fuente [6].}\relax }}{22}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces \small {Sistema de transmisión-recepción completo.}\relax }}{24}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces \small {Transmisor óptico.}\relax }}{25}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Parte frontal del faro.\relax }}{25}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Parte trasera del faro\relax }}{25}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces \small {Transmisor óptico.}\relax }}{26}{figure.caption.18}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Fundamentos teóricos}{17}{chapter.4}%
-\contentsline {figure}{\numberline {4.1}{\ignorespaces \small {Diagrama de Trellis de la codificación pulsos alternos.}\relax }}{19}{figure.caption.10}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces \small {Codificación con pulsos alternos.}\relax }}{20}{figure.caption.11}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces \small {Potencia espectral frente a frecuencia normalizada.}\relax }}{21}{figure.caption.12}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces \small {Diagrama de Trellis de la codificación cancelación de pulsos.}\relax }}{22}{figure.caption.13}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces \small {Codificación con cancelación de pulsos.}\relax }}{23}{figure.caption.14}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces \small {Potencia espectral frente a frecuencia normalizada.}\relax }}{24}{figure.caption.15}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces \small {Pareja de bits con su respectiva codificación.}\relax }}{25}{figure.caption.16}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces \small {Codificación 4-PPM.}\relax }}{25}{figure.caption.17}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces \small {Pareja de bits con su respectiva codificación.}\relax }}{27}{figure.caption.18}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces \small {Sistema \textit {Hard-decoding}.}\relax }}{28}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces \small {Sistema \textit {Soft-decoding}.}\relax }}{30}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces \small {Algoritmo de Viterbi.}\relax }}{32}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces \small {Sistemas de decisión con pulsos alternos.}\relax }}{33}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces \small {Sistemas de decisión con cancelación de pulsos.}\relax }}{34}{figure.caption.23}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces \small {Sistemas de decisión con 4-PPM.}\relax }}{35}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces \small {Comparativa de los esquemas de codificación con su mejor sistema de deicisón.}\relax }}{36}{figure.caption.25}%
+\contentsline {xchapter}{Fundamentos teóricos}{29}{chapter.4}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \small {Diagrama de Trellis de la codificación pulsos alternos.}\relax }}{31}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \small {Codificación con pulsos alternos.}\relax }}{31}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces \small {BER de pulsos alternos.}\relax }}{33}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces \small {Potencia espectral frente a frecuencia normalizada. Fuente: [12]}\relax }}{33}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces \small {Diagrama de Trellis de la codificación cancelación de pulsos.}\relax }}{35}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces \small {Codificación con cancelación de pulsos.}\relax }}{35}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces \small {BER de cancelación de pulsos.}\relax }}{37}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces \small {Potencia espectral frente a frecuencia normalizada. Fuente: [13]}\relax }}{38}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces \small {Pareja de bits con su respectiva codificación.}\relax }}{39}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces \small {Codificación 4-PPM.}\relax }}{39}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces \small {Ber de 4PPM.}\relax }}{40}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces \small {Pareja de bits con su respectiva codificación.}\relax }}{41}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces \small {Sistema \textit {Hard-decoding}.}\relax }}{42}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces \small {Sistema \textit {Soft-decoding}.}\relax }}{44}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces \small {Algoritmo de Viterbi.}\relax }}{46}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces \small {Sistemas de decisión con pulsos alternos.}\relax }}{47}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces \small {Sistemas de decisión con cancelación de pulsos.}\relax }}{48}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces \small {Sistemas de decisión con 4-PPM.}\relax }}{49}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces \small {Comparativa de los esquemas de codificación con su mejor sistema de decisión.}\relax }}{50}{figure.caption.37}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Implementación}{37}{chapter.5}%
+\contentsline {xchapter}{Implementación}{51}{chapter.5}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces \small {Diagrama de bloques general del sistema completo.}\relax }}{52}{figure.caption.38}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces \small {Diagrama de flujo de la transmisión de datos}\relax }}{53}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces \small {Diagrama de flujo de la recepción de datos}\relax }}{53}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces \small {Selector de codificación.}\relax }}{54}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces \small {Cuenta de sincronismo.}\relax }}{55}{figure.caption.41}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces \small {Simulación del transmisor con cancelación de pulsos.}\relax }}{56}{figure.caption.42}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces \small {Simulación \textit {hard-decoding} con 4PPM.}\relax }}{58}{figure.caption.43}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces \small {Diagrama de flujo.}\relax }}{59}{figure.caption.44}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces \small {Simulación \textit {soft-decoding} con 4PPM.}\relax }}{60}{figure.caption.45}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces \small {Simulación algoritmo de Viterbi con cancelación de pulsos.}\relax }}{61}{figure.caption.46}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Pruebas}{39}{chapter.6}%
-\contentsline {xpart}{Parte tercera.}{43}{part.3}%
-\contentsline {xpart}{Apéndices}{47}{part.4}%
+\contentsline {xchapter}{Pruebas}{63}{chapter.6}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces \small {Sistema de transmisión-recepción completo.}\relax }}{63}{figure.caption.47}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces \small {Sistema global para la transmisión-recepción.}\relax }}{64}{figure.caption.48}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces \small {Recepción correcta de paquetes.}\relax }}{65}{figure.caption.49}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces \small {Recepción errónea de paquetes.}\relax }}{65}{figure.caption.49}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces \small {Terminal de recepción.}\relax }}{65}{figure.caption.50}%
+\contentsline {xpart}{Parte tercera.}{71}{part.3}%
+\contentsline {xpart}{Apéndices}{75}{part.4}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Manual de uso}{47}{appendix.Alph1}%
+\contentsline {xchapter}{Manual de uso de la aplicación funcional}{75}{appendix.Alph1}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces \small {Conexión entre los conversores de la Red Pitaya para el prototipo 1.}\relax }}{76}{figure.caption.57}%
 \contentsfinish 

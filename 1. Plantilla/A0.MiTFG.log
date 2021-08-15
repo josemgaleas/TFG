@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.7.15)  2 AUG 2021 18:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.7.15)  15 AUG 2021 20:06
 entering extended mode
 **"d:/Users/Jose/Documents/TELECO/4TELECO/0TFG_LATEX/TFG/1. Plantilla/A0.MiTFG.tex"
 (d:/Users/Jose/Documents/TELECO/4TELECO/0TFG_LATEX/TFG/1. Plantilla/A0.MiTFG.tex
@@ -785,10 +785,6 @@ Package minitoc Info: I0033
 (minitoc)             Writing A0.MiTFG.mtc13.
 \openout4 = `A0.MiTFG.mtc13'.
 
-Package minitoc Info: I0033
-(minitoc)             Writing A0.MiTFG.mtc14.
-\openout4 = `A0.MiTFG.mtc14'.
-
 ) (A3.Preambulo.entornos.tex
 \parskipenv=\skip77
 \parindentenv=\skip78
@@ -931,19 +927,19 @@ Package minitoc(hints) Warning: W0023
 
 
 ]) (B2a.ResumenTFG-ESP.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
  (D:\Miktex\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
  (D:\Miktex\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 51.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 55.
  (D:\Miktex\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 24--52
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 26--56
 []$[]$ 
  []
 
@@ -951,94 +947,102 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 24--52
 
 
 ]) (B2b.ResumenTFG-ENG.tex
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 23--51
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 24--54
 []$[]$ 
  []
 
 [5] [6
 
 
-]) (B3a.Dedicatoria.tex
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 23.
-
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 14--26
-[]$[]$ 
- []
-
-[7
+]) (B3b.Agradecimientos.tex [7
 
 ] [8
 
+]) (B4.Acronimos.tex
 
-]) (B3b.Agradecimientos.tex [9
+LaTeX Warning: Hyper reference `acro:ETSIT' on page \es@scroman {ix} undefined on input line 16.
+
+
+LaTeX Warning: Hyper reference `acro:ETSIT' on page \es@scroman {ix} undefined on input line 16.
+
+
+LaTeX Warning: Hyper reference `acro:PFC' on page \es@scroman {ix} undefined on input line 17.
+
+
+LaTeX Warning: Hyper reference `acro:PFC' on page \es@scroman {ix} undefined on input line 17.
+
+
+LaTeX Warning: Hyper reference `acro:TFG' on page \es@scroman {ix} undefined on input line 18.
+
+
+LaTeX Warning: Hyper reference `acro:TFG' on page \es@scroman {ix} undefined on input line 18.
+
+
+LaTeX Warning: Hyper reference `acro:TFM' on page \es@scroman {ix} undefined on input line 19.
+
+
+LaTeX Warning: Hyper reference `acro:TFM' on page \es@scroman {ix} undefined on input line 19.
+
+
+LaTeX Warning: Hyper reference `acro:UMA' on page \es@scroman {ix} undefined on input line 20.
+
+
+LaTeX Warning: Hyper reference `acro:UMA' on page \es@scroman {ix} undefined on input line 20.
+
+
+LaTeX Warning: Hyper reference `acro:OOK' on page \es@scroman {ix} undefined on input line 21.
+
+
+LaTeX Warning: Hyper reference `acro:OOK' on page \es@scroman {ix} undefined on input line 21.
+
+
+LaTeX Warning: Hyper reference `acro:SoC' on page \es@scroman {ix} undefined on input line 22.
+
+
+LaTeX Warning: Hyper reference `acro:SoC' on page \es@scroman {ix} undefined on input line 22.
+
+
+LaTeX Warning: Hyper reference `acro:FPGA' on page \es@scroman {ix} undefined on input line 23.
+
+
+LaTeX Warning: Hyper reference `acro:FPGA' on page \es@scroman {ix} undefined on input line 23.
+
+
+LaTeX Warning: Hyper reference `acro:PAOPR' on page \es@scroman {ix} undefined on input line 24.
+
+
+LaTeX Warning: Hyper reference `acro:PAOPR' on page \es@scroman {ix} undefined on input line 24.
+
+[9
+
+
 
 ] [10
 
-]) (B4.Acronimos.tex
-
-LaTeX Warning: Hyper reference `acro:ETSIT' on page \es@scroman {xi} undefined on input line 16.
-
-
-LaTeX Warning: Hyper reference `acro:ETSIT' on page \es@scroman {xi} undefined on input line 16.
-
-
-LaTeX Warning: Hyper reference `acro:PFC' on page \es@scroman {xi} undefined on input line 17.
-
-
-LaTeX Warning: Hyper reference `acro:PFC' on page \es@scroman {xi} undefined on input line 17.
-
-
-LaTeX Warning: Hyper reference `acro:TFG' on page \es@scroman {xi} undefined on input line 18.
-
-
-LaTeX Warning: Hyper reference `acro:TFG' on page \es@scroman {xi} undefined on input line 18.
-
-
-LaTeX Warning: Hyper reference `acro:TFM' on page \es@scroman {xi} undefined on input line 19.
-
-
-LaTeX Warning: Hyper reference `acro:TFM' on page \es@scroman {xi} undefined on input line 19.
-
-
-LaTeX Warning: Hyper reference `acro:UMA' on page \es@scroman {xi} undefined on input line 20.
-
-
-LaTeX Warning: Hyper reference `acro:UMA' on page \es@scroman {xi} undefined on input line 20.
-
-[11
-
-
-
-] [12
-
-]) (B4.TableOfContents.tex [13
-
-] [14
-
-] (A0.MiTFG.toc
+]) (B4.TableOfContents.tex (A0.MiTFG.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [15] [16])
+ [11
+
+] [12])
 \tf@toc=\write7
 \openout7 = `A0.MiTFG.toc'.
 
-LaTeX Info: Redefining \. on input line 27.
-LaTeX Info: Redefining \% on input line 27.
- [17] [18
+ [13] [14
 
 ]) (B4.TableOfFigures.tex (A0.MiTFG.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
+ [15
+
+]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 25.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 37.
 )
 \tf@lof=\write8
 \openout8 = `A0.MiTFG.lof'.
 
- [19
-
-] [20
+ [16] [17] [18
 
 ]) (B4.TableOfTables.tex (A0.MiTFG.lot
 LaTeX Info: Redefining \. on input line 1.
@@ -1047,9 +1051,9 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lot=\write9
 \openout9 = `A0.MiTFG.lot'.
 
- [21
+ [19
 
-] [22
+] [20
 
 ]) [1
 
@@ -1060,214 +1064,451 @@ Cap\'{\i }tulo 1.
 
 \openout4 = `A0.MiTFG.mtc'.
 
-(A0.MiTFG.mtc6) [3
+(A0.MiTFG.mtc5) [3
 
-] [4]
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
- [5] [6
+]
+<./figuras/muertes_accidentes.png, id=525, 336.65775pt x 147.55125pt>
+File: ./figuras/muertes_accidentes.png Graphic file (type png)
+<use ./figuras/muertes_accidentes.png>
+Package pdftex.def Info: ./figuras/muertes_accidentes.png  used on input line 41.
+(pdftex.def)             Requested size: 286.16042pt x 125.41913pt.
+<./figuras/distribucion.png, id=527, 554.67226pt x 359.54324pt>
+File: ./figuras/distribucion.png Graphic file (type png)
+<use ./figuras/distribucion.png>
+Package pdftex.def Info: ./figuras/distribucion.png  used on input line 48.
+(pdftex.def)             Requested size: 318.93407pt x 206.73575pt.
 
-]) [7
 
-] [8] (Capitulo02.tex
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4]
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
+ [5 <./figuras/muertes_accidentes.png> <./figuras/distribucion.png>]
+<./figuras/data_traffic.png, id=541, 551.05875pt x 282.45525pt>
+File: ./figuras/data_traffic.png Graphic file (type png)
+<use ./figuras/data_traffic.png>
+Package pdftex.def Info: ./figuras/data_traffic.png  used on input line 64.
+(pdftex.def)             Requested size: 385.73848pt x 197.71732pt.
+ [6 <./figuras/data_traffic.png>]
+<./figuras/espectro.png, id=551, 500.46976pt x 199.34476pt>
+File: ./figuras/espectro.png Graphic file (type png)
+<use ./figuras/espectro.png>
+Package pdftex.def Info: ./figuras/espectro.png  used on input line 88.
+(pdftex.def)             Requested size: 350.32643pt x 139.54036pt.
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
+ [7]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 98.
+ [8 <./figuras/espectro.png>]
+LaTeX Info: Redefining \. on input line 131.
+LaTeX Info: Redefining \% on input line 131.
+ [9] [10]
+LaTeX Info: Redefining \. on input line 183.
+LaTeX Info: Redefining \% on input line 183.
+ [11] [12
+
+]) [13
+
+] [14] (Capitulo02.tex
 Cap\'{\i }tulo 2.
 \openout4 = `A0.MiTFG.mtc'.
 
 \openout4 = `A0.MiTFG.mtc'.
 
-(A0.MiTFG.mtc7) [9
+(A0.MiTFG.mtc6) [15
 
-] [10]) (Capitulo03.tex
+]
+<./figuras/pitaya.png, id=600, 854.59274pt x 513.71925pt>
+File: ./figuras/pitaya.png Graphic file (type png)
+<use ./figuras/pitaya.png>
+Package pdftex.def Info: ./figuras/pitaya.png  used on input line 60.
+(pdftex.def)             Requested size: 213.64766pt x 128.42949pt.
+ [16 <./figuras/pitaya.png>]
+<./figuras/comp_pitaya.png, id=607, 367.3725pt x 178.266pt>
+File: ./figuras/comp_pitaya.png Graphic file (type png)
+<use ./figuras/comp_pitaya.png>
+Package pdftex.def Info: ./figuras/comp_pitaya.png  used on input line 81.
+(pdftex.def)             Requested size: 293.89838pt x 142.61298pt.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 102.
+ (D:\Miktex\tex/latex/psnfss\ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+LaTeX Info: Redefining \. on input line 117.
+LaTeX Info: Redefining \% on input line 117.
+ [17 <./figuras/comp_pitaya.png>]
+<./figuras/vivadoo.png, id=619, 1152.10425pt x 571.53525pt>
+File: ./figuras/vivadoo.png Graphic file (type png)
+<use ./figuras/vivadoo.png>
+Package pdftex.def Info: ./figuras/vivadoo.png  used on input line 145.
+(pdftex.def)             Requested size: 426.2719pt x 211.46472pt.
+ [18]
+LaTeX Info: Redefining \. on input line 176.
+LaTeX Info: Redefining \% on input line 176.
+ [19 <./figuras/vivadoo.png>] [20
+
+]) (Capitulo03.tex
 Cap\'{\i }tulo 3.
 \openout4 = `A0.MiTFG.mtc'.
 
 \openout4 = `A0.MiTFG.mtc'.
 
-(A0.MiTFG.mtc8) [11
-
+(A0.MiTFG.mtc7) [21
 
 ]
-<./figuras/capasEstandar.png, id=459, 1086.30844pt x 390.70969pt>
+<./figuras/capasEstandar.png, id=647, 1086.30844pt x 390.70969pt>
 File: ./figuras/capasEstandar.png Graphic file (type png)
 <use ./figuras/capasEstandar.png>
 Package pdftex.def Info: ./figuras/capasEstandar.png  used on input line 56.
 (pdftex.def)             Requested size: 380.21365pt x 136.75043pt.
- [12 <./figuras/capasEstandar.png>]
-<./figuras/Enlace.jpeg, id=465, 1517.67pt x 2023.56pt>
+ [22 <./figuras/capasEstandar.png>]
+<./figuras/Enlace.jpeg, id=653, 1517.67pt x 2023.56pt>
 File: ./figuras/Enlace.jpeg Graphic file (type jpg)
 <use ./figuras/Enlace.jpeg>
-Package pdftex.def Info: ./figuras/Enlace.jpeg  used on input line 102.
-(pdftex.def)             Requested size: 227.64067pt x 303.5209pt.
-LaTeX Info: Redefining \. on input line 116.
-LaTeX Info: Redefining \% on input line 116.
- [13] [14 <./figuras/Enlace.jpeg>]
-LaTeX Info: Redefining \. on input line 180.
-LaTeX Info: Redefining \% on input line 180.
- [15] [16]) (Capitulo04.tex
+Package pdftex.def Info: ./figuras/Enlace.jpeg  used on input line 101.
+(pdftex.def)             Requested size: 212.47235pt x 283.29646pt.
+LaTeX Info: Redefining \. on input line 105.
+LaTeX Info: Redefining \% on input line 105.
+ [23]
+<./figuras/transm.png, id=660, 372.79276pt x 291.489pt>
+File: ./figuras/transm.png Graphic file (type png)
+<use ./figuras/transm.png>
+Package pdftex.def Info: ./figuras/transm.png  used on input line 129.
+(pdftex.def)             Requested size: 149.11446pt x 116.59352pt.
+ [24 <./figuras/Enlace.jpeg>]
+<./figuras/faro2.png, id=667, 286.671pt x 340.27126pt>
+File: ./figuras/faro2.png Graphic file (type png)
+<use ./figuras/faro2.png>
+Package pdftex.def Info: ./figuras/faro2.png  used on input line 141.
+(pdftex.def)             Requested size: 114.66635pt x 136.10608pt.
+<./figuras/faro.png, id=668, 907.59074pt x 972.63374pt>
+File: ./figuras/faro.png Graphic file (type png)
+<use ./figuras/faro.png>
+Package pdftex.def Info: ./figuras/faro.png  used on input line 148.
+(pdftex.def)             Requested size: 126.16167pt x 135.20311pt.
+LaTeX Info: Redefining \. on input line 169.
+LaTeX Info: Redefining \% on input line 169.
+ [25 <./figuras/transm.png> <./figuras/faro2.png> <./figuras/faro.png>]
+<./figuras/recept.png, id=675, 442.0515pt x 272.81924pt>
+File: ./figuras/recept.png Graphic file (type png)
+<use ./figuras/recept.png>
+Package pdftex.def Info: ./figuras/recept.png  used on input line 174.
+(pdftex.def)             Requested size: 176.81746pt x 109.12576pt.
+ [26 <./figuras/recept.png>]
+LaTeX Info: Redefining \. on input line 237.
+LaTeX Info: Redefining \% on input line 237.
+ [27] [28
+
+]) (Capitulo04.tex
 Cap\'{\i }tulo 4.
 \openout4 = `A0.MiTFG.mtc'.
 
 \openout4 = `A0.MiTFG.mtc'.
 
-(A0.MiTFG.mtc9) [17
+(A0.MiTFG.mtc8) [29
 
-
-] [18] (figuras/alternos.tikz)
-<./figuras/CodificadaAlternos.pdf, id=504, 562.1pt x 421.575pt>
+] [30] (figuras/alternos.tikz)
+<./figuras/CodificadaAlternos.pdf, id=715, 562.1pt x 421.575pt>
 File: ./figuras/CodificadaAlternos.pdf Graphic file (type pdf)
 <use ./figuras/CodificadaAlternos.pdf>
-Package pdftex.def Info: ./figuras/CodificadaAlternos.pdf  used on input line 86.
+Package pdftex.def Info: ./figuras/CodificadaAlternos.pdf  used on input line 85.
 (pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
-LaTeX Info: Redefining \. on input line 108.
-LaTeX Info: Redefining \% on input line 108.
- [19]
-<./figuras/psd_alternos.png, id=513, 485.56406pt x 307.90031pt>
+LaTeX Info: Redefining \. on input line 98.
+LaTeX Info: Redefining \% on input line 98.
+ [31 <./figuras/CodificadaAlternos.pdf>]
+<./figuras/solo_soft_alternos.pdf, id=738, 702.625pt x 526.96875pt>
+File: ./figuras/solo_soft_alternos.pdf Graphic file (type pdf)
+<use ./figuras/solo_soft_alternos.pdf>
+Package pdftex.def Info: ./figuras/solo_soft_alternos.pdf  used on input line 141.
+(pdftex.def)             Requested size: 189.71127pt x 142.28346pt.
+ [32]
+<./figuras/psd_alternos.png, id=745, 485.56406pt x 307.90031pt>
 File: ./figuras/psd_alternos.png Graphic file (type png)
 <use ./figuras/psd_alternos.png>
-Package pdftex.def Info: ./figuras/psd_alternos.png  used on input line 136.
-(pdftex.def)             Requested size: 242.78143pt x 153.94977pt.
- [20 <./figuras/CodificadaAlternos.pdf>]
-LaTeX Info: Redefining \. on input line 179.
-LaTeX Info: Redefining \% on input line 179.
- [21 <./figuras/psd_alternos.png>] (figuras/cancelacion.tikz)
-<./figuras/CodificadaCancelacion.pdf, id=539, 562.1pt x 421.575pt>
+Package pdftex.def Info: ./figuras/psd_alternos.png  used on input line 163.
+(pdftex.def)             Requested size: 179.65588pt x 113.92133pt.
+LaTeX Info: Redefining \. on input line 186.
+LaTeX Info: Redefining \% on input line 186.
+ [33 <./figuras/solo_soft_alternos.pdf> <./figuras/psd_alternos.png>] [34] (figuras/cancelacion.tikz)
+<./figuras/CodificadaCancelacion.pdf, id=770, 562.1pt x 421.575pt>
 File: ./figuras/CodificadaCancelacion.pdf Graphic file (type pdf)
 <use ./figuras/CodificadaCancelacion.pdf>
-Package pdftex.def Info: ./figuras/CodificadaCancelacion.pdf  used on input line 194.
-(pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
- [22]
-LaTeX Info: Redefining \. on input line 246.
-LaTeX Info: Redefining \% on input line 246.
- [23 <./figuras/CodificadaCancelacion.pdf>]
-<./figuras/psd_cancelacion.png, id=563, 577.40718pt x 454.69875pt>
+Package pdftex.def Info: ./figuras/CodificadaCancelacion.pdf  used on input line 222.
+(pdftex.def)             Requested size: 309.15596pt x 231.86696pt.
+LaTeX Info: Redefining \. on input line 236.
+LaTeX Info: Redefining \% on input line 236.
+ [35 <./figuras/CodificadaCancelacion.pdf>] [36]
+<./figuras/solo_soft_cancelacion.pdf, id=797, 727.71875pt x 539.01375pt>
+File: ./figuras/solo_soft_cancelacion.pdf Graphic file (type pdf)
+<use ./figuras/solo_soft_cancelacion.pdf>
+Package pdftex.def Info: ./figuras/solo_soft_cancelacion.pdf  used on input line 298.
+(pdftex.def)             Requested size: 327.47041pt x 242.55394pt.
+LaTeX Info: Redefining \. on input line 314.
+LaTeX Info: Redefining \% on input line 314.
+ [37 <./figuras/solo_soft_cancelacion.pdf>]
+<./figuras/psd_cancelacion.png, id=812, 577.40718pt x 454.69875pt>
 File: ./figuras/psd_cancelacion.png Graphic file (type png)
 <use ./figuras/psd_cancelacion.png>
-Package pdftex.def Info: ./figuras/psd_cancelacion.png  used on input line 249.
+Package pdftex.def Info: ./figuras/psd_cancelacion.png  used on input line 317.
 (pdftex.def)             Requested size: 288.70288pt x 227.34882pt.
- [24 <./figuras/psd_cancelacion.png>]
-<./figuras/opciones4PPM.png, id=570, 715.92468pt x 203.25937pt>
+ [38 <./figuras/psd_cancelacion.png>]
+<./figuras/opciones4PPM.png, id=820, 715.92468pt x 203.25937pt>
 File: ./figuras/opciones4PPM.png Graphic file (type png)
 <use ./figuras/opciones4PPM.png>
-Package pdftex.def Info: ./figuras/opciones4PPM.png  used on input line 287.
-(pdftex.def)             Requested size: 357.96146pt x 101.62943pt.
-<./figuras/CodificadaPPM.pdf, id=573, 562.1pt x 421.575pt>
+Package pdftex.def Info: ./figuras/opciones4PPM.png  used on input line 355.
+(pdftex.def)             Requested size: 286.36479pt x 81.30229pt.
+<./figuras/CodificadaPPM.pdf, id=822, 562.1pt x 421.575pt>
 File: ./figuras/CodificadaPPM.pdf Graphic file (type pdf)
 <use ./figuras/CodificadaPPM.pdf>
-Package pdftex.def Info: ./figuras/CodificadaPPM.pdf  used on input line 296.
+Package pdftex.def Info: ./figuras/CodificadaPPM.pdf  used on input line 364.
 (pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
-LaTeX Info: Redefining \. on input line 317.
-LaTeX Info: Redefining \% on input line 317.
- [25 <./figuras/opciones4PPM.png> <./figuras/CodificadaPPM.pdf>]
-<./figuras/opcionesI4PPM.png, id=593, 730.22812pt x 194.22563pt>
+LaTeX Info: Redefining \. on input line 386.
+LaTeX Info: Redefining \% on input line 386.
+ [39 <./figuras/opciones4PPM.png> <./figuras/CodificadaPPM.pdf>]
+<./figuras/solo_soft_ppm.pdf, id=842, 702.625pt x 526.96875pt>
+File: ./figuras/solo_soft_ppm.pdf Graphic file (type pdf)
+<use ./figuras/solo_soft_ppm.pdf>
+Package pdftex.def Info: ./figuras/solo_soft_ppm.pdf  used on input line 396.
+(pdftex.def)             Requested size: 281.04501pt x 210.78375pt.
+ [40 <./figuras/solo_soft_ppm.pdf>]
+<./figuras/opcionesI4PPM.png, id=857, 730.22812pt x 194.22563pt>
 File: ./figuras/opcionesI4PPM.png Graphic file (type png)
 <use ./figuras/opcionesI4PPM.png>
-Package pdftex.def Info: ./figuras/opcionesI4PPM.png  used on input line 351.
+Package pdftex.def Info: ./figuras/opcionesI4PPM.png  used on input line 428.
 (pdftex.def)             Requested size: 365.11316pt x 97.11256pt.
- [26]
-LaTeX Info: Redefining \. on input line 391.
-LaTeX Info: Redefining \% on input line 391.
- [27 <./figuras/opcionesI4PPM.png>]
-<./figuras/Hard.pdf, id=604, 562.1pt x 421.575pt>
+LaTeX Info: Redefining \. on input line 457.
+LaTeX Info: Redefining \% on input line 457.
+ [41 <./figuras/opcionesI4PPM.png>]
+<./figuras/Hard.pdf, id=865, 562.1pt x 421.575pt>
 File: ./figuras/Hard.pdf Graphic file (type pdf)
 <use ./figuras/Hard.pdf>
-Package pdftex.def Info: ./figuras/Hard.pdf  used on input line 397.
-(pdftex.def)             Requested size: 365.36067pt x 274.0205pt.
- [28 <./figuras/Hard.pdf>]
-LaTeX Info: Redefining \. on input line 463.
-LaTeX Info: Redefining \% on input line 463.
- [29]
-<./figuras/Soft.pdf, id=624, 774.895pt x 710.655pt>
+Package pdftex.def Info: ./figuras/Hard.pdf  used on input line 475.
+(pdftex.def)             Requested size: 292.29369pt x 219.22025pt.
+ [42 <./figuras/Hard.pdf>]
+LaTeX Info: Redefining \. on input line 532.
+LaTeX Info: Redefining \% on input line 532.
+ [43]
+<./figuras/Soft.pdf, id=886, 774.895pt x 710.655pt>
 File: ./figuras/Soft.pdf Graphic file (type pdf)
 <use ./figuras/Soft.pdf>
-Package pdftex.def Info: ./figuras/Soft.pdf  used on input line 474.
-(pdftex.def)             Requested size: 387.44655pt x 355.32663pt.
- [30 <./figuras/Soft.pdf>]
-LaTeX Info: Redefining \. on input line 533.
-LaTeX Info: Redefining \% on input line 533.
- [31]
-<./figuras/Viterbi.pdf, id=642, 562.1pt x 421.575pt>
+Package pdftex.def Info: ./figuras/Soft.pdf  used on input line 551.
+(pdftex.def)             Requested size: 294.46317pt x 270.0517pt.
+ [44 <./figuras/Soft.pdf>]
+LaTeX Info: Redefining \. on input line 609.
+LaTeX Info: Redefining \% on input line 609.
+ [45]
+<./figuras/Viterbi.pdf, id=906, 562.1pt x 421.575pt>
 File: ./figuras/Viterbi.pdf Graphic file (type pdf)
 <use ./figuras/Viterbi.pdf>
-Package pdftex.def Info: ./figuras/Viterbi.pdf  used on input line 546.
+Package pdftex.def Info: ./figuras/Viterbi.pdf  used on input line 622.
 (pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
- [32 <./figuras/Viterbi.pdf>]
-<./figuras/alternos.pdf, id=656, 652.4375pt x 485.815pt>
+ [46 <./figuras/Viterbi.pdf>]
+<./figuras/alternos.pdf, id=920, 652.4375pt x 485.815pt>
 File: ./figuras/alternos.pdf Graphic file (type pdf)
 <use ./figuras/alternos.pdf>
-Package pdftex.def Info: ./figuras/alternos.pdf  used on input line 567.
-(pdftex.def)             Requested size: 391.46552pt x 291.49124pt.
-<./figuras/cancelacion.pdf, id=658, 562.1pt x 421.575pt>
+Package pdftex.def Info: ./figuras/alternos.pdf  used on input line 643.
+(pdftex.def)             Requested size: 456.70313pt x 340.06818pt.
+
+Overfull \hbox (29.91179pt too wide) in paragraph at lines 643--644
+ [][] 
+ []
+
+LaTeX Info: Redefining \. on input line 652.
+LaTeX Info: Redefining \% on input line 652.
+[47 <./figuras/alternos.pdf>]
+<./figuras/cancelacion.pdf, id=935, 562.1pt x 421.575pt>
 File: ./figuras/cancelacion.pdf Graphic file (type pdf)
 <use ./figuras/cancelacion.pdf>
-Package pdftex.def Info: ./figuras/cancelacion.pdf  used on input line 582.
-(pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
-LaTeX Info: Redefining \. on input line 590.
-LaTeX Info: Redefining \% on input line 590.
- [33 <./figuras/alternos.pdf>]
-<./figuras/4ppm.pdf, id=673, 562.1pt x 421.575pt>
+Package pdftex.def Info: ./figuras/cancelacion.pdf  used on input line 658.
+(pdftex.def)             Requested size: 421.57397pt x 316.18047pt.
+ [48 <./figuras/cancelacion.pdf>]
+<./figuras/4ppm.pdf, id=949, 562.1pt x 421.575pt>
 File: ./figuras/4ppm.pdf Graphic file (type pdf)
 <use ./figuras/4ppm.pdf>
-Package pdftex.def Info: ./figuras/4ppm.pdf  used on input line 596.
-(pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
-<./figuras/Comparativa.pdf, id=674, 637.38126pt x 493.845pt>
+Package pdftex.def Info: ./figuras/4ppm.pdf  used on input line 672.
+(pdftex.def)             Requested size: 421.57397pt x 316.18047pt.
+LaTeX Info: Redefining \. on input line 679.
+LaTeX Info: Redefining \% on input line 679.
+ [49 <./figuras/4ppm.pdf>]
+<./figuras/Comparativa.pdf, id=962, 637.38126pt x 493.845pt>
 File: ./figuras/Comparativa.pdf Graphic file (type pdf)
 <use ./figuras/Comparativa.pdf>
-Package pdftex.def Info: ./figuras/Comparativa.pdf  used on input line 611.
+Package pdftex.def Info: ./figuras/Comparativa.pdf  used on input line 687.
 (pdftex.def)             Requested size: 382.4317pt x 296.30928pt.
- [34 <./figuras/cancelacion.pdf>]
-LaTeX Info: Redefining \. on input line 621.
-LaTeX Info: Redefining \% on input line 621.
- [35 <./figuras/4ppm.pdf>] [36 <./figuras/Comparativa.pdf>]) (Capitulo05.tex
+ [50 <./figuras/Comparativa.pdf>]) (Capitulo05.tex
 Cap\'{\i }tulo 5.
 \openout4 = `A0.MiTFG.mtc'.
 
 \openout4 = `A0.MiTFG.mtc'.
 
-(A0.MiTFG.mtc10)
-Overfull \hbox (9.67691pt too wide) in paragraph at lines 24--27
-[]\T1/phv/m/n/12 -Recepción del da-to se-rie -Agrupar los da-tos en pa-re-jas o cuar-te-tos -Decodificar
+(A0.MiTFG.mtc9) [51
+
+
+]
+<./figuras/general.png, id=987, 935.8965pt x 416.15475pt>
+File: ./figuras/general.png Graphic file (type png)
+<use ./figuras/general.png>
+Package pdftex.def Info: ./figuras/general.png  used on input line 34.
+(pdftex.def)             Requested size: 467.94711pt x 208.07686pt.
+
+Overfull \hbox (41.15578pt too wide) in paragraph at lines 34--35
+ [][] 
  []
 
-[37
 
 
-] [38]) (Capitulo06.tex
+pdfTeX warning: pdflatex (file ./figuras/flujo_trans.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figuras/flujo_trans.pdf, id=990, 108.405pt x 361.35pt>
+File: ./figuras/flujo_trans.pdf Graphic file (type pdf)
+<use ./figuras/flujo_trans.pdf>
+Package pdftex.def Info: ./figuras/flujo_trans.pdf  used on input line 55.
+(pdftex.def)             Requested size: 89.9761pt x 299.92043pt.
+
+
+pdfTeX warning: pdflatex (file ./figuras/flujo_receptor.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figuras/flujo_receptor.pdf, id=991, 108.405pt x 542.025pt>
+File: ./figuras/flujo_receptor.pdf Graphic file (type pdf)
+<use ./figuras/flujo_receptor.pdf>
+Package pdftex.def Info: ./figuras/flujo_receptor.pdf  used on input line 62.
+(pdftex.def)             Requested size: 59.62292pt x 298.11467pt.
+[52 <./figuras/general.png>]
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
+ [53 <./figuras/flujo_trans.pdf> <./figuras/flujo_receptor.pdf>]
+
+pdfTeX warning: pdflatex (file ./figuras/selec_code.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figuras/selec_code.pdf, id=1031, 514.92375pt x 180.675pt>
+File: ./figuras/selec_code.pdf Graphic file (type pdf)
+<use ./figuras/selec_code.pdf>
+Package pdftex.def Info: ./figuras/selec_code.pdf  used on input line 124.
+(pdftex.def)             Requested size: 411.93954pt x 144.54018pt.
+
+
+pdfTeX warning: pdflatex (file ./figuras/cuenta.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figuras/cuenta.pdf, id=1032, 424.98775pt x 424.58624pt>
+File: ./figuras/cuenta.pdf Graphic file (type pdf)
+<use ./figuras/cuenta.pdf>
+Package pdftex.def Info: ./figuras/cuenta.pdf  used on input line 131.
+(pdftex.def)             Requested size: 276.23875pt x 275.97778pt.
+[54 <./figuras/selec_code.pdf>]
+<./figuras/sim_cod_cancel.png, id=1061, 854.59274pt x 192.72pt>
+File: ./figuras/sim_cod_cancel.png Graphic file (type png)
+<use ./figuras/sim_cod_cancel.png>
+Package pdftex.def Info: ./figuras/sim_cod_cancel.png  used on input line 157.
+(pdftex.def)             Requested size: 299.11194pt x 67.453pt.
+LaTeX Info: Redefining \. on input line 165.
+LaTeX Info: Redefining \% on input line 165.
+ [55 <./figuras/cuenta.pdf>] [56 <./figuras/sim_cod_cancel.png>]
+LaTeX Info: Redefining \. on input line 247.
+LaTeX Info: Redefining \% on input line 247.
+ [57]
+<./figuras/sim_hard_4ppm.png, id=1095, 928.6695pt x 216.81pt>
+File: ./figuras/sim_hard_4ppm.png Graphic file (type png)
+<use ./figuras/sim_hard_4ppm.png>
+Package pdftex.def Info: ./figuras/sim_hard_4ppm.png  used on input line 250.
+(pdftex.def)             Requested size: 371.46121pt x 86.72246pt.
+ [58 <./figuras/sim_hard_4ppm.png>]
+
+pdfTeX warning: pdflatex (file ./figuras/euclidea.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figuras/euclidea.pdf, id=1101, 108.405pt x 415.5525pt>
+File: ./figuras/euclidea.pdf Graphic file (type pdf)
+<use ./figuras/euclidea.pdf>
+Package pdftex.def Info: ./figuras/euclidea.pdf  used on input line 311.
+(pdftex.def)             Requested size: 35.77374pt x 137.13274pt.
+LaTeX Info: Redefining \. on input line 323.
+LaTeX Info: Redefining \% on input line 323.
+[59 <./figuras/euclidea.pdf>]
+<./figuras/sim_4ppm.png, id=1122, 894.9435pt x 245.718pt>
+File: ./figuras/sim_4ppm.png Graphic file (type png)
+<use ./figuras/sim_4ppm.png>
+Package pdftex.def Info: ./figuras/sim_4ppm.png  used on input line 343.
+(pdftex.def)             Requested size: 313.23491pt x 86.00258pt.
+ [60 <./figuras/sim_4ppm.png>]
+<./figuras/sim_viterbi_cancel.png, id=1129, 907.59074pt x 216.20775pt>
+File: ./figuras/sim_viterbi_cancel.png Graphic file (type png)
+<use ./figuras/sim_viterbi_cancel.png>
+Package pdftex.def Info: ./figuras/sim_viterbi_cancel.png  used on input line 378.
+(pdftex.def)             Requested size: 408.41206pt x 97.29257pt.
+LaTeX Info: Redefining \. on input line 383.
+LaTeX Info: Redefining \% on input line 383.
+ [61 <./figuras/sim_viterbi_cancel.png>] [62
+
+]) (Capitulo06.tex
 Cap\'{\i }tulo 6.
-Package minitoc Info: I0006
-(minitoc)             A0.MiTFG.mtc11 is empty on input line 14.
-[39
+\openout4 = `A0.MiTFG.mtc'.
+
+\openout4 = `A0.MiTFG.mtc'.
+
+(A0.MiTFG.mtc10)
+<./figuras/Enlace.png, id=1145, 906.38625pt x 1168.96725pt>
+File: ./figuras/Enlace.png Graphic file (type png)
+<use ./figuras/Enlace.png>
+Package pdftex.def Info: ./figuras/Enlace.png  used on input line 24.
+(pdftex.def)             Requested size: 90.64392pt x 116.90356pt.
 
 
-] [40
+pdfTeX warning: pdflatex (file ./figuras/sistema_global.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figuras/sistema_global.pdf, id=1147, 467.44638pt x 370.38374pt>
+File: ./figuras/sistema_global.pdf Graphic file (type pdf)
+<use ./figuras/sistema_global.pdf>
+Package pdftex.def Info: ./figuras/sistema_global.pdf  used on input line 34.
+(pdftex.def)             Requested size: 341.23302pt x 270.37787pt.
+[63
 
-]) [41
+ <./figuras/Enlace.png>]
+<./figuras/putty_rec.png, id=1155, 238.491pt x 383.63326pt>
+File: ./figuras/putty_rec.png Graphic file (type png)
+<use ./figuras/putty_rec.png>
+Package pdftex.def Info: ./figuras/putty_rec.png  used on input line 62.
+(pdftex.def)             Requested size: 143.09569pt x 230.18172pt.
+<./figuras/putty_rec_fail.png, id=1156, 198.14024pt x 413.1435pt>
+File: ./figuras/putty_rec_fail.png Graphic file (type png)
+<use ./figuras/putty_rec_fail.png>
+Package pdftex.def Info: ./figuras/putty_rec_fail.png  used on input line 69.
+(pdftex.def)             Requested size: 110.95776pt x 231.35876pt.
+ [64 <./figuras/sistema_global.pdf>]
+<./figuras/1.png, id=1216, 448.67625pt x 259.56975pt>
+File: ./figuras/1.png Graphic file (type png)
+<use ./figuras/1.png>
+Package pdftex.def Info: ./figuras/1.png  used on input line 83.
+(pdftex.def)             Requested size: 224.33757pt x 129.78455pt.
+ [65 <./figuras/putty_rec.png> <./figuras/putty_rec_fail.png> <./figuras/1.png>]
+Overfull \hbox (6.64043pt too wide) in paragraph at lines 113--120
+[][] 
+ []
 
-] [42] (D0.Conclusiones.tex [43
+[66]
+Overfull \hbox (6.64043pt too wide) in paragraph at lines 161--168
+[][] 
+ []
 
-] [44
+LaTeX Info: Redefining \. on input line 185.
+LaTeX Info: Redefining \% on input line 185.
+[67] [68
 
-]) [45
+]) [69
 
-] [46] (D1.AppendixA.tex
+] [70] (D0.Conclusiones.tex [71
+
+] [72]) [73
+
+
+] [74] (D1.AppendixA.tex
 Ap\'{e}ndice A.
-\openout4 = `A0.MiTFG.mtc'.
+[75
 
-\openout4 = `A0.MiTFG.mtc'.
-
-(A0.MiTFG.mtc13) [47
-
-] [48
-
-]) (E1.Bibliografia.tex (A0.MiTFG.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-) [49
+]
+<./figuras/conexion_pitaya.png, id=1265, 376.40625pt x 166.221pt>
+File: ./figuras/conexion_pitaya.png Graphic file (type png)
+<use ./figuras/conexion_pitaya.png>
+Package pdftex.def Info: ./figuras/conexion_pitaya.png  used on input line 65.
+(pdftex.def)             Requested size: 188.20265pt x 83.11028pt.
+ [76 <./figuras/conexion_pitaya.png>]) (E1.Bibliografia.tex (A0.MiTFG.bbl [77
 
 
-] [50
 
-]) (F1.Index.tex
+]) [78]) (F1.Index.tex
 runsystem(makeindex A0.MiTFG.idx)...executed (allowed).
 
  (A0.MiTFG.ind))
@@ -1287,7 +1528,8 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the A0.MiTFG.log file.
 
-[51
+[79
+
 
 
 ] (A0.MiTFG.aux
@@ -1298,20 +1540,20 @@ LaTeX Info: Redefining \% on input line 26.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `A0.MiTFG.out' has not changed.
-(rerunfilecheck)             Checksum: 11FA7B657C8D6C399E6CB752F3B2FCBD;8515.
+(rerunfilecheck)             Checksum: 38545FF2B3BE32565B29434B6B52FBD1;10066.
  ) 
 Here is how much of TeX's memory you used:
- 29547 strings out of 478873
- 498349 string characters out of 2865390
- 820126 words of memory out of 3000000
- 46413 multiletter control sequences out of 15000+600000
- 479946 words of font info for 100 fonts, out of 8000000 for 9000
+ 29925 strings out of 478873
+ 506096 string characters out of 2865390
+ 820713 words of memory out of 3000000
+ 46679 multiletter control sequences out of 15000+600000
+ 475185 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,12n,86p,493b,803s stack positions out of 5000i,500n,10000p,200000b,80000s
-{D:/Miktex/fonts/enc/dvips/base/8r.enc}<D:/Miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Miktex/fonts/type1/urw/helvetic/uhvb8a.pfb><D:/Miktex/fonts/type1/urw/helvetic/uhvr8a.pfb><D:/Miktex/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on A0.MiTFG.pdf (73 pages, 1172826 bytes).
+ 89i,12n,86p,914b,803s stack positions out of 5000i,500n,10000p,200000b,80000s
+{D:/Miktex/fonts/enc/dvips/base/8r.enc}<D:/Miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Miktex/fonts/type1/urw/helvetic/uhvb8a.pfb><D:/Miktex/fonts/type1/urw/helvetic/uhvr8a.pfb><D:/Miktex/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on A0.MiTFG.pdf (99 pages, 12872000 bytes).
 PDF statistics:
- 854 PDF objects out of 1000 (max. 8388607)
- 149 named destinations out of 1000 (max. 500000)
- 493 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1385 PDF objects out of 1440 (max. 8388607)
+ 235 named destinations out of 1000 (max. 500000)
+ 699 words of extra memory for PDF output out of 10000 (max. 10000000)
 

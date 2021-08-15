@@ -1,6 +1,11 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Estándar de los sistemas VLC}{\reset@font\mtcSfont 11}{section.3.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Enlace de luz}{\reset@font\mtcSfont 13}{section.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.1}Transmisor}{\reset@font\mtcSSfont 13}{subsection.3.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.2}Receptor}{\reset@font\mtcSSfont 15}{subsection.3.2.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}Sistema de partida}{\reset@font\mtcSfont 15}{section.3.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.4}Mejoras respecto al sistema anterior}{\reset@font\mtcSfont 16}{section.3.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.1}Introducción a los esquemas de señalización}{\reset@font\mtcSfont 29}{section.4.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.2}Pulsos alternos}{\reset@font\mtcSfont 30}{section.4.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.3}Cancelación de pulsos}{\reset@font\mtcSfont 34}{section.4.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.4}4-PPM}{\reset@font\mtcSfont 38}{section.4.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.5}Comparativa 4-PPM frente a Inverse 4-PPM}{\reset@font\mtcSfont 41}{section.4.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.6}Sistemas de decisión}{\reset@font\mtcSfont 41}{section.4.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.6.1}Hard-decoding}{\reset@font\mtcSSfont 42}{subsection.4.6.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.6.2}Soft-decoding}{\reset@font\mtcSSfont 43}{subsection.4.6.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.6.3}Algoritmo de Viterbi}{\reset@font\mtcSSfont 45}{subsection.4.6.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.6.4}Comparativa entre los sistemas de decisión}{\reset@font\mtcSSfont 47}{subsection.4.6.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.7}Conclusiones}{\reset@font\mtcSfont 50}{section.4.7}}

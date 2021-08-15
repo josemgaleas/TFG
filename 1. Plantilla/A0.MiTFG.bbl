@@ -1,3 +1,98 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
+
+\bibitem{who1}
+World~Hearth Organization.
+\newblock Road traffic injuries.
+\newblock Junio 2021.
+
+\bibitem{who2}
+World~Hearth Organization.
+\newblock Global status report on road safety.
+\newblock Junio 2018.
+
+\bibitem{who3}
+World~Hearth Organization.
+\newblock Electromagnetic fields and public health.
+\newblock Junio 2017.
+
+\bibitem{khan}
+L.~U. Khan.
+\newblock Visible light communication: Applications, architecture,
+  standardization and research challenges.
+\newblock {\em Digital Communications and Networks}, pages 78--88, 2017.
+\newblock KeAi.
+
+\bibitem{falci}
+M.~Falcitelli y~P.~Pagano.
+\newblock Visible light communication for cooperative its.
+\newblock {\em Intelligent Transportation Systems, Studies in Systems, Decision
+  and Control}, 52:19--47, 2016.
+\newblock Suiza: Springer International Publishing.
+
+\bibitem{caile}
+A.M.~Cailean y~M.~Dimian.
+\newblock Impact of ieee 802.15.7 standard on visible light communications
+  usage in automotive applications.
+\newblock {\em IEEE Communications Magazine}, pages 169--175, 2017.
+
+\bibitem{fpga}
+Javier López.
+\newblock Qué es un fpga: características y utilidad de este tipo de
+  componente.
+\newblock {\em HardZone}, Junio 2021.
+
+\bibitem{pitaya}
+Red~Pitaya Stemlab.
+\newblock {\em Red Pitaya Documentation}.
+
+\bibitem{vivado}
+Jyoti~Saini y~Priyanka~Verma.
+\newblock An implementation and comparison of io expander on zed board and
+  spartan 3e for low cost and area efficiency.
+\newblock {\em International Journal of Electrical and Electronics
+  Engineering}, 2, 2015.
+
+\bibitem{ieee}
+IEEE~Standars Association.
+\newblock Ieee standard for local and metropolitan area networks. part 15.7:
+  Short-range optical wireless communications.
+\newblock 2018.
+
+\bibitem{arte}
+ISA.
+\newblock More than illumination.
+\newblock {\em Strategic Research Agenda}, 2013.
+
+\bibitem{anto_alt}
+Antonio García~Zambrana y~Antonio Puerta~Notario.
+\newblock Rate-adaptive indoor wireless infrared links using ook formats with
+  alternate-position gaussian pulses.
+\newblock {\em Electronic Letters}, 2001.
+
+\bibitem{anto_cancel}
+Antonio García~Zambrana y~Antonio Puerta~Notario.
+\newblock Novel approach for increasing the peak-to-average optical power ratio
+  in rate-adaptive optical wireless communication systems.
+\newblock {\em IEE Proceedings Optoelectronics}, 50(5), 2003.
+
+\bibitem{ppm}
+Shlomi Arnon.
+\newblock Visible light communication.
+\newblock {\em Cambridge University Press}, 2015.
+
+\bibitem{hard}
+Mathuranathan Viswanathan.
+\newblock Hard and soft decision decoding.
+\newblock {\em GaussianWaves}, 2009.
+
+\bibitem{euclidean}
+Juri Ranieri y Martin~Vetterli Ivan~Dokmanic, Reza~Parhizkar.
+\newblock Euclidean distance matrices: Short walk through theory, algorithms
+  and applications.
+\newblock {\em Computing Research Repository (CoRR)}, 2015.
+
+\bibitem{viterbi}
+Wikipedia.
+\newblock Algoritmo de viterbi.
 
 \end{thebibliography}
